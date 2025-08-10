@@ -1,0 +1,56 @@
+[0.766s] Invoking command in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_row_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_navigator/lib:/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/build/opennav_coverage_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages:/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/opennav_coverage_demo build --build-base /home/manel/psolar_ws/build/opennav_coverage_demo/build install --record /home/manel/psolar_ws/build/opennav_coverage_demo/install.log --single-version-externally-managed install_data
+[1.072s] running egg_info
+[1.072s] creating ../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info
+[1.073s] writing ../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/PKG-INFO
+[1.073s] writing dependency_links to ../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/dependency_links.txt
+[1.073s] writing entry points to ../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/entry_points.txt
+[1.073s] writing requirements to ../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/requires.txt
+[1.073s] writing top-level names to ../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/top_level.txt
+[1.073s] writing manifest file '../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/SOURCES.txt'
+[1.075s] reading manifest file '../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/SOURCES.txt'
+[1.076s] writing manifest file '../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info/SOURCES.txt'
+[1.076s] running build
+[1.076s] running build_py
+[1.077s] creating /home/manel/psolar_ws/build/opennav_coverage_demo/build
+[1.077s] creating /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib
+[1.077s] creating /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo
+[1.077s] copying opennav_coverage_demo/demo_row_coverage.py -> /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo
+[1.077s] copying opennav_coverage_demo/demo_coverage.py -> /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo
+[1.077s] copying opennav_coverage_demo/test_compute_path.py -> /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo
+[1.077s] copying opennav_coverage_demo/__init__.py -> /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo
+[1.077s] running install
+[1.077s] running install_lib
+[1.079s] creating /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo
+[1.079s] copying /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo/demo_row_coverage.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo
+[1.079s] copying /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo/demo_coverage.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo
+[1.079s] copying /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo/test_compute_path.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo
+[1.079s] copying /home/manel/psolar_ws/build/opennav_coverage_demo/build/lib/opennav_coverage_demo/__init__.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo
+[1.080s] byte-compiling /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo/demo_row_coverage.py to demo_row_coverage.cpython-310.pyc
+[1.081s] byte-compiling /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo/demo_coverage.py to demo_coverage.cpython-310.pyc
+[1.082s] byte-compiling /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo/test_compute_path.py to test_compute_path.cpython-310.pyc
+[1.083s] byte-compiling /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo/__init__.py to __init__.cpython-310.pyc
+[1.083s] running install_data
+[1.083s] creating /home/manel/psolar_ws/install/opennav_coverage_demo/share/ament_index
+[1.083s] creating /home/manel/psolar_ws/install/opennav_coverage_demo/share/ament_index/resource_index
+[1.083s] creating /home/manel/psolar_ws/install/opennav_coverage_demo/share/ament_index/resource_index/packages
+[1.083s] copying resource/opennav_coverage_demo -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/ament_index/resource_index/packages
+[1.084s] copying package.xml -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.084s] copying launch/row_bringup_launch.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.084s] copying launch/bringup_launch.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.084s] copying launch/test_launch.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.084s] copying launch/coverage_demo_launch.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.084s] copying launch/row_coverage_demo_launch.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.084s] copying launch/test_complete_launch.py -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.084s] copying world/blank.world -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.085s] copying params/param_on_panel.yaml -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.085s] copying params/demo_params.yaml -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.085s] copying params/test_params.yaml -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.086s] copying rviz/opennav_coverage_demo.rviz -> /home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo
+[1.086s] running install_egg_info
+[1.088s] Copying ../../../build/opennav_coverage_demo/opennav_coverage_demo.egg-info to /home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages/opennav_coverage_demo-1.0.0-py3.10.egg-info
+[1.088s] running install_scripts
+[1.112s] Installing demo_coverage script to /home/manel/psolar_ws/install/opennav_coverage_demo/lib/opennav_coverage_demo
+[1.112s] Installing demo_row_coverage script to /home/manel/psolar_ws/install/opennav_coverage_demo/lib/opennav_coverage_demo
+[1.112s] Installing test_compute_path script to /home/manel/psolar_ws/install/opennav_coverage_demo/lib/opennav_coverage_demo
+[1.112s] writing list of installed files to '/home/manel/psolar_ws/build/opennav_coverage_demo/install.log'
+[1.137s] Invoked command in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_row_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_navigator/lib:/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/build/opennav_coverage_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages:/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/opennav_coverage_demo build --build-base /home/manel/psolar_ws/build/opennav_coverage_demo/build install --record /home/manel/psolar_ws/build/opennav_coverage_demo/install.log --single-version-externally-managed install_data

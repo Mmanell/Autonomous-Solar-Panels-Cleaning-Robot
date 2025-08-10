@@ -1,0 +1,22 @@
+[  0%] Built target opennav_coverage_msgs__cpp
+[  0%] Built target ament_cmake_python_copy_opennav_coverage_msgs
+[ 12%] Built target opennav_coverage_msgs__rosidl_generator_c
+[ 24%] Built target opennav_coverage_msgs__rosidl_typesupport_cpp
+[ 36%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_cpp
+[ 47%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp
+[ 59%] Built target opennav_coverage_msgs__rosidl_typesupport_c
+[ 71%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_c
+[ 83%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_c
+[ 83%] Built target opennav_coverage_msgs
+[ 84%] Built target opennav_coverage_msgs__py
+[ 95%] Built target opennav_coverage_msgs__rosidl_generator_py
+[ 97%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_c__pyext
+[ 99%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext
+[100%] Built target opennav_coverage_msgs__rosidl_typesupport_c__pyext
+running egg_info
+writing opennav_coverage_msgs.egg-info/PKG-INFO
+writing dependency_links to opennav_coverage_msgs.egg-info/dependency_links.txt
+writing top-level names to opennav_coverage_msgs.egg-info/top_level.txt
+reading manifest file 'opennav_coverage_msgs.egg-info/SOURCES.txt'
+writing manifest file 'opennav_coverage_msgs.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_opennav_coverage_msgs_egg

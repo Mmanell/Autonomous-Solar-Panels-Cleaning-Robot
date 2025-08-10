@@ -1,0 +1,184 @@
+[0.010s] Invoking command in '/home/manel/psolar_ws/build/opennav_row_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/opennav_row_coverage
+[0.053s] -- The C compiler identification is GNU 11.4.0
+[0.106s] -- The CXX compiler identification is GNU 11.4.0
+[0.113s] -- Detecting C compiler ABI info
+[0.171s] -- Detecting C compiler ABI info - done
+[0.178s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.179s] -- Detecting C compile features
+[0.179s] -- Detecting C compile features - done
+[0.182s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.263s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.264s] -- Detecting CXX compile features
+[0.265s] -- Detecting CXX compile features - done
+[0.268s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.418s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.516s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.572s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.579s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.591s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.607s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.630s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.694s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.698s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.777s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.793s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.812s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.821s] -- Looking for pthread.h
+[0.880s] -- Looking for pthread.h - found
+[0.880s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.948s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.949s] -- Found Threads: TRUE  
+[1.006s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.035s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.057s] -- Found nav2_util: 1.1.18 (/opt/ros/humble/share/nav2_util/cmake)
+[1.221s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.223s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.223s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.274s] -- Found GDAL: /usr/lib/libgdal.so (found suitable version "3.4.1", minimum required is "3.0") 
+[1.275s] -- Found opennav_coverage: 0.0.1 (/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/cmake)
+[1.556s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.558s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.641s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.820s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.823s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.824s] -- Configured cppcheck include dirs: /home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage/include
+[1.824s] -- Configured cppcheck exclude dirs and/or files: 
+[1.825s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.825s] -- Configured cpplint exclude dirs and/or files: 
+[1.826s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.826s] -- Added test 'lint_cmake' to check CMake code style
+[1.827s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.828s] -- Added test 'uncrustify' to check C / C++ code style
+[1.828s] -- Configured uncrustify additional arguments: 
+[1.829s] -- Added test 'xmllint' to check XML markup files
+[1.833s] -- Configuring done
+[1.876s] [33mCMake Warning at CMakeLists.txt:40 (add_library):
+[1.876s]   Cannot generate a safe runtime search path for target
+[1.876s]   opennav_row_coverage_core because there is a cycle in the constraint graph:
+[1.876s] 
+[1.876s]     dir 0 is [/opt/ros/humble/lib]
+[1.876s]     dir 1 is [/home/manel/psolar_ws/install/opennav_coverage_msgs/lib]
+[1.876s]     dir 2 is [/home/manel/psolar_ws/install/opennav_coverage/lib]
+[1.876s]     dir 3 is [/home/manel/turtlebot3_ws/install/fields2cover/lib]
+[1.876s]       dir 4 must precede it due to runtime library [libtinyxml2.so.9]
+[1.876s]     dir 4 is [/home/manel/psolar_ws/install/fields2cover/lib]
+[1.876s]       dir 3 must precede it due to runtime library [libFields2Cover.so]
+[1.877s] 
+[1.877s]   Some of these libraries may not be found correctly.
+[1.877s] 
+[1.877s] [0m
+[1.903s] [33mCMake Warning at CMakeLists.txt:51 (add_executable):
+[1.904s]   Cannot generate a safe runtime search path for target opennav_row_coverage
+[1.904s]   because there is a cycle in the constraint graph:
+[1.904s] 
+[1.904s]     dir 0 is [/home/manel/psolar_ws/build/opennav_row_coverage]
+[1.904s]     dir 1 is [/opt/ros/humble/lib]
+[1.904s]     dir 2 is [/home/manel/psolar_ws/install/opennav_coverage_msgs/lib]
+[1.904s]     dir 3 is [/home/manel/psolar_ws/install/opennav_coverage/lib]
+[1.904s]     dir 4 is [/home/manel/turtlebot3_ws/install/fields2cover/lib]
+[1.904s]       dir 5 must precede it due to runtime library [libtinyxml2.so.9]
+[1.904s]     dir 5 is [/home/manel/psolar_ws/install/fields2cover/lib]
+[1.904s]       dir 4 must precede it due to runtime library [libFields2Cover.so]
+[1.904s] 
+[1.904s]   Some of these libraries may not be found correctly.
+[1.904s] 
+[1.904s] [0m
+[1.941s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):
+[1.941s]   Cannot generate a safe runtime search path for target test_swath_generator
+[1.941s]   because there is a cycle in the constraint graph:
+[1.941s] 
+[1.941s]     dir 0 is [/home/manel/psolar_ws/install/opennav_coverage/lib]
+[1.941s]     dir 1 is [/opt/ros/humble/lib]
+[1.941s]     dir 2 is [/home/manel/psolar_ws/install/opennav_coverage_msgs/lib]
+[1.941s]     dir 3 is [/home/manel/psolar_ws/build/opennav_row_coverage]
+[1.941s]     dir 4 is [/home/manel/turtlebot3_ws/install/fields2cover/lib]
+[1.941s]       dir 5 must precede it due to runtime library [libtinyxml2.so.9]
+[1.941s]     dir 5 is [/home/manel/psolar_ws/install/fields2cover/lib]
+[1.941s]       dir 4 must precede it due to runtime library [libFields2Cover.so]
+[1.941s] 
+[1.941s]   Some of these libraries may not be found correctly.
+[1.941s] Call Stack (most recent call first):
+[1.941s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)
+[1.941s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)
+[1.942s]   test/CMakeLists.txt:2 (ament_add_gtest)
+[1.942s] 
+[1.942s] [0m
+[1.976s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):
+[1.976s]   Cannot generate a safe runtime search path for target test_utils because
+[1.976s]   there is a cycle in the constraint graph:
+[1.976s] 
+[1.976s]     dir 0 is [/home/manel/psolar_ws/install/opennav_coverage/lib]
+[1.976s]     dir 1 is [/opt/ros/humble/lib]
+[1.976s]     dir 2 is [/home/manel/psolar_ws/install/opennav_coverage_msgs/lib]
+[1.976s]     dir 3 is [/home/manel/psolar_ws/build/opennav_row_coverage]
+[1.976s]     dir 4 is [/home/manel/turtlebot3_ws/install/fields2cover/lib]
+[1.976s]       dir 5 must precede it due to runtime library [libtinyxml2.so.9]
+[1.977s]     dir 5 is [/home/manel/psolar_ws/install/fields2cover/lib]
+[1.977s]       dir 4 must precede it due to runtime library [libFields2Cover.so]
+[1.977s] 
+[1.977s]   Some of these libraries may not be found correctly.
+[1.977s] Call Stack (most recent call first):
+[1.977s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)
+[1.977s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)
+[1.977s]   test/CMakeLists.txt:13 (ament_add_gtest)
+[1.977s] 
+[1.977s] [0m
+[1.982s] -- Generating done
+[2.011s] -- Build files have been written to: /home/manel/psolar_ws/build/opennav_row_coverage
+[2.023s] Invoked command in '/home/manel/psolar_ws/build/opennav_row_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/opennav_row_coverage
+[2.024s] Invoking command in '/home/manel/psolar_ws/build/opennav_row_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_row_coverage -- -j12 -l12
+[2.070s] [ 23%] [32mBuilding CXX object CMakeFiles/opennav_row_coverage_core.dir/src/row_swath_generator.cpp.o[0m
+[2.070s] [ 30%] [32mBuilding CXX object CMakeFiles/opennav_row_coverage_core.dir/src/row_coverage_server.cpp.o[0m
+[2.070s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.070s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[3.302s] [ 38%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.343s] [ 38%] Built target gtest_main
+[6.727s] [ 46%] [32m[1mLinking CXX static library libgtest.a[0m
+[6.799s] [ 46%] Built target gtest
+[12.502s] [ 53%] [32m[1mLinking CXX shared library libopennav_row_coverage_core.so[0m
+[13.115s] [ 53%] Built target opennav_row_coverage_core
+[13.135s] [ 76%] [32mBuilding CXX object CMakeFiles/opennav_row_coverage.dir/src/main.cpp.o[0m
+[13.136s] [ 76%] [32mBuilding CXX object test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o[0m
+[13.136s] [ 76%] [32mBuilding CXX object test/CMakeFiles/test_utils.dir/test_utils.cpp.o[0m
+[19.579s] [ 84%] [32m[1mLinking CXX executable opennav_row_coverage[0m
+[19.793s] [ 92%] [32m[1mLinking CXX executable test_utils[0m
+[20.290s] [ 92%] Built target opennav_row_coverage
+[20.353s] [100%] [32m[1mLinking CXX executable test_swath_generator[0m
+[20.590s] [100%] Built target test_utils
+[21.288s] [100%] Built target test_swath_generator
+[21.300s] Invoked command in '/home/manel/psolar_ws/build/opennav_row_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_row_coverage -- -j12 -l12
+[21.301s] Invoking command in '/home/manel/psolar_ws/build/opennav_row_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_row_coverage
+[21.309s] -- Install configuration: ""
+[21.310s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/lib/libopennav_row_coverage_core.so
+[21.313s] -- Set runtime path of "/home/manel/psolar_ws/install/opennav_row_coverage/lib/libopennav_row_coverage_core.so" to ""
+[21.313s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/lib/opennav_row_coverage/opennav_row_coverage
+[21.313s] -- Set runtime path of "/home/manel/psolar_ws/install/opennav_row_coverage/lib/opennav_row_coverage/opennav_row_coverage" to ""
+[21.313s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/include/
+[21.313s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/row_swath_generator.hpp
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/utils.hpp
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/row_coverage_server.hpp
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/types.hpp
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/library_path.sh
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/library_path.dsv
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/package_run_dependencies/opennav_row_coverage
+[21.314s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/parent_prefix_path/opennav_row_coverage
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/ament_prefix_path.sh
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/ament_prefix_path.dsv
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/path.sh
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/path.dsv
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.bash
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.sh
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.zsh
+[21.315s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.dsv
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.dsv
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/packages/opennav_row_coverage
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/rclcpp_components/opennav_row_coverage
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/ament_cmake_export_include_directories-extras.cmake
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/ament_cmake_export_libraries-extras.cmake
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/opennav_row_coverageConfig.cmake
+[21.316s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/opennav_row_coverageConfig-version.cmake
+[21.317s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.xml
+[21.319s] Invoked command in '/home/manel/psolar_ws/build/opennav_row_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_row_coverage

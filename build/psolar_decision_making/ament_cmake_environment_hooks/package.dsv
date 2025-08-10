@@ -1,0 +1,4 @@
+source;share/psolar_decision_making/local_setup.bash
+source;share/psolar_decision_making/local_setup.dsv
+source;share/psolar_decision_making/local_setup.sh
+source;share/psolar_decision_making/local_setup.zsh

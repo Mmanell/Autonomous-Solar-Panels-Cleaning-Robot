@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/humble/include/**",
+        "/home/manel/psolar_ws/src/Fields2Cover/include/**",
+        "/home/manel/psolar_ws/src/opennav_coverage/backported_bt_navigator/include/**",
+        "/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage/include/**",
+        "/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_bt/include/**",
+        "/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_navigator/include/**",
+        "/home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage/include/**",
+        "/home/manel/psolar_ws/src/psolar_decision_making/include/**",
+        "/home/manel/psolar_ws/src/psolar_gazebo/include/**",
+        "/home/manel/psolar_ws/src/psolar_localization/include/**",
+        "/home/manel/psolar_ws/src/psolar_path_planning/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

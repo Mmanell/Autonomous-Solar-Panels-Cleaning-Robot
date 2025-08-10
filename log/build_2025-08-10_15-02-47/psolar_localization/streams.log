@@ -1,0 +1,36 @@
+[0.032s] Invoking command in '/home/manel/psolar_ws/build/psolar_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_localization -- -j12 -l12
+[0.157s] [ 33%] Built target odom_tilted_publisher
+[0.166s] [ 66%] Built target gps_tilted_publisher
+[0.167s] [100%] Built target tilted_frames_publisher
+[0.222s] Invoked command in '/home/manel/psolar_ws/build/psolar_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_localization -- -j12 -l12
+[0.225s] Invoking command in '/home/manel/psolar_ws/build/psolar_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_localization
+[0.234s] -- Install configuration: ""
+[0.234s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch
+[0.234s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch/dual_ekf_navsat.launch.py
+[0.234s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch/localization_on_slope.launch.py
+[0.234s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config
+[0.235s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params_slope.yaml
+[0.235s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params.yaml
+[0.235s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/navsat_params_slope.yaml
+[0.235s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/local_ekf_params.yaml
+[0.235s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/local_ekf_params_slope.yaml
+[0.235s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/navsat_params.yaml
+[0.235s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/gps_tilted_publisher
+[0.236s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/odom_tilted_publisher
+[0.236s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/tilted_frames_publisher
+[0.236s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/ament_index/resource_index/package_run_dependencies/psolar_localization
+[0.236s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/ament_index/resource_index/parent_prefix_path/psolar_localization
+[0.236s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/environment/ament_prefix_path.sh
+[0.236s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/environment/ament_prefix_path.dsv
+[0.236s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/environment/path.sh
+[0.237s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/environment/path.dsv
+[0.237s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/local_setup.bash
+[0.237s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/local_setup.sh
+[0.237s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/local_setup.zsh
+[0.237s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/local_setup.dsv
+[0.237s] -- Installing: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.dsv
+[0.239s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/ament_index/resource_index/packages/psolar_localization
+[0.240s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/cmake/psolar_localizationConfig.cmake
+[0.240s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/cmake/psolar_localizationConfig-version.cmake
+[0.241s] -- Up-to-date: /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.xml
+[0.254s] Invoked command in '/home/manel/psolar_ws/build/psolar_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_localization

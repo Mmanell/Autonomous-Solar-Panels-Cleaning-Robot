@@ -1,0 +1,15 @@
+/home/manel/psolar_ws/install/psolar_decision_making/share/ament_index/resource_index/package_run_dependencies/psolar_decision_making
+/home/manel/psolar_ws/install/psolar_decision_making/share/ament_index/resource_index/parent_prefix_path/psolar_decision_making
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/environment/ament_prefix_path.sh
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/environment/ament_prefix_path.dsv
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/environment/path.sh
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/environment/path.dsv
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/local_setup.bash
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/local_setup.sh
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/local_setup.zsh
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/local_setup.dsv
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.dsv
+/home/manel/psolar_ws/install/psolar_decision_making/share/ament_index/resource_index/packages/psolar_decision_making
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/cmake/psolar_decision_makingConfig.cmake
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/cmake/psolar_decision_makingConfig-version.cmake
+/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.xml

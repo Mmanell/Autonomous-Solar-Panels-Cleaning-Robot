@@ -1,0 +1,108 @@
+[0.031s] Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/fields2cover -- -j12 -l12
+[0.090s] [  2%] Built target tinyxml2
+[0.099s] [ 17%] Built target steering_functions
+[0.123s] [ 19%] Built target xmltest
+[0.229s] [ 53%] Built target Fields2Cover
+[0.282s] [ 54%] Built target 1_basic_types_tutorial
+[0.286s] [ 56%] Built target 2_objective_functions_tutorial
+[0.300s] [ 57%] Built target 6_path_planning_tutorial
+[0.305s] [ 59%] Built target 4_swath_generator_tutorial
+[0.308s] [ 61%] Built target 7_complete_flow
+[0.311s] [ 62%] Built target 3_headland_generator_tutorial
+[0.313s] [ 64%] Built target 5_route_planning_tutorial
+[0.378s] [100%] Built target unittests
+[0.396s] Invoked command in '/home/manel/psolar_ws/build/fields2cover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/fields2cover -- -j12 -l12
+[0.398s] Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/fields2cover
+[0.408s] -- Install configuration: "Release"
+[0.409s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9.0.0
+[0.409s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9
+[0.409s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so
+[0.409s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-shared-targets.cmake
+[0.410s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-shared-targets-release.cmake
+[0.410s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-config.cmake
+[0.410s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-config-version.cmake
+[0.410s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/tinyxml2.h
+[0.410s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/pkgconfig/tinyxml2.pc
+[0.410s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libsteering_functions.so
+[0.410s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/spline/splineTargets.cmake
+[0.411s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/spline/splineConfig.cmake
+[0.411s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/spline.h
+[0.411s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/matplotlib_cpp/matplotlib_cppTargets.cmake
+[0.411s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/matplotlib_cpp/matplotlib_cppConfig.cmake
+[0.411s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/matplotlibcpp.h
+[0.411s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
+[0.412s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover.h
+[0.412s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9.0.0
+[0.412s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9
+[0.412s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so
+[0.412s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libsteering_functions.so
+[0.412s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2Cover-shared-Targets.cmake
+[0.412s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2Cover-shared-Targets-release.cmake
+[0.413s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2CoverConfig.cmake
+[0.413s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2CoverConfigVersion.cmake
+[0.413s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/share/Fields2Cover/package.xml
+[0.413s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include
+[0.413s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover
+[0.414s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils
+[0.414s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/parser.h
+[0.414s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/transformation.h
+[0.414s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/visualizer.h
+[0.414s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/random.h
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiPoint.h
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries_impl.hpp
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry.h
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LineString.h
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry_impl.hpp
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Robot.h
+[0.415s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiLineString.h
+[0.416s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Point.h
+[0.416s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swath.h
+[0.416s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/OptimizationParams.h
+[0.416s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Field.h
+[0.416s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Strip.h
+[0.416s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries.h
+[0.416s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cells.h
+[0.417s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cell.h
+[0.417s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Path.h
+[0.417s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LinearRing.h
+[0.417s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Route.h
+[0.417s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swaths.h
+[0.418s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator
+[0.418s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/constant_headland.h
+[0.418s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/headland_generator_base.h
+[0.418s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator
+[0.419s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base.h
+[0.419s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base_impl.hpp
+[0.419s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/brute_force.h
+[0.419s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives
+[0.419s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/path_length.h
+[0.419s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/complete_turn_path_obj.h
+[0.420s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/field_coverage.h
+[0.420s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rp_objective.h
+[0.420s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/direct_dist_path_obj.h
+[0.420s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/hg_objective.h
+[0.420s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/swath_length.h
+[0.421s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/overlaps.h
+[0.421s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/sg_objective.h
+[0.421s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/n_swath.h
+[0.422s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/base_objective.h
+[0.423s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/pp_objective.h
+[0.423s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rem_area.h
+[0.423s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types.h
+[0.424s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning
+[0.424s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/turning_base.h
+[0.425s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves_hc.h
+[0.425s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves_cc.h
+[0.426s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves.h
+[0.426s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/path_planning.h
+[0.426s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/steer_to_path.hpp
+[0.426s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves.h
+[0.426s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning
+[0.427s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/boustrophedon_order.h
+[0.427s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/snake_order.h
+[0.427s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/single_cell_swaths_order_base.h
+[0.427s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/custom_order.h
+[0.428s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/spiral_order.h
+[0.428s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover.h
+[0.428s] Invoked command in '/home/manel/psolar_ws/build/fields2cover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/fields2cover

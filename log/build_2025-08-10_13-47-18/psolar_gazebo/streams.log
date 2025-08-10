@@ -1,0 +1,3 @@
+[0.025s] Invoking command in '/home/manel/psolar_ws/build/psolar_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_gazebo -- -j12 -l12
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[0.106s] [100%] Built target turtlebot3_drive

@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target odom_tilted_publisher[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/gps_tilted_publisher.dir/src/gps_tilted_publisher.cpp.o[0m
+[ 50%] Built target tilted_frames_publisher
+[ 83%] Built target odom_tilted_publisher

@@ -1,0 +1,262 @@
+[0.021s] Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/Fields2Cover -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/fields2cover
+[0.086s] -- The CXX compiler identification is GNU 11.4.0
+[0.096s] -- Detecting CXX compiler ABI info
+[0.180s] -- Detecting CXX compiler ABI info - done
+[0.189s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.189s] -- Detecting CXX compile features
+[0.190s] -- Detecting CXX compile features - done
+[1.486s] -- Using the single-header code from /home/manel/psolar_ws/build/fields2cover/_deps/json-src/single_include/
+[18.346s] -- The C compiler identification is GNU 11.4.0
+[18.355s] -- Detecting C compiler ABI info
+[18.455s] -- Detecting C compiler ABI info - done
+[18.489s] -- Check for working C compiler: /usr/bin/cc - skipped
+[18.489s] -- Detecting C compile features
+[18.490s] -- Detecting C compile features - done
+[46.472s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+[46.947s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: NumPy Interpreter Development.Module 
+[46.953s] -- Found GDAL: /usr/lib/libgdal.so (found suitable version "3.4.1", minimum required is "3.0") 
+[47.117s] -- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.11.0")  
+[47.121s] -- Configuring done
+[47.167s] -- Generating done
+[47.179s] -- Build files have been written to: /home/manel/psolar_ws/build/fields2cover
+[47.186s] Invoked command in '/home/manel/psolar_ws/build/fields2cover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/Fields2Cover -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/fields2cover
+[47.188s] Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/fields2cover -- -j12 -l12
+[47.232s] [  3%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/utilities/utilities.cpp.o[0m
+[47.232s] [  3%] [32mBuilding CXX object _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o[0m
+[47.232s] [  3%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/cc00_reeds_shepp_state_space.cpp.o[0m
+[47.232s] [  4%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/cc0pm_dubins_state_space.cpp.o[0m
+[47.232s] [  4%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/dubins_state_space/dubins_state_space.cpp.o[0m
+[47.233s] [  5%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/cc_dubins_state_space.cpp.o[0m
+[47.233s] [  5%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/ccpmpm_dubins_state_space.cpp.o[0m
+[47.233s] [  7%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/reeds_shepp_state_space/reeds_shepp_state_space.cpp.o[0m
+[47.233s] [  7%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/cc00_dubins_state_space.cpp.o[0m
+[47.234s] [  8%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/ccpm0_dubins_state_space.cpp.o[0m
+[47.238s] [  9%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/hc00_reeds_shepp_state_space.cpp.o[0m
+[47.241s] [ 10%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/configuration.cpp.o[0m
+[48.549s] [ 11%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/hc0pm_reeds_shepp_state_space.cpp.o[0m
+[48.644s] [ 12%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/hc_cc_circle.cpp.o[0m
+[48.969s] [ 12%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/hc_cc_state_space.cpp.o[0m
+[49.068s] [ 13%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/hc_reeds_shepp_state_space.cpp.o[0m
+[49.123s] [ 14%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/hcpm0_reeds_shepp_state_space.cpp.o[0m
+[49.208s] [ 15%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/hcpmpm_reeds_shepp_state_space.cpp.o[0m
+[49.418s] [ 16%] [32mBuilding CXX object _deps/steering_functions-build/CMakeFiles/steering_functions.dir/src/hc_cc_state_space/paths.cpp.o[0m
+[50.161s] [ 17%] [32m[1mLinking CXX shared library libtinyxml2.so[0m
+[50.365s] [ 17%] Built target tinyxml2
+[50.398s] [ 18%] [32mBuilding CXX object _deps/tinyxml2-build/CMakeFiles/xmltest.dir/xmltest.cpp.o[0m
+[50.562s] [01m[K/home/manel/psolar_ws/build/fields2cover/_deps/tinyxml2-src/xmltest.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[50.562s] [01m[K/home/manel/psolar_ws/build/fields2cover/_deps/tinyxml2-src/xmltest.cpp:711:38:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kchar* fgets(char*, int, FILE*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[50.562s]   711 |                                 [01;35m[Kfgets( savedBuf, 256, saved )[m[K;
+[50.562s]       |                                 [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[50.562s] [01m[K/home/manel/psolar_ws/build/fields2cover/_deps/tinyxml2-src/xmltest.cpp:1195:30:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kchar* fgets(char*, int, FILE*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[50.563s]  1195 |                         [01;35m[Kfgets( buf, 1024, textfile )[m[K;
+[50.563s]       |                         [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[51.528s] [ 18%] [32m[1mLinking CXX shared library libsteering_functions.so[0m
+[51.621s] [ 18%] Built target steering_functions
+[51.647s] [ 20%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/n_swath.cpp.o[0m
+[51.648s] [ 20%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/field_coverage.cpp.o[0m
+[51.649s] [ 21%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/rem_area.cpp.o[0m
+[51.649s] [ 24%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/rp_objective.cpp.o[0m
+[51.650s] [ 24%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/path_length.cpp.o[0m
+[51.650s] [ 25%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/overlaps.cpp.o[0m
+[51.651s] [ 25%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/headland_generator/constant_headland.cpp.o[0m
+[51.651s] [ 25%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/pp_objective.cpp.o[0m
+[51.651s] [ 25%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/direct_dist_path_obj.cpp.o[0m
+[51.651s] [ 26%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/hg_objective.cpp.o[0m
+[51.657s] [ 27%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/sg_objective.cpp.o[0m
+[51.994s] [ 28%] [32m[1mLinking CXX executable xmltest[0m
+[52.261s] [ 28%] Built target xmltest
+[52.298s] [ 29%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/objectives/swath_length.cpp.o[0m
+[55.146s] [ 30%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/path_planning/dubins_curves_cc.cpp.o[0m
+[55.150s] [ 30%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/path_planning/dubins_curves.cpp.o[0m
+[55.320s] [ 31%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/path_planning/path_planning.cpp.o[0m
+[55.388s] [ 32%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/path_planning/reeds_shepp_curves.cpp.o[0m
+[55.443s] [ 33%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/path_planning/reeds_shepp_curves_hc.cpp.o[0m
+[55.452s] [ 34%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/path_planning/turning_base.cpp.o[0m
+[55.457s] [ 34%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/route_planning/boustrophedon_order.cpp.o[0m
+[55.517s] [ 35%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/route_planning/custom_order.cpp.o[0m
+[55.594s] [ 36%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/route_planning/single_cell_swaths_order_base.cpp.o[0m
+[55.612s] [ 37%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/route_planning/snake_order.cpp.o[0m
+[55.650s] [ 38%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/route_planning/spiral_order.cpp.o[0m
+[56.091s] [ 38%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/swath_generator/brute_force.cpp.o[0m
+[58.886s] [ 39%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Cell.cpp.o[0m
+[58.902s] [ 40%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Cells.cpp.o[0m
+[58.909s] [ 41%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Field.cpp.o[0m
+[58.972s] [ 42%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/LineString.cpp.o[0m
+[59.040s] [ 42%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/LinearRing.cpp.o[0m
+[59.114s] [ 43%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/MultiLineString.cpp.o[0m
+[59.143s] [ 44%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/MultiPoint.cpp.o[0m
+[59.164s] [ 45%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Path.cpp.o[0m
+[59.327s] [ 46%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Point.cpp.o[0m
+[59.356s] [ 47%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Route.cpp.o[0m
+[59.657s] [ 47%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Strip.cpp.o[0m
+[59.982s] [ 48%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Swath.cpp.o[0m
+[62.606s] [ 49%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/types/Swaths.cpp.o[0m
+[62.802s] [ 50%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/utils/parser.cpp.o[0m
+[62.813s] [ 51%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/utils/random.cpp.o[0m
+[62.835s] [ 51%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/utils/transformation.cpp.o[0m
+[62.889s] [ 52%] [32mBuilding CXX object CMakeFiles/Fields2Cover.dir/src/fields2cover/utils/visualizer.cpp.o[0m
+[66.404s] [ 53%] [32m[1mLinking CXX shared library lib/libFields2Cover.so[0m
+[66.834s] lto-wrapper: warning: using serial compilation of 8 LTRANS jobs
+[73.791s] [ 53%] Built target Fields2Cover
+[73.810s] [ 55%] [32mBuilding CXX object tutorials/CMakeFiles/2_objective_functions_tutorial.dir/2_objective_functions.cpp.o[0m
+[73.810s] [ 55%] [32mBuilding CXX object tutorials/CMakeFiles/4_swath_generator_tutorial.dir/4_swath_generator.cpp.o[0m
+[73.811s] [ 56%] [32mBuilding CXX object tutorials/CMakeFiles/7_complete_flow.dir/7_complete_flow.cpp.o[0m
+[73.811s] [ 57%] [32mBuilding CXX object tutorials/CMakeFiles/1_basic_types_tutorial.dir/1_basic_types.cpp.o[0m
+[73.812s] [ 57%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/headland_generator/const_hl_test.cpp.o[0m
+[73.812s] [ 58%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/complete_turn_path_obj_test.cpp.o[0m
+[73.812s] [ 60%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/n_swath_test.cpp.o[0m
+[73.812s] [ 61%] [32mBuilding CXX object tutorials/CMakeFiles/3_headland_generator_tutorial.dir/3_headland_generator.cpp.o[0m
+[73.812s] [ 59%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/direct_dist_path_obj_test.cpp.o[0m
+[73.813s] [ 62%] [32mBuilding CXX object tutorials/CMakeFiles/5_route_planning_tutorial.dir/5_route_planning.cpp.o[0m
+[73.813s] [ 62%] [32mBuilding CXX object tutorials/CMakeFiles/6_path_planning_tutorial.dir/6_path_planning.cpp.o[0m
+[73.813s] [ 59%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/field_coverage_test.cpp.o[0m
+[78.068s] [ 63%] [32m[1mLinking CXX executable 2_objective_functions_tutorial[0m
+[78.116s] [ 63%] [32m[1mLinking CXX executable 3_headland_generator_tutorial[0m
+[78.507s] [ 64%] [32m[1mLinking CXX executable 1_basic_types_tutorial[0m
+[78.757s] [ 64%] Built target 3_headland_generator_tutorial
+[78.770s] [ 64%] Built target 2_objective_functions_tutorial
+[78.774s] [ 65%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/overlaps_test.cpp.o[0m
+[78.790s] [ 66%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/path_length_test.cpp.o[0m
+[78.807s] [ 67%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/pp_obj_test.cpp.o[0m
+[78.942s] [ 68%] [32m[1mLinking CXX executable 7_complete_flow[0m
+[79.066s] [ 68%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/rem_area_test.cpp.o[0m
+[79.115s] [ 68%] Built target 1_basic_types_tutorial
+[79.133s] [ 69%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/rp_obj_test.cpp.o[0m
+[79.142s] [ 70%] [32m[1mLinking CXX executable 4_swath_generator_tutorial[0m
+[79.170s] [ 71%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/sg_obj_test.cpp.o[0m
+[79.321s] [ 72%] [32m[1mLinking CXX executable 5_route_planning_tutorial[0m
+[79.507s] [ 73%] [32m[1mLinking CXX executable 6_path_planning_tutorial[0m
+[79.511s] [ 73%] Built target 7_complete_flow
+[79.527s] [ 74%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/objectives/swath_length_test.cpp.o[0m
+[79.709s] [ 74%] Built target 4_swath_generator_tutorial
+[79.731s] [ 75%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/path_planning/dubins_cc_test.cpp.o[0m
+[79.861s] [ 75%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/path_planning/dubins_test.cpp.o[0m
+[79.919s] [ 75%] Built target 5_route_planning_tutorial
+[79.938s] [ 76%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/path_planning/path_planning_test.cpp.o[0m
+[80.136s] [ 76%] Built target 6_path_planning_tutorial
+[80.152s] [ 77%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/path_planning/reeds_shepp_hc_test.cpp.o[0m
+[81.396s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/path_planning/reeds_shepp_test.cpp.o[0m
+[83.290s] [ 79%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/route_planning/boustrophedon_order_test.cpp.o[0m
+[83.768s] [ 80%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/route_planning/custom_order.cpp.o[0m
+[83.816s] [ 80%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/route_planning/snake_order_test.cpp.o[0m
+[83.956s] [ 81%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/route_planning/spiral_order_test.cpp.o[0m
+[84.113s] [ 82%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/swath_generator/brute_force_test.cpp.o[0m
+[84.471s] [ 83%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Cell_test.cpp.o[0m
+[84.599s] [ 84%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Cells_test.cpp.o[0m
+[85.062s] [ 84%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Field_test.cpp.o[0m
+[85.895s] [ 85%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Geometries_test.cpp.o[0m
+[86.070s] [ 86%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Geometry_test.cpp.o[0m
+[86.508s] [ 87%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/LineString_test.cpp.o[0m
+[87.248s] [ 88%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/LinearRing_test.cpp.o[0m
+[88.858s] [ 88%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/MultiLineString_test.cpp.o[0m
+[89.168s] [ 89%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/MultiPoint_test.cpp.o[0m
+[89.694s] [ 90%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Path_test.cpp.o[0m
+[90.782s] [ 91%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Point_test.cpp.o[0m
+[91.957s] [ 92%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Robot_test.cpp.o[0m
+[92.395s] [ 93%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Route_test.cpp.o[0m
+[93.280s] [ 93%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Strip_test.cpp.o[0m
+[93.690s] [ 94%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Swath_test.cpp.o[0m
+[93.825s] [ 95%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/types/Swaths_test.cpp.o[0m
+[93.951s] [ 96%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/utils/parser_test.cpp.o[0m
+[94.623s] [ 97%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/utils/random_test.cpp.o[0m
+[96.256s] [ 97%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/utils/transform_test.cpp.o[0m
+[96.370s] [ 98%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/cpp/utils/visualizer_test.cpp.o[0m
+[97.644s] [ 99%] [32mBuilding CXX object tests/CMakeFiles/unittests.dir/unittests.cpp.o[0m
+[103.532s] [100%] [32m[1mLinking CXX executable unittests[0m
+[103.878s] [100%] Built target unittests
+[103.890s] Invoked command in '/home/manel/psolar_ws/build/fields2cover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/fields2cover -- -j12 -l12
+[103.892s] Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/fields2cover
+[103.897s] -- Install configuration: "Release"
+[103.897s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9.0.0
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-shared-targets.cmake
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-shared-targets-release.cmake
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-config.cmake
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/cmake/tinyxml2/tinyxml2-config-version.cmake
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/tinyxml2.h
+[103.898s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/pkgconfig/tinyxml2.pc
+[103.899s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/libsteering_functions.so
+[103.899s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/spline/splineTargets.cmake
+[103.899s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/spline/splineConfig.cmake
+[103.899s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/spline.h
+[103.900s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/matplotlib_cpp/matplotlib_cppTargets.cmake
+[103.900s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/matplotlib_cpp/matplotlib_cppConfig.cmake
+[103.900s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/matplotlibcpp.h
+[103.900s] -- Installing: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
+[103.901s] -- Set runtime path of "/home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so" to ""
+[103.901s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover.h
+[103.901s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9.0.0
+[103.901s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9
+[103.901s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so
+[103.901s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/lib/libsteering_functions.so
+[103.901s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2Cover-shared-Targets.cmake
+[103.901s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2Cover-shared-Targets-release.cmake
+[103.901s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2CoverConfig.cmake
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/cmake/fields2cover/Fields2CoverConfigVersion.cmake
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/share/Fields2Cover/package.xml
+[103.902s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/parser.h
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/transformation.h
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/visualizer.h
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/random.h
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiPoint.h
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries_impl.hpp
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry.h
+[103.902s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LineString.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry_impl.hpp
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Robot.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiLineString.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Point.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swath.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/OptimizationParams.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Field.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Strip.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cells.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cell.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Path.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LinearRing.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Route.h
+[103.903s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swaths.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/constant_headland.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/headland_generator_base.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base_impl.hpp
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/brute_force.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/path_length.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/complete_turn_path_obj.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/field_coverage.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rp_objective.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/direct_dist_path_obj.h
+[103.904s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/hg_objective.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/swath_length.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/overlaps.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/sg_objective.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/n_swath.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/base_objective.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/pp_objective.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rem_area.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/turning_base.h
+[103.905s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves_hc.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves_cc.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/path_planning.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/steer_to_path.hpp
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/boustrophedon_order.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/snake_order.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/single_cell_swaths_order_base.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/custom_order.h
+[103.906s] -- Installing: /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/spiral_order.h
+[103.906s] -- Up-to-date: /home/manel/psolar_ws/install/fields2cover/include/fields2cover.h
+[103.908s] Invoked command in '/home/manel/psolar_ws/build/fields2cover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/fields2cover

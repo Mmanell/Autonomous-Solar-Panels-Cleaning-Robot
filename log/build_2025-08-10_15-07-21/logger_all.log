@@ -1,0 +1,944 @@
+[0.107s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.108s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7da7cc5473a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7da7cc546cb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7da7cc546cb0>>, mixin_verb=('build',))
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.302s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/manel/psolar_ws'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/Fields2Cover) by extension 'ros'
+[0.330s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Fields2Cover' with type 'ros.cmake' and name 'fields2cover'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'ros'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extensions ['cmake', 'python']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'cmake'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'python'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extensions ['python_setup_py']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage) by extension 'python_setup_py'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/backported_bt_navigator) by extension 'ros'
+[0.332s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opennav_coverage/backported_bt_navigator' with type 'ros.ament_cmake' and name 'backported_bt_navigator'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extensions ['colcon_pkg']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage) by extension 'ros'
+[0.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opennav_coverage/opennav_coverage' with type 'ros.ament_cmake' and name 'opennav_coverage'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_bt) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opennav_coverage/opennav_coverage_bt' with type 'ros.ament_cmake' and name 'opennav_coverage_bt'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_demo) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opennav_coverage/opennav_coverage_demo' with type 'ros.ament_python' and name 'opennav_coverage_demo'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_msgs) by extension 'ros'
+[0.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opennav_coverage/opennav_coverage_msgs' with type 'ros.ament_cmake' and name 'opennav_coverage_msgs'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_coverage_navigator) by extension 'ros'
+[0.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opennav_coverage/opennav_coverage_navigator' with type 'ros.ament_cmake' and name 'opennav_coverage_navigator'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extension 'ignore_ament_install'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extensions ['colcon_pkg']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extension 'colcon_pkg'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extensions ['colcon_meta']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extension 'colcon_meta'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extensions ['ros']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/opennav_coverage/opennav_row_coverage) by extension 'ros'
+[0.343s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opennav_coverage/opennav_row_coverage' with type 'ros.ament_cmake' and name 'opennav_row_coverage'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_bringup) by extension 'ros'
+[0.345s] DEBUG:colcon.colcon_core.package_identification:Package 'src/psolar_bringup' with type 'ros.ament_cmake' and name 'psolar_bringup'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_decision_making) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'src/psolar_decision_making' with type 'ros.ament_cmake' and name 'psolar_decision_making'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_gazebo) by extension 'ros'
+[0.348s] DEBUG:colcon.colcon_core.package_identification:Package 'src/psolar_gazebo' with type 'ros.ament_cmake' and name 'psolar_gazebo'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_localization) by extension 'ros'
+[0.350s] DEBUG:colcon.colcon_core.package_identification:Package 'src/psolar_localization' with type 'ros.ament_cmake' and name 'psolar_localization'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extension 'ignore_ament_install'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extensions ['colcon_meta']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/psolar_path_planning) by extension 'ros'
+[0.351s] DEBUG:colcon.colcon_core.package_identification:Package 'src/psolar_path_planning' with type 'ros.ament_cmake' and name 'psolar_path_planning'
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.380s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 452 installed packages in /opt/ros/humble
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'backported_bt_navigator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'backported_bt_navigator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/backported_bt_navigator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/backported_bt_navigator', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/opennav_coverage/backported_bt_navigator', 'symlink_install': False, 'test_result_base': None}
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'fields2cover' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'fields2cover' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/fields2cover', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/fields2cover', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/Fields2Cover', 'symlink_install': False, 'test_result_base': None}
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'opennav_coverage_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/opennav_coverage_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/opennav_coverage_msgs', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'cmake_target' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'cmake_clean_cache' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'cmake_clean_first' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'cmake_force_configure' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'ament_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'catkin_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'psolar_decision_making' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.448s] DEBUG:colcon.colcon_core.verb:Building package 'psolar_decision_making' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/psolar_decision_making', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/psolar_decision_making', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/psolar_decision_making', 'symlink_install': False, 'test_result_base': None}
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.449s] DEBUG:colcon.colcon_core.verb:Building package 'psolar_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/psolar_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/psolar_gazebo', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/psolar_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'cmake_target' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'psolar_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.450s] DEBUG:colcon.colcon_core.verb:Building package 'psolar_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/psolar_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/psolar_localization', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/psolar_localization', 'symlink_install': False, 'test_result_base': None}
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'cmake_target' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'cmake_clean_cache' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'cmake_clean_first' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'cmake_force_configure' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'ament_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'catkin_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'psolar_path_planning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.450s] DEBUG:colcon.colcon_core.verb:Building package 'psolar_path_planning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/psolar_path_planning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/psolar_path_planning', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/psolar_path_planning', 'symlink_install': False, 'test_result_base': None}
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'cmake_target' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'cmake_clean_cache' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'cmake_clean_first' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'cmake_force_configure' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'ament_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'catkin_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.451s] DEBUG:colcon.colcon_core.verb:Building package 'opennav_coverage' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/opennav_coverage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/opennav_coverage', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage', 'symlink_install': False, 'test_result_base': None}
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'cmake_target' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_bt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'opennav_coverage_bt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/opennav_coverage_bt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/opennav_coverage_bt', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_bt', 'symlink_install': False, 'test_result_base': None}
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'cmake_target' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'psolar_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'psolar_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/psolar_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/psolar_bringup', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/psolar_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'cmake_target' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'cmake_clean_first' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'cmake_force_configure' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'ament_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_navigator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.453s] DEBUG:colcon.colcon_core.verb:Building package 'opennav_coverage_navigator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/opennav_coverage_navigator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/opennav_coverage_navigator', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_navigator', 'symlink_install': False, 'test_result_base': None}
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'cmake_target' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'cmake_clean_cache' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'cmake_clean_first' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'cmake_force_configure' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'ament_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'catkin_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_row_coverage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.454s] DEBUG:colcon.colcon_core.verb:Building package 'opennav_row_coverage' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/opennav_row_coverage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/opennav_row_coverage', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage', 'symlink_install': False, 'test_result_base': None}
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'cmake_target' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'opennav_coverage_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.454s] DEBUG:colcon.colcon_core.verb:Building package 'opennav_coverage_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manel/psolar_ws/build/opennav_coverage_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manel/psolar_ws/install/opennav_coverage_demo', 'merge_install': False, 'path': '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo', 'symlink_install': False, 'test_result_base': None}
+[0.455s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.456s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs' with build type 'ament_cmake'
+[0.457s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs'
+[0.459s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.459s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.459s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.462s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/manel/psolar_ws/src/Fields2Cover' with build type 'cmake'
+[0.463s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/Fields2Cover'
+[0.463s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.463s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.466s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/opennav_coverage/backported_bt_navigator' with build type 'ament_cmake'
+[0.466s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/opennav_coverage/backported_bt_navigator'
+[0.466s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.467s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.470s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/psolar_gazebo' with build type 'ament_cmake'
+[0.470s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/psolar_gazebo'
+[0.470s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.470s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.474s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/psolar_localization' with build type 'ament_cmake'
+[0.474s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/psolar_localization'
+[0.474s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.474s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.478s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/psolar_decision_making' with build type 'ament_cmake'
+[0.478s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/psolar_decision_making'
+[0.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.481s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/psolar_path_planning' with build type 'ament_cmake'
+[0.482s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/psolar_path_planning'
+[0.482s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.482s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_msgs -- -j12 -l12
+[0.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/fields2cover -- -j12 -l12
+[0.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/backported_bt_navigator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/backported_bt_navigator -- -j12 -l12
+[0.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_gazebo -- -j12 -l12
+[0.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_localization -- -j12 -l12
+[0.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_decision_making': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_decision_making -- -j12 -l12
+[0.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_path_planning': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_path_planning -- -j12 -l12
+[0.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_decision_making' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_decision_making -- -j12 -l12
+[0.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_decision_making': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_decision_making
+[0.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_path_planning' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_path_planning -- -j12 -l12
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_path_planning': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_path_planning
+[0.641s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_path_planning)
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning' for CMake module files
+[0.652s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning' for CMake config files
+[0.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_path_planning' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_path_planning
+[0.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_path_planning', 'cmake_prefix_path')
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/hook/cmake_prefix_path.ps1'
+[0.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/hook/cmake_prefix_path.dsv'
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/hook/cmake_prefix_path.sh'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/bin'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/lib/pkgconfig/psolar_path_planning.pc'
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/lib/python3.10/site-packages'
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/bin'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.ps1'
+[0.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.dsv'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.sh'
+[0.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.bash'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.zsh'
+[0.674s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_path_planning/share/colcon-core/packages/psolar_path_planning)
+[0.675s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_path_planning)
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning' for CMake module files
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning' for CMake config files
+[0.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_path_planning', 'cmake_prefix_path')
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/hook/cmake_prefix_path.ps1'
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/hook/cmake_prefix_path.dsv'
+[0.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/hook/cmake_prefix_path.sh'
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/bin'
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/lib/pkgconfig/psolar_path_planning.pc'
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/lib/python3.10/site-packages'
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_path_planning/bin'
+[0.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.ps1'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.dsv'
+[0.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.sh'
+[0.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.bash'
+[0.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.zsh'
+[0.684s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_path_planning/share/colcon-core/packages/psolar_path_planning)
+[0.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_decision_making)
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making' for CMake module files
+[0.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_decision_making' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_decision_making
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making' for CMake config files
+[0.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_decision_making', 'cmake_prefix_path')
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/hook/cmake_prefix_path.ps1'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/hook/cmake_prefix_path.dsv'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/hook/cmake_prefix_path.sh'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/bin'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/lib/pkgconfig/psolar_decision_making.pc'
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/lib/python3.10/site-packages'
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/bin'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.ps1'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.dsv'
+[0.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.sh'
+[0.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.bash'
+[0.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.zsh'
+[0.699s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_decision_making/share/colcon-core/packages/psolar_decision_making)
+[0.700s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_decision_making)
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making' for CMake module files
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making' for CMake config files
+[0.703s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_decision_making', 'cmake_prefix_path')
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/hook/cmake_prefix_path.ps1'
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/hook/cmake_prefix_path.dsv'
+[0.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/hook/cmake_prefix_path.sh'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/bin'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/lib/pkgconfig/psolar_decision_making.pc'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/lib/python3.10/site-packages'
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_decision_making/bin'
+[0.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.ps1'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.dsv'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.sh'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.bash'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_decision_making/share/psolar_decision_making/package.zsh'
+[0.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_decision_making/share/colcon-core/packages/psolar_decision_making)
+[0.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_localization -- -j12 -l12
+[0.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_localization
+[0.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_gazebo -- -j12 -l12
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_gazebo
+[0.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/backported_bt_navigator' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/backported_bt_navigator -- -j12 -l12
+[0.728s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/backported_bt_navigator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/backported_bt_navigator
+[0.738s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_localization)
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization' for CMake module files
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization' for CMake config files
+[0.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_localization', 'cmake_prefix_path')
+[0.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/hook/cmake_prefix_path.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/hook/cmake_prefix_path.dsv'
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/hook/cmake_prefix_path.sh'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/lib'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/bin'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/lib/pkgconfig/psolar_localization.pc'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/lib/python3.10/site-packages'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.ps1'
+[0.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_localization
+[0.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.dsv'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.sh'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.bash'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.zsh'
+[0.778s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_localization/share/colcon-core/packages/psolar_localization)
+[0.781s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_localization)
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization' for CMake module files
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization' for CMake config files
+[0.784s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_localization', 'cmake_prefix_path')
+[0.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/hook/cmake_prefix_path.ps1'
+[0.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/hook/cmake_prefix_path.dsv'
+[0.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/hook/cmake_prefix_path.sh'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/lib'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/bin'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/lib/pkgconfig/psolar_localization.pc'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/lib/python3.10/site-packages'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_localization/bin'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.ps1'
+[0.798s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.dsv'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.sh'
+[0.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.bash'
+[0.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/package.zsh'
+[0.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_localization/share/colcon-core/packages/psolar_localization)
+[0.818s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(backported_bt_navigator)
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator' for CMake module files
+[0.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/backported_bt_navigator' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/backported_bt_navigator
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator' for CMake config files
+[0.827s] Level 1:colcon.colcon_core.shell:create_environment_hook('backported_bt_navigator', 'cmake_prefix_path')
+[0.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/cmake_prefix_path.ps1'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/cmake_prefix_path.dsv'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/cmake_prefix_path.sh'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/lib'
+[0.851s] Level 1:colcon.colcon_core.shell:create_environment_hook('backported_bt_navigator', 'ld_library_path_lib')
+[0.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/ld_library_path_lib.ps1'
+[0.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/ld_library_path_lib.dsv'
+[0.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/ld_library_path_lib.sh'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/bin'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/lib/pkgconfig/backported_bt_navigator.pc'
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/lib/python3.10/site-packages'
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/bin'
+[0.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.ps1'
+[0.859s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.dsv'
+[0.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.sh'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.bash'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.zsh'
+[0.866s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/backported_bt_navigator/share/colcon-core/packages/backported_bt_navigator)
+[0.870s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(backported_bt_navigator)
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator' for CMake module files
+[0.872s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator' for CMake config files
+[0.873s] Level 1:colcon.colcon_core.shell:create_environment_hook('backported_bt_navigator', 'cmake_prefix_path')
+[0.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/cmake_prefix_path.ps1'
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/cmake_prefix_path.dsv'
+[0.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/cmake_prefix_path.sh'
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/lib'
+[0.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('backported_bt_navigator', 'ld_library_path_lib')
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/ld_library_path_lib.ps1'
+[0.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/ld_library_path_lib.dsv'
+[0.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/hook/ld_library_path_lib.sh'
+[0.879s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/bin'
+[0.879s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/lib/pkgconfig/backported_bt_navigator.pc'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/lib/python3.10/site-packages'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/backported_bt_navigator/bin'
+[0.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.ps1'
+[0.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.dsv'
+[0.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.sh'
+[0.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.bash'
+[0.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/backported_bt_navigator/share/backported_bt_navigator/package.zsh'
+[0.888s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/backported_bt_navigator/share/colcon-core/packages/backported_bt_navigator)
+[0.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_gazebo)
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo' for CMake module files
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo' for CMake config files
+[0.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_gazebo
+[0.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_gazebo', 'cmake_prefix_path')
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/hook/cmake_prefix_path.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/hook/cmake_prefix_path.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/hook/cmake_prefix_path.sh'
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/lib'
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/bin'
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/lib/pkgconfig/psolar_gazebo.pc'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/lib/python3.10/site-packages'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/bin'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.ps1'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.dsv'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.sh'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.bash'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.zsh'
+[0.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_gazebo/share/colcon-core/packages/psolar_gazebo)
+[0.903s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_gazebo)
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo' for CMake module files
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo' for CMake config files
+[0.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_gazebo', 'cmake_prefix_path')
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/hook/cmake_prefix_path.ps1'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/hook/cmake_prefix_path.dsv'
+[0.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/hook/cmake_prefix_path.sh'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/lib'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/bin'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/lib/pkgconfig/psolar_gazebo.pc'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/lib/python3.10/site-packages'
+[0.909s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_gazebo/bin'
+[0.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.ps1'
+[0.910s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.dsv'
+[0.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.sh'
+[0.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.bash'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo/package.zsh'
+[0.913s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_gazebo/share/colcon-core/packages/psolar_gazebo)
+[0.913s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/psolar_bringup' with build type 'ament_cmake'
+[0.913s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/psolar_bringup'
+[0.914s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.914s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_bringup': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_bringup -- -j12 -l12
+[0.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/fields2cover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/fields2cover -- -j12 -l12
+[0.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/fields2cover
+[0.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_bringup' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_bringup -- -j12 -l12
+[1.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('fields2cover', 'pkg_config_path')
+[1.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/pkg_config_path.ps1'
+[1.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/pkg_config_path.dsv'
+[1.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/psolar_bringup': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_bringup
+[1.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/pkg_config_path.sh'
+[1.013s] Level 1:colcon.colcon_core.shell:create_environment_hook('fields2cover', 'pkg_config_path_multiarch')
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/pkg_config_path_multiarch.ps1'
+[1.015s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/pkg_config_path_multiarch.dsv'
+[1.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/pkg_config_path_multiarch.sh'
+[1.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fields2cover)
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/fields2cover' for CMake module files
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/fields2cover' for CMake config files
+[1.020s] Level 1:colcon.colcon_core.shell:create_environment_hook('fields2cover', 'cmake_prefix_path')
+[1.020s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/cmake_prefix_path.ps1'
+[1.022s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/cmake_prefix_path.dsv'
+[1.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/fields2cover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/fields2cover
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/cmake_prefix_path.sh'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/fields2cover/lib'
+[1.025s] Level 1:colcon.colcon_core.shell:create_environment_hook('fields2cover', 'ld_library_path_lib')
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/ld_library_path_lib.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/ld_library_path_lib.dsv'
+[1.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/hook/ld_library_path_lib.sh'
+[1.031s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/fields2cover/bin'
+[1.031s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig/fields2cover.pc'
+[1.031s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/fields2cover/lib/python3.10/site-packages'
+[1.031s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/fields2cover/bin'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/package.ps1'
+[1.035s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/package.dsv'
+[1.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/package.sh'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/package.bash'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/fields2cover/share/fields2cover/package.zsh'
+[1.038s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/fields2cover/share/colcon-core/packages/fields2cover)
+[1.040s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_bringup)
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup' for CMake module files
+[1.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/psolar_bringup' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/psolar_localization:/home/manel/psolar_ws/install/psolar_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_bringup
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup' for CMake config files
+[1.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_bringup', 'cmake_prefix_path')
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/hook/cmake_prefix_path.ps1'
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/hook/cmake_prefix_path.dsv'
+[1.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/hook/cmake_prefix_path.sh'
+[1.047s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/bin'
+[1.047s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/lib/pkgconfig/psolar_bringup.pc'
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/lib/python3.10/site-packages'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/bin'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.ps1'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.dsv'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.sh'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.bash'
+[1.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.zsh'
+[1.054s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_bringup/share/colcon-core/packages/psolar_bringup)
+[1.056s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(psolar_bringup)
+[1.056s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup' for CMake module files
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup' for CMake config files
+[1.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('psolar_bringup', 'cmake_prefix_path')
+[1.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/hook/cmake_prefix_path.ps1'
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/hook/cmake_prefix_path.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/hook/cmake_prefix_path.sh'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/bin'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/lib/pkgconfig/psolar_bringup.pc'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/lib/python3.10/site-packages'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/psolar_bringup/bin'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.dsv'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.sh'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.bash'
+[1.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.zsh'
+[1.071s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/psolar_bringup/share/colcon-core/packages/psolar_bringup)
+[1.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_msgs -- -j12 -l12
+[1.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_msgs
+[1.430s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage_msgs)
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs' for CMake module files
+[1.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_msgs
+[1.432s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs' for CMake config files
+[1.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_msgs', 'cmake_prefix_path')
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/cmake_prefix_path.ps1'
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/cmake_prefix_path.dsv'
+[1.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/cmake_prefix_path.sh'
+[1.434s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/lib'
+[1.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_msgs', 'ld_library_path_lib')
+[1.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/ld_library_path_lib.ps1'
+[1.435s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/ld_library_path_lib.dsv'
+[1.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/ld_library_path_lib.sh'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/bin'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/lib/pkgconfig/opennav_coverage_msgs.pc'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/lib/python3.10/site-packages'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/bin'
+[1.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.ps1'
+[1.437s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.dsv'
+[1.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.sh'
+[1.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.bash'
+[1.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.zsh'
+[1.439s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage_msgs/share/colcon-core/packages/opennav_coverage_msgs)
+[1.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage_msgs)
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs' for CMake module files
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs' for CMake config files
+[1.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_msgs', 'cmake_prefix_path')
+[1.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/cmake_prefix_path.ps1'
+[1.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/cmake_prefix_path.dsv'
+[1.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/cmake_prefix_path.sh'
+[1.442s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/lib'
+[1.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_msgs', 'ld_library_path_lib')
+[1.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/ld_library_path_lib.ps1'
+[1.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/ld_library_path_lib.dsv'
+[1.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/hook/ld_library_path_lib.sh'
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/bin'
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/lib/pkgconfig/opennav_coverage_msgs.pc'
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/lib/python3.10/site-packages'
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_msgs/bin'
+[1.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.ps1'
+[1.445s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.dsv'
+[1.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.sh'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.bash'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.zsh'
+[1.447s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage_msgs/share/colcon-core/packages/opennav_coverage_msgs)
+[1.448s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage' with build type 'ament_cmake'
+[1.448s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage'
+[1.448s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.452s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_bt' with build type 'ament_cmake'
+[1.452s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_bt'
+[1.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage -- -j12 -l12
+[1.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_bt': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_bt -- -j12 -l12
+[1.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_bt' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_bt -- -j12 -l12
+[1.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_bt': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_bt
+[1.582s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage_bt)
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt' for CMake module files
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt' for CMake config files
+[1.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_bt', 'cmake_prefix_path')
+[1.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/cmake_prefix_path.ps1'
+[1.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_bt' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_bt
+[1.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/cmake_prefix_path.dsv'
+[1.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/cmake_prefix_path.sh'
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/lib'
+[1.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_bt', 'ld_library_path_lib')
+[1.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/ld_library_path_lib.ps1'
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/ld_library_path_lib.dsv'
+[1.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/ld_library_path_lib.sh'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/bin'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/lib/pkgconfig/opennav_coverage_bt.pc'
+[1.595s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/lib/python3.10/site-packages'
+[1.595s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/bin'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.ps1'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.dsv'
+[1.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.sh'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.bash'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.zsh'
+[1.606s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage_bt/share/colcon-core/packages/opennav_coverage_bt)
+[1.607s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage_bt)
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt' for CMake module files
+[1.609s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt' for CMake config files
+[1.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_bt', 'cmake_prefix_path')
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/cmake_prefix_path.ps1'
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/cmake_prefix_path.dsv'
+[1.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/cmake_prefix_path.sh'
+[1.613s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/lib'
+[1.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_bt', 'ld_library_path_lib')
+[1.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/ld_library_path_lib.ps1'
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/ld_library_path_lib.dsv'
+[1.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/hook/ld_library_path_lib.sh'
+[1.617s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/bin'
+[1.617s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/lib/pkgconfig/opennav_coverage_bt.pc'
+[1.617s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/lib/python3.10/site-packages'
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_bt/bin'
+[1.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.ps1'
+[1.620s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.dsv'
+[1.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.sh'
+[1.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.bash'
+[1.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_bt/share/opennav_coverage_bt/package.zsh'
+[1.625s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage_bt/share/colcon-core/packages/opennav_coverage_bt)
+[1.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage -- -j12 -l12
+[1.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage
+[1.696s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage)
+[1.697s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage' for CMake module files
+[1.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage' for CMake config files
+[1.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage', 'cmake_prefix_path')
+[1.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/cmake_prefix_path.ps1'
+[1.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/cmake_prefix_path.dsv'
+[1.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/cmake_prefix_path.sh'
+[1.701s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/lib'
+[1.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage', 'ld_library_path_lib')
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/ld_library_path_lib.ps1'
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/ld_library_path_lib.dsv'
+[1.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/ld_library_path_lib.sh'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/bin'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/lib/pkgconfig/opennav_coverage.pc'
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/lib/python3.10/site-packages'
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/bin'
+[1.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.ps1'
+[1.705s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.dsv'
+[1.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.sh'
+[1.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.bash'
+[1.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.zsh'
+[1.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage/share/colcon-core/packages/opennav_coverage)
+[1.708s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage)
+[1.709s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage' for CMake module files
+[1.710s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage' for CMake config files
+[1.710s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage', 'cmake_prefix_path')
+[1.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/cmake_prefix_path.ps1'
+[1.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/cmake_prefix_path.dsv'
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/cmake_prefix_path.sh'
+[1.712s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/lib'
+[1.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage', 'ld_library_path_lib')
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/ld_library_path_lib.ps1'
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/ld_library_path_lib.dsv'
+[1.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/hook/ld_library_path_lib.sh'
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/bin'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/lib/pkgconfig/opennav_coverage.pc'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/lib/python3.10/site-packages'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage/bin'
+[1.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.ps1'
+[1.717s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.dsv'
+[1.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.sh'
+[1.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.bash'
+[1.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.zsh'
+[1.719s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage/share/colcon-core/packages/opennav_coverage)
+[1.720s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_navigator' with build type 'ament_cmake'
+[1.720s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_navigator'
+[1.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.725s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage' with build type 'ament_cmake'
+[1.726s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage'
+[1.726s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.726s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_navigator': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_navigator -- -j12 -l12
+[1.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_row_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_row_coverage -- -j12 -l12
+[1.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_navigator' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_navigator -- -j12 -l12
+[1.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_navigator': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_navigator
+[1.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_row_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_row_coverage -- -j12 -l12
+[1.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/build/opennav_row_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_row_coverage
+[1.893s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage_navigator)
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator' for CMake module files
+[1.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_navigator' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_navigator
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator' for CMake config files
+[1.901s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_navigator', 'cmake_prefix_path')
+[1.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/cmake_prefix_path.ps1'
+[1.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/cmake_prefix_path.dsv'
+[1.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/cmake_prefix_path.sh'
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/lib'
+[1.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_navigator', 'ld_library_path_lib')
+[1.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/ld_library_path_lib.ps1'
+[1.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/ld_library_path_lib.dsv'
+[1.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/ld_library_path_lib.sh'
+[1.905s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/bin'
+[1.905s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/lib/pkgconfig/opennav_coverage_navigator.pc'
+[1.906s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/lib/python3.10/site-packages'
+[1.906s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/bin'
+[1.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.ps1'
+[1.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.dsv'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.sh'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.bash'
+[1.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.zsh'
+[1.909s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage_navigator/share/colcon-core/packages/opennav_coverage_navigator)
+[1.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage_navigator)
+[1.911s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator' for CMake module files
+[1.911s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator' for CMake config files
+[1.912s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_navigator', 'cmake_prefix_path')
+[1.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/cmake_prefix_path.ps1'
+[1.913s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/cmake_prefix_path.dsv'
+[1.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/cmake_prefix_path.sh'
+[1.914s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/lib'
+[1.914s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_navigator', 'ld_library_path_lib')
+[1.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/ld_library_path_lib.ps1'
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/ld_library_path_lib.dsv'
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/hook/ld_library_path_lib.sh'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/bin'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/lib/pkgconfig/opennav_coverage_navigator.pc'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/lib/python3.10/site-packages'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_navigator/bin'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.ps1'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.dsv'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.sh'
+[1.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.bash'
+[1.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_navigator/share/opennav_coverage_navigator/package.zsh'
+[1.921s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage_navigator/share/colcon-core/packages/opennav_coverage_navigator)
+[1.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_row_coverage)
+[1.923s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage' for CMake module files
+[1.924s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/build/opennav_row_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_row_coverage
+[1.924s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage' for CMake config files
+[1.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_row_coverage', 'cmake_prefix_path')
+[1.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/cmake_prefix_path.ps1'
+[1.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/cmake_prefix_path.dsv'
+[1.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/cmake_prefix_path.sh'
+[1.927s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/lib'
+[1.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_row_coverage', 'ld_library_path_lib')
+[1.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/ld_library_path_lib.ps1'
+[1.928s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/ld_library_path_lib.dsv'
+[1.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/ld_library_path_lib.sh'
+[1.929s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/bin'
+[1.929s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/lib/pkgconfig/opennav_row_coverage.pc'
+[1.929s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/lib/python3.10/site-packages'
+[1.929s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/bin'
+[1.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.ps1'
+[1.931s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.dsv'
+[1.931s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.sh'
+[1.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.bash'
+[1.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.zsh'
+[1.933s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_row_coverage/share/colcon-core/packages/opennav_row_coverage)
+[1.934s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_row_coverage)
+[1.934s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage' for CMake module files
+[1.935s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage' for CMake config files
+[1.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_row_coverage', 'cmake_prefix_path')
+[1.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/cmake_prefix_path.ps1'
+[1.936s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/cmake_prefix_path.dsv'
+[1.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/cmake_prefix_path.sh'
+[1.937s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/lib'
+[1.937s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_row_coverage', 'ld_library_path_lib')
+[1.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/ld_library_path_lib.ps1'
+[1.939s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/ld_library_path_lib.dsv'
+[1.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/hook/ld_library_path_lib.sh'
+[1.940s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/bin'
+[1.940s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/lib/pkgconfig/opennav_row_coverage.pc'
+[1.941s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/lib/python3.10/site-packages'
+[1.941s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_row_coverage/bin'
+[1.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.ps1'
+[1.943s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.dsv'
+[1.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.sh'
+[1.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.bash'
+[1.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.zsh'
+[1.946s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_row_coverage/share/colcon-core/packages/opennav_row_coverage)
+[1.946s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo' with build type 'ament_python'
+[1.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_demo', 'ament_prefix_path')
+[1.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/hook/ament_prefix_path.ps1'
+[1.948s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/hook/ament_prefix_path.dsv'
+[1.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/hook/ament_prefix_path.sh'
+[1.949s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.949s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.493s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo'
+[2.493s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.493s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_row_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_navigator/lib:/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/build/opennav_coverage_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages:/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/opennav_coverage_demo build --build-base /home/manel/psolar_ws/build/opennav_coverage_demo/build install --record /home/manel/psolar_ws/build/opennav_coverage_demo/install.log --single-version-externally-managed install_data
+[3.436s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_demo' for CMake module files
+[3.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/backported_bt_navigator:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_row_coverage:/home/manel/psolar_ws/install/opennav_coverage_navigator:/home/manel/psolar_ws/install/opennav_coverage_bt:/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/home/manel/psolar_ws/install/backported_bt_navigator LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_row_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_navigator/lib:/home/manel/psolar_ws/install/opennav_coverage_bt/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/psolar_ws/install/backported_bt_navigator/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/build/opennav_coverage_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages:/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/opennav_coverage_demo build --build-base /home/manel/psolar_ws/build/opennav_coverage_demo/build install --record /home/manel/psolar_ws/build/opennav_coverage_demo/install.log --single-version-externally-managed install_data
+[3.437s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_demo' for CMake config files
+[3.437s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_demo/lib'
+[3.437s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_demo/bin'
+[3.437s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_demo/lib/pkgconfig/opennav_coverage_demo.pc'
+[3.438s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_demo/lib/python3.10/site-packages'
+[3.438s] Level 1:colcon.colcon_core.shell:create_environment_hook('opennav_coverage_demo', 'pythonpath')
+[3.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/hook/pythonpath.ps1'
+[3.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/hook/pythonpath.dsv'
+[3.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/hook/pythonpath.sh'
+[3.439s] Level 1:colcon.colcon_core.environment:checking '/home/manel/psolar_ws/install/opennav_coverage_demo/bin'
+[3.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opennav_coverage_demo)
+[3.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/package.ps1'
+[3.440s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/package.dsv'
+[3.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/package.sh'
+[3.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/package.bash'
+[3.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/manel/psolar_ws/install/opennav_coverage_demo/share/opennav_coverage_demo/package.zsh'
+[3.442s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manel/psolar_ws/install/opennav_coverage_demo/share/colcon-core/packages/opennav_coverage_demo)
+[3.442s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.443s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.443s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.443s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.448s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.448s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.448s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.459s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.459s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manel/psolar_ws/install/local_setup.ps1'
+[3.460s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/manel/psolar_ws/install/_local_setup_util_ps1.py'
+[3.462s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manel/psolar_ws/install/setup.ps1'
+[3.462s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manel/psolar_ws/install/local_setup.sh'
+[3.463s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/manel/psolar_ws/install/_local_setup_util_sh.py'
+[3.464s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manel/psolar_ws/install/setup.sh'
+[3.465s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manel/psolar_ws/install/local_setup.bash'
+[3.465s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manel/psolar_ws/install/setup.bash'
+[3.466s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manel/psolar_ws/install/local_setup.zsh'
+[3.467s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manel/psolar_ws/install/setup.zsh'

@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-2fc54ae9d628673b8de5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "opennav_coverage_msgs__py",
+					"jsonFile" : "directory-opennav_coverage_msgs__py-e2c24ab50ea7d635870d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/manel/psolar_ws/build/opennav_coverage_msgs/opennav_coverage_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "opennav_coverage_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_opennav_coverage_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_opennav_coverage_msgs_egg-b5294fd27933fbf2bab4.json",
+					"name" : "ament_cmake_python_build_opennav_coverage_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_opennav_coverage_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_opennav_coverage_msgs-0b596d67d58abf749157.json",
+					"name" : "ament_cmake_python_copy_opennav_coverage_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs-05601c822083c153593b.json",
+					"name" : "opennav_coverage_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__cpp-1c9ea6fb0da111f4cd0e.json",
+					"name" : "opennav_coverage_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "opennav_coverage_msgs__py::@68c0a5b565bd361c595f",
+					"jsonFile" : "target-opennav_coverage_msgs__py-50811dc43302cdd0b2fe.json",
+					"name" : "opennav_coverage_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_generator_c-9f04e6cccf237fb56efa.json",
+					"name" : "opennav_coverage_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_generator_py-f73bcab9d3f045fe1c6a.json",
+					"name" : "opennav_coverage_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_c-22e9da6f92e859596905.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_c__pyext-a5feb381c9cba4a2486c.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_cpp-55077fe6651594f6bf69.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_fastrtps_c-f387cd4efce3fa177a2d.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_fastrtps_c__pyext-7888861f781af974bf66.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp-1ad793199cbb23ace9d7.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_introspection_c-046c94ee92e87acaa561.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext-946f85b0abe0ca0f1422.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs__rosidl_typesupport_introspection_cpp-708fec8a744568c390c7.json",
+					"name" : "opennav_coverage_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opennav_coverage_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opennav_coverage_msgs_uninstall-a213dd566d39f7e5898e.json",
+					"name" : "opennav_coverage_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3ea111942de6c03a08dd.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/manel/psolar_ws/build/opennav_coverage_msgs",
+		"source" : "/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

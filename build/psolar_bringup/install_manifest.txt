@@ -1,0 +1,16 @@
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup//launch/psolar.launch.py
+/home/manel/psolar_ws/install/psolar_bringup/share/ament_index/resource_index/package_run_dependencies/psolar_bringup
+/home/manel/psolar_ws/install/psolar_bringup/share/ament_index/resource_index/parent_prefix_path/psolar_bringup
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/ament_prefix_path.sh
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/ament_prefix_path.dsv
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/path.sh
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/path.dsv
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/local_setup.bash
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/local_setup.sh
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/local_setup.zsh
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/local_setup.dsv
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.dsv
+/home/manel/psolar_ws/install/psolar_bringup/share/ament_index/resource_index/packages/psolar_bringup
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/cmake/psolar_bringupConfig.cmake
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/cmake/psolar_bringupConfig-version.cmake
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/package.xml

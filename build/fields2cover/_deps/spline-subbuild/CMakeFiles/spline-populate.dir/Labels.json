@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/CMakeFiles/spline-populate"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/CMakeFiles/spline-populate.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/CMakeFiles/spline-populate-complete.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/spline-populate-prefix/src/spline-populate-stamp/spline-populate-build.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/spline-populate-prefix/src/spline-populate-stamp/spline-populate-configure.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/spline-populate-prefix/src/spline-populate-stamp/spline-populate-download.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/spline-populate-prefix/src/spline-populate-stamp/spline-populate-install.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/spline-populate-prefix/src/spline-populate-stamp/spline-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/spline-populate-prefix/src/spline-populate-stamp/spline-populate-patch.rule"
+		},
+		{
+			"file" : "/home/manel/psolar_ws/build/fields2cover/_deps/spline-subbuild/spline-populate-prefix/src/spline-populate-stamp/spline-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"spline-populate"
+		],
+		"name" : "spline-populate"
+	}
+}

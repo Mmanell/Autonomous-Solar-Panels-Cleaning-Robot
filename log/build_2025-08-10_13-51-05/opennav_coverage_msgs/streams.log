@@ -1,0 +1,23 @@
+[0.039s] Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_msgs -- -j12 -l12
+[0.104s] [  0%] Built target opennav_coverage_msgs__cpp
+[0.133s] [  0%] Built target ament_cmake_python_copy_opennav_coverage_msgs
+[0.141s] [ 12%] Built target opennav_coverage_msgs__rosidl_generator_c
+[0.159s] [ 24%] Built target opennav_coverage_msgs__rosidl_typesupport_cpp
+[0.162s] [ 36%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_cpp
+[0.165s] [ 47%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp
+[0.173s] [ 59%] Built target opennav_coverage_msgs__rosidl_typesupport_c
+[0.175s] [ 71%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_c
+[0.177s] [ 83%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_c
+[0.199s] [ 83%] Built target opennav_coverage_msgs
+[0.227s] [ 84%] Built target opennav_coverage_msgs__py
+[0.272s] [ 95%] Built target opennav_coverage_msgs__rosidl_generator_py
+[0.316s] [ 97%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.319s] [ 99%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext
+[0.324s] [100%] Built target opennav_coverage_msgs__rosidl_typesupport_c__pyext
+[0.538s] running egg_info
+[0.539s] writing opennav_coverage_msgs.egg-info/PKG-INFO
+[0.539s] writing dependency_links to opennav_coverage_msgs.egg-info/dependency_links.txt
+[0.540s] writing top-level names to opennav_coverage_msgs.egg-info/top_level.txt
+[0.542s] reading manifest file 'opennav_coverage_msgs.egg-info/SOURCES.txt'
+[0.543s] writing manifest file 'opennav_coverage_msgs.egg-info/SOURCES.txt'
+[0.570s] [100%] Built target ament_cmake_python_build_opennav_coverage_msgs_egg

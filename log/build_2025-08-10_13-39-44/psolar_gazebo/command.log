@@ -1,0 +1,6 @@
+Invoking command in '/home/manel/psolar_ws/build/psolar_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/psolar_gazebo -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/psolar_gazebo
+Invoked command in '/home/manel/psolar_ws/build/psolar_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/psolar_gazebo -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/psolar_gazebo
+Invoking command in '/home/manel/psolar_ws/build/psolar_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_gazebo -- -j12 -l12
+Invoked command in '/home/manel/psolar_ws/build/psolar_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_gazebo -- -j12 -l12
+Invoking command in '/home/manel/psolar_ws/build/psolar_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_gazebo
+Invoked command in '/home/manel/psolar_ws/build/psolar_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_gazebo

@@ -1,0 +1,50 @@
+[ 13%] Built target gtest
+[ 13%] Built target gtest_main
+[ 37%] Built target opennav_coverage_core
+[ 44%] Built target opennav_coverage
+[ 51%] Built target test_viz
+[ 58%] Built target test_swath
+[ 65%] Built target test_utils
+[ 75%] Built target test_route
+[ 79%] Built target test_robot
+[ 86%] Built target test_path
+[ 93%] Built target test_headland
+[100%] Built target test_server
+-- Install configuration: ""
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/lib/libopennav_coverage_core.so
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/lib/opennav_coverage/opennav_coverage
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include/
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/robot_params.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/swath_generator.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/route_generator.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/headland_generator.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/visualizer.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/utils.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/coverage_server.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/path_generator.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/include//opennav_coverage/types.hpp
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/test_field.xml
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/cartesian_test_field.xml
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/irregular_test_field.xml
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/environment/library_path.sh
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/environment/library_path.dsv
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/ament_index/resource_index/package_run_dependencies/opennav_coverage
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/ament_index/resource_index/parent_prefix_path/opennav_coverage
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/environment/ament_prefix_path.sh
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/environment/path.sh
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/environment/path.dsv
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/local_setup.bash
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/local_setup.sh
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/local_setup.zsh
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/local_setup.dsv
+-- Installing: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.dsv
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/ament_index/resource_index/packages/opennav_coverage
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/ament_index/resource_index/rclcpp_components/opennav_coverage
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/cmake/opennav_coverageConfig.cmake
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/cmake/opennav_coverageConfig-version.cmake
+-- Up-to-date: /home/manel/psolar_ws/install/opennav_coverage/share/opennav_coverage/package.xml

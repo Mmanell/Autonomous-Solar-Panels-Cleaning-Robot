@@ -1,0 +1,25 @@
+[0.028s] Invoking command in '/home/manel/psolar_ws/build/fields2cover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/fields2cover -- -j12 -l12
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target tinyxml2[0m
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target steering_functions[0m
+[0.083s] [  2%] Built target tinyxml2
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target xmltest[0m
+[0.123s] [  4%] Built target xmltest
+[0.123s] [ 19%] Built target steering_functions
+[0.186s] [35m[1mConsolidate compiler generated dependencies of target Fields2Cover[0m
+[0.347s] [ 53%] Built target Fields2Cover
+[0.368s] [35m[1mConsolidate compiler generated dependencies of target 3_headland_generator_tutorial[0m
+[0.368s] [35m[1mConsolidate compiler generated dependencies of target 2_objective_functions_tutorial[0m
+[0.368s] [35m[1mConsolidate compiler generated dependencies of target 1_basic_types_tutorial[0m
+[0.369s] [35m[1mConsolidate compiler generated dependencies of target 6_path_planning_tutorial[0m
+[0.369s] [35m[1mConsolidate compiler generated dependencies of target 4_swath_generator_tutorial[0m
+[0.369s] [35m[1mConsolidate compiler generated dependencies of target 7_complete_flow[0m
+[0.376s] [35m[1mConsolidate compiler generated dependencies of target 5_route_planning_tutorial[0m
+[0.401s] [ 54%] Built target 1_basic_types_tutorial
+[0.401s] [ 55%] Built target 3_headland_generator_tutorial
+[0.402s] [ 56%] Built target 6_path_planning_tutorial
+[0.408s] [ 58%] Built target 4_swath_generator_tutorial
+[0.408s] [ 60%] Built target 7_complete_flow
+[0.409s] [ 62%] Built target 2_objective_functions_tutorial
+[0.413s] [ 64%] Built target 5_route_planning_tutorial
+[0.447s] [35m[1mConsolidate compiler generated dependencies of target unittests[0m
+[0.614s] [100%] Built target unittests

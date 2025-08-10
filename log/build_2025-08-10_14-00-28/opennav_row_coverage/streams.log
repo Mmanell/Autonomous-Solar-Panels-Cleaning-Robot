@@ -1,0 +1,40 @@
+[0.015s] Invoking command in '/home/manel/psolar_ws/build/opennav_row_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_row_coverage -- -j12 -l12
+[0.078s] [ 15%] Built target gtest_main
+[0.078s] [ 30%] Built target gtest
+[0.102s] [ 53%] Built target opennav_row_coverage_core
+[0.160s] [ 69%] Built target opennav_row_coverage
+[0.165s] [ 84%] Built target test_swath_generator
+[0.169s] [100%] Built target test_utils
+[0.187s] Invoked command in '/home/manel/psolar_ws/build/opennav_row_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_row_coverage -- -j12 -l12
+[0.192s] Invoking command in '/home/manel/psolar_ws/build/opennav_row_coverage': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_row_coverage
+[0.204s] -- Install configuration: ""
+[0.205s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/lib/libopennav_row_coverage_core.so
+[0.206s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/lib/opennav_row_coverage/opennav_row_coverage
+[0.206s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/include/
+[0.206s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage
+[0.207s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/row_swath_generator.hpp
+[0.207s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/utils.hpp
+[0.207s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/row_coverage_server.hpp
+[0.208s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/include//opennav_row_coverage/types.hpp
+[0.208s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/library_path.sh
+[0.208s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/library_path.dsv
+[0.208s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/package_run_dependencies/opennav_row_coverage
+[0.208s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/parent_prefix_path/opennav_row_coverage
+[0.208s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/ament_prefix_path.sh
+[0.209s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/ament_prefix_path.dsv
+[0.209s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/path.sh
+[0.209s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/environment/path.dsv
+[0.209s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.bash
+[0.209s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.sh
+[0.209s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.zsh
+[0.209s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/local_setup.dsv
+[0.210s] -- Installing: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.dsv
+[0.210s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/packages/opennav_row_coverage
+[0.210s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/ament_index/resource_index/rclcpp_components/opennav_row_coverage
+[0.210s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.210s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/ament_cmake_export_libraries-extras.cmake
+[0.210s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.210s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/opennav_row_coverageConfig.cmake
+[0.210s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/cmake/opennav_row_coverageConfig-version.cmake
+[0.211s] -- Up-to-date: /home/manel/psolar_ws/install/opennav_row_coverage/share/opennav_row_coverage/package.xml
+[0.249s] Invoked command in '/home/manel/psolar_ws/build/opennav_row_coverage' returned '0': AMENT_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/manel/psolar_ws/install/opennav_coverage:/home/manel/psolar_ws/install/opennav_coverage_msgs:/home/manel/psolar_ws/install/fields2cover:/opt/ros/humble LD_LIBRARY_PATH=/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/fields2cover/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/manel/psolar_ws/install/fields2cover/lib/x86_64-linux-gnu/pkgconfig:/home/manel/psolar_ws/install/fields2cover/lib/pkgconfig PYTHONPATH=/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_row_coverage

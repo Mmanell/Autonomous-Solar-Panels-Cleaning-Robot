@@ -1,0 +1,169 @@
+<!-- <model name="solar_panel">
+   <static>true</static> <!-- Set to true if it's a static object in the world -->
+   <link name="panel_link">
+     <visual name="visual">
+       <geometry>
+         <mesh>
+           <uri>model://turtlebot3_common/meshes/solar_panel_10deg.dae</uri>
+           <!-- Adjust scale if necessary, usually 1 1 1 if it's already in meters -->
+           <scale>1 1 1</scale>
+         </mesh>
+       </geometry>
+       <material>
+         <ambient>0.1 0.1 0.1 1</ambient>
+         <diffuse>0.1 0.1 0.1 1</diffuse>
+         <specular>0.1 0.1 0.1 1</specular>
+         <emissive>0.0 0.0 0.0 1</emissive>
+       </material>
+     </visual>
+     <collision name="collision">
+       <geometry>
+       <mesh>
+           <uri>model://turtlebot3_common/meshes/solar_panel_10deg.dae</uri>
+           <!-- Adjust scale if necessary, usually 1 1 1 if it's already in meters -->
+           <scale>1 1 1</scale>
+         </mesh>   
+       </geometry>
+       <surface>
+       <friction>
+         <ode>
+           <mu>1.5</mu>  <!-- High friction -->
+           <mu2>1.5</mu2>
+         </ode>
+       </friction>
+     </surface>
+     </collision>
+     <inertial>
+       <mass>1.0</mass>
+       <inertia>
+         <ixx>0.01</ixx> <ixy>0</ixy> <ixz>0</ixz>
+         <iyy>0.01</iyy> <iyz>0</iyz>
+         <izz>0.01</izz>
+       </inertia>
+      
+     </inertial>
+   </link>
+   <pose>1 6 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
+
+
+   <!-- Add a solar panel plugin if you want it to generate power -->
+   <!-- This is a conceptual plugin, you might need to find or create one -->
+   <!-- <plugin name="solar_panel_power_plugin" filename="libSolarPanelPowerPlugin.so">
+     <power_output>100.0</power_output>
+   </plugin> -->
+
+
+ </model> -->
+
+<model name="solar_panel">
+   <static>true</static> <!-- Set to true if it's a static object in the world -->
+   <link name="panel_link">
+     <visual name="visual">
+       <geometry>
+         <mesh>
+           <uri>model://turtlebot3_common/meshes/solar_origin.dae</uri>
+           <!-- Adjust scale if necessary, usually 1 1 1 if it's already in meters -->
+           <scale>1 1 1</scale>
+         </mesh>
+       </geometry>
+       <material>
+         <ambient>0.1 0.1 0.1 1</ambient>
+         <diffuse>0.1 0.1 0.1 1</diffuse>
+         <specular>0.1 0.1 0.1 1</specular>
+         <emissive>0.0 0.0 0.0 1</emissive>
+       </material>
+     </visual>
+     <collision name="collision">
+       <geometry>
+       <mesh>
+           <uri>model://turtlebot3_common/meshes/solar_origin.dae</uri>
+           <!-- Adjust scale if necessary, usually 1 1 1 if it's already in meters -->
+           <scale>1 1 1</scale>
+         </mesh>   
+       </geometry>
+       <surface>
+       <friction>
+         <ode>
+           <mu>1.5</mu>  <!-- High friction -->
+           <mu2>1.5</mu2>
+         </ode>
+       </friction>
+     </surface>
+     </collision>
+     <inertial>
+       <mass>1.0</mass>
+       <inertia>
+         <ixx>0.01</ixx> <ixy>0</ixy> <ixz>0</ixz>
+         <iyy>0.01</iyy> <iyz>0</iyz>
+         <izz>0.01</izz>
+       </inertia>
+      
+     </inertial>
+   </link>
+   <pose>-0.3 -0.3 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
+
+
+   <!-- Add a solar panel plugin if you want it to generate power -->
+   <!-- This is a conceptual plugin, you might need to find or create one -->
+   <!-- <plugin name="solar_panel_power_plugin" filename="libSolarPanelPowerPlugin.so">
+     <power_output>100.0</power_output>
+   </plugin> -->
+
+
+ </model> 
+ <model name="solar_panel">
+   <static>true</static> <!-- Set to true if it's a static object in the world -->
+   <link name="panel_link">
+     <visual name="visual">
+       <geometry>
+         <mesh>
+           <uri>model://turtlebot3_common/meshes/solar_origin.dae</uri>
+           <!-- Adjust scale if necessary, usually 1 1 1 if it's already in meters -->
+           <scale>1 1 1</scale>
+         </mesh>
+       </geometry>
+       <material>
+         <ambient>0.1 0.1 0.1 1</ambient>
+         <diffuse>0.1 0.1 0.1 1</diffuse>
+         <specular>0.1 0.1 0.1 1</specular>
+         <emissive>0.0 0.0 0.0 1</emissive>
+       </material>
+     </visual>
+     <collision name="collision">
+       <geometry>
+       <mesh>
+           <uri>model://turtlebot3_common/meshes/solar_origin.dae</uri>
+           <!-- Adjust scale if necessary, usually 1 1 1 if it's already in meters -->
+           <scale>1 1 1</scale>
+         </mesh>   
+       </geometry>
+       <surface>
+       <friction>
+         <ode>
+           <mu>1.5</mu>  <!-- High friction -->
+           <mu2>1.5</mu2>
+         </ode>
+       </friction>
+     </surface>
+     </collision>
+     <inertial>
+       <mass>1.0</mass>
+       <inertia>
+         <ixx>0.01</ixx> <ixy>0</ixy> <ixz>0</ixz>
+         <iyy>0.01</iyy> <iyz>0</iyz>
+         <izz>0.01</izz>
+       </inertia>
+      
+     </inertial>
+   </link>
+   <pose>-0.3 -0.3 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
+
+
+   <!-- Add a solar panel plugin if you want it to generate power -->
+   <!-- This is a conceptual plugin, you might need to find or create one -->
+   <!-- <plugin name="solar_panel_power_plugin" filename="libSolarPanelPowerPlugin.so">
+     <power_output>100.0</power_output>
+   </plugin> -->
+
+
+ </model> 

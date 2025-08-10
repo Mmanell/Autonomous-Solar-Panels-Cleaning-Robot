@@ -1,0 +1,15 @@
+/home/manel/psolar_ws/install/psolar_path_planning/share/ament_index/resource_index/package_run_dependencies/psolar_path_planning
+/home/manel/psolar_ws/install/psolar_path_planning/share/ament_index/resource_index/parent_prefix_path/psolar_path_planning
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/environment/ament_prefix_path.sh
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/environment/ament_prefix_path.dsv
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/environment/path.sh
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/environment/path.dsv
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/local_setup.bash
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/local_setup.sh
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/local_setup.zsh
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/local_setup.dsv
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.dsv
+/home/manel/psolar_ws/install/psolar_path_planning/share/ament_index/resource_index/packages/psolar_path_planning
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/cmake/psolar_path_planningConfig.cmake
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/cmake/psolar_path_planningConfig-version.cmake
+/home/manel/psolar_ws/install/psolar_path_planning/share/psolar_path_planning/package.xml
