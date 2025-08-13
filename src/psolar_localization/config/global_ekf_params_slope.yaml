@@ -18,7 +18,7 @@ ekf_filter_node_map:
 
    map_frame: map_tilted
    odom_frame: odom_tilted
-   base_link_frame: base_footprint # the frame id used by the turtlebot's diff drive plugin
+   base_link_frame: base_footprint_tilted # the frame id used by the turtlebot's diff drive plugin
    world_frame: map_tilted
 
 

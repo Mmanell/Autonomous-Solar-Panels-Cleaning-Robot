@@ -1,0 +1,271 @@
+<mxfile host="65bd71144e">
+    <diagram id="3zLOXqMcMvEkxm14hXJ_" name="Page-1">
+        <mxGraphModel dx="2293" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="36" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="-110" y="185" width="790" height="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="navsat_transform&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="370" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;div&gt;GPS&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="210" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="&lt;div&gt;IMU&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="210" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;div&gt;Wheel Odometry&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="210" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="6" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;div&gt;EKF Global&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="720" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="/gps/fix&lt;div&gt;sensor-msgs/NavSatFix&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#006600;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="260" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=classic;html=1;exitX=0.442;exitY=1.067;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="350" as="sourcePoint"/>
+                        <mxPoint x="470" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="/imu/data&lt;div&gt;sensor_msgs/IMU&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#006600;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="260" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="/wheel/odometry&lt;div&gt;nav_msgs/Odometry&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#006600;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="260" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;div&gt;EKF Local&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="550" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Broadcast transform&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;odom-&amp;gt;base&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" parent="1" vertex="1">
+                    <mxGeometry x="25" y="590" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Broadcast transform&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;map-&amp;gt;odom&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="770" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="/odometry/gps&lt;div&gt;nav_msgs/Odometry&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="420" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="/odometry/filtered/global&lt;div&gt;nav_msgs/Odometry&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="480" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="/gps/filtered&lt;div&gt;sensor-msgs/NavSatFix&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="370" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="/odometry/filtered/local&lt;div&gt;nav_msgs/Odometry&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-110" y="550" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="-90" y="710" width="90" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=classic;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="31" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="80" as="sourcePoint"/>
+                        <mxPoint as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=classic;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="31" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="80" as="sourcePoint"/>
+                        <mxPoint x="80" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="" style="group" parent="31" vertex="1" connectable="0">
+                    <mxGeometry x="10" y="-10" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=classic;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="32" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="80" as="sourcePoint"/>
+                        <mxPoint as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="endArrow=classic;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="32" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="80" as="sourcePoint"/>
+                        <mxPoint x="80" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="Can wheel odometry be expressed in odom tilted frame and imu and odometry/gps in map tilted and ekf globala broadcasts the transform between map_tilted and odom_tilted and ekf_local between odom_tilted and base_tilted" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="720" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="LOCALIZATION" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#FF0000;" parent="1" vertex="1">
+                    <mxGeometry x="-40" y="210" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-55" y="685" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="-940" y="184" width="810" height="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="Path Planning&lt;div&gt;! This is a simplified way to view things&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#FF0000;" parent="1" vertex="1">
+                    <mxGeometry x="-780" y="215" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;div&gt;navigate_complete_coverage&lt;/div&gt;&lt;div&gt;opennav_coverage_msgs/action/NavigateCompleteCoverage&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-780" y="320" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;SERVICE&lt;/font&gt;&lt;/b&gt;:&lt;/div&gt;&lt;div&gt;Service: /bt_navigator/get_state&lt;/div&gt;&lt;div&gt;Server: bt_navigator (behavior tree navigator in nav2)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-780" y="730" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;ACTION&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;GOAL&lt;/b&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;:&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;1/ Field: Filepath to a GML path or Vector of Polygons where the first polygon is a vector of field and the others are subsequent polygons&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;2/ Frame of reference&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;3/Behavior tree&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;RESULT&lt;/b&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;:&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&amp;nbsp;Success/Failure Status&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;Feedback&lt;/b&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;:&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;1/ Current pose&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;2/ Navigation time&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;3/Time remaining&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;4/Number of recoveries&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;5/Distance remaining&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-800" y="420" width="270" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&lt;div&gt;Node CverageNavigatorTester&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-930" y="460" width="120" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="80" target="77" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="&lt;font color=&quot;#ff7edb&quot;&gt;Coverage_client&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-910" y="540" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="82" target="83" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;NAV2 Controller server&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-440" y="460" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="83" target="85" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="cmd_vel_nav" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-400" y="520" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="85" target="87" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;NAV2 Velocity smoother&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-440" y="570" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="87" target="96" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="cmd_vel" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-400" y="630" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="89" target="92" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;Coverage server&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-440" y="210" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="90" target="82" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;BT_NAVIGATOR:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 153);&quot;&gt;Executes a behavior tree that calls coverage_server and other Nav2 actions&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-440" y="340" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="92" target="90" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="Coverage Path" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-400" y="280" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="96" target="98" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Robot basr controller" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-400" y="690" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="moves robot, publishes odom &amp;amp; TF" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-415" y="745" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="To ensure a bidirectionel communication between the two process&lt;div&gt;I need odometry/filtered/local&lt;/div&gt;&lt;div&gt;and odometry/filtered/global in the solar panel frame&lt;/div&gt;&lt;div&gt;I need the coverage plan expressed in the solar panel frame&lt;/div&gt;&lt;div&gt;I need to broadcast the transformation map-&amp;gt;odom and odom-&amp;gt;base&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-415" y="80" width="600" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.059;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.938;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="55" target="36" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-170" y="194" as="sourcePoint"/>
+                        <mxPoint x="-70" y="180" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-120" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" value="&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;I need wheel odometry to reflect the true measurements in the solar panel frame&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Do I need a new odom frame for the tilted panel&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="12.5" y="450" width="135" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="105" target="106" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="Map" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-95" y="245" width="105" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="106" target="107" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="Odom" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-90" y="300" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="107" target="108" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="Base_footprint" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-92.5" y="355" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="Base_link" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-92.5" y="410" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Can I create a new odom and broadcast a transform from it&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="12.5" y="635" width="135" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="54" target="54" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;GPS here is giving the righ coordinates in the map frame&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;But I need the coordinates to be expressed in the solar_panel frame since the path planning and navigation must be in a 2d frame(solar_panel)&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="570" width="135" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="118" target="119">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="855" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="118" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Idea 2: Can I express thr coordinates in a 6DOF setting and then updates the odom sources nav2 is using&amp;nbsp;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-190" y="860" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: light-dark(rgb(251, 251, 251), rgb(21, 21, 21)); text-align: center;&quot;&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Problem: Too much noise. Map and odom frames drift a lot&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;and robot wheels start jumping around. If this is fixed I can plan the path in solar_panel frame and transform robot odometry in that frame.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; background-color: rgb(251, 251, 251); display: inline !important;&quot;&gt;&lt;font style=&quot;font-family: Helvetica; font-size: 12px; white-space: normal; background-color: light-dark(rgb(251, 251, 251), rgb(21, 21, 21)); color: rgb(255, 0, 0);&quot;&gt;I set 2d-mode to true and added pitch and roll in imu and their respective velocities and added z in gps odom. And added z in gps and set zero_altitude to false in navsat&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="830" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;A problem with ekf publishing frequency detected from ros2 diagnostics&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="840" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="&lt;font color=&quot;#ff0000&quot;&gt;When I plot gps and odometry and imu with plotjuggler. odometry/global rely heavily on gps and gps and odom are not quite alike&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="900" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="A lot of ressources on the internet discussing robots navigating slopes/uneven terrains talk about the use of 2.d maps/height maps or a detailed 3d map. The height map comes with traversabiliyu values (slope steepness)&lt;div&gt;&lt;div class=&quot;t m0 x15 h6 yb8 ff7 fs1 fc0 sc0 ls45&quot;&gt;&lt;span class=&quot;ff3 ls7 ws9c&quot;&gt;Elevation&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;mapping&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;&lt;span class=&quot;ff8 ws9d&quot;&gt;module&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;takes&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;RGBD&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;and&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 yb9 ff8 fs1 fc0 sc0 ls7 ws9e&quot;&gt;odometry&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;sensor&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;data&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;and&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;builds&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;a&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;height&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;map&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;of&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;the&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 yba ff8 fs1 fc0 sc0 ls7 ws12&quot;&gt;robot’s&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;surroundings.&lt;/div&gt;&lt;div class=&quot;t m0 x15 h6 ybb ff7 fs1 fc0 sc0 ls45&quot;&gt;•&lt;span class=&quot;ff3 ls7 ws9f&quot;&gt;Path&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;planning&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;&lt;span class=&quot;ff8 wsa0&quot;&gt;module&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;builds&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;a&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;global&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;plan&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;to&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;reach&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 ybc ff8 fs1 fc0 sc0 ls7 wsa1&quot;&gt;the&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;goal.&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;Its&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;inputs&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;are:&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;the&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;robot’s&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;odometry&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;data,&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 ybd ff8 fs1 fc0 sc0 ls7 ws12&quot;&gt;target&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;state,&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;and&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;the&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;height&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;map.&lt;/div&gt;&lt;div class=&quot;t m0 x15 h6 ybe ff7 fs1 fc0 sc0 ls45&quot;&gt;•&lt;span class=&quot;ff3 ls7 wsa2&quot;&gt;Path&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;following&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;&lt;span class=&quot;ff8 ws35&quot;&gt;module&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;follows&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;the&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;trajectory&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;sug-&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 ybf ff8 fs1 fc0 sc0 ls7 wsa3&quot;&gt;gested&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;by&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;the&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;path&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;planner&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;and&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;performs&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;local&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;ma-&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 yc0 ff8 fs1 fc0 sc0 ls7 ws71&quot;&gt;neuvers&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;to&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;av&lt;span class=&quot;_ _0&quot;&gt;&lt;/span&gt;oid&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;obstacles&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;and&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;severe&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;roughnesses.&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;It&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 yc1 ff8 fs1 fc0 sc0 ls7 wsa4&quot;&gt;takes&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;a&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;robot’s&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;odometry&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;data,&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;global&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;path,&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;and&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;2.5D&lt;/div&gt;&lt;div class=&quot;t m0 x16 h6 yc2 ff8 fs1 fc0 sc0 ls7 ws12&quot;&gt;map&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;built&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;by&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;the&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;mapping&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;module&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;as&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;an&lt;span class=&quot;_&quot;&gt; &lt;/span&gt;input&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-940" y="980" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" value="is navigation stack (a 3D terrain-aware navigation system). It uses gps and octomaps&lt;div&gt;&lt;li data-end=&quot;288&quot; data-start=&quot;201&quot;&gt;&lt;p data-end=&quot;288&quot; data-start=&quot;203&quot;&gt;&lt;strong data-end=&quot;217&quot; data-start=&quot;203&quot;&gt;3D Mapping&lt;/strong&gt; – Uses voxel grids (hence “Vox”) to represent the environment in 3D.&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;423&quot; data-start=&quot;289&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;423&quot; data-start=&quot;291&quot;&gt;&lt;strong data-end=&quot;324&quot; data-start=&quot;291&quot;&gt;Elevation &amp;amp; Terrain Awareness&lt;/strong&gt; – Maintains an elevation map so the robot understands height differences, not just 2D obstacles.&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;569&quot; data-start=&quot;424&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;569&quot; data-start=&quot;426&quot;&gt;&lt;strong data-end=&quot;449&quot; data-start=&quot;426&quot;&gt;Path Planning in 3D&lt;/strong&gt; – Plans paths that take into account elevation, surface slope, and traversability, unlike Nav2’s default 2D planners.&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;696&quot; data-start=&quot;570&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;696&quot; data-start=&quot;572&quot;&gt;&lt;strong data-end=&quot;605&quot; data-start=&quot;572&quot;&gt;Integration with Localization&lt;/strong&gt; – Works with odometry, IMU, GPS, and sometimes SLAM to position the robot in the 3D map.&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;818&quot; data-start=&quot;697&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;818&quot; data-start=&quot;699&quot;&gt;&lt;strong data-end=&quot;722&quot; data-start=&quot;699&quot;&gt;Terrain Constraints&lt;/strong&gt; – Lets you specify limits like maximum slope, step height, or roughness the robot can handle.&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;956&quot; data-start=&quot;819&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;956&quot; data-start=&quot;821&quot;&gt;&lt;strong data-end=&quot;863&quot; data-start=&quot;821&quot;&gt;For Legged, Tracked, or Wheeled Robots&lt;/strong&gt; – Useful in field robotics (search &amp;amp; rescue, inspection, mining) where terrain is complex&lt;/p&gt;&lt;/li&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-590" y="1210" width="240" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

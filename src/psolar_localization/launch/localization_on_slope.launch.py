@@ -48,14 +48,27 @@ def generate_launch_description():
                ("imu/data", "imu"),
                ("gps/fix", "navsat"),
                ("odometry/filtered", "odometry/global/slope"),
-               ("gps/filtered", "gps/filtered"),
-               ("odometry/gps", "odometry/gps"),              
+               ("gps/filtered", "gps/filtered/slope"),
+               ("odometry/gps", "odometry/gps/slope"),              
            ]
+       )
+    
+    gps_tilted_publisher=Node(
+        package="psolar_localization",
+        executable="gps_tilted_publisher",
+        output="screen",
+       )
+    odom_tilted_publisher=Node(
+        package="psolar_localization",
+        executable="odom_tilted_publisher",
+        output="screen",
        )
         
     return LaunchDescription([
             use_sim_time_arg,
             ekf_filter_node_odom,
             ekf_filter_node_map,
+            gps_tilted_publisher,
+            odom_tilted_publisher,
             navsat_transform,
     ])

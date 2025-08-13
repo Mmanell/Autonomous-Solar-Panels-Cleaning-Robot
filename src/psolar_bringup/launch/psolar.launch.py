@@ -37,21 +37,34 @@ def generate_launch_description():
         "test_complete_launch.py"
     )),
     condition=IfCondition(use_opennav)
-)
-
+    )
+    
+    rviz = Node(
+            package="rviz2",
+            executable="rviz2",
+            arguments=["-d", os.path.join(
+                    get_package_share_directory("psolar_bringup"),
+                    "rviz",
+                    "opennav_rviz.rviz"
+                )
+            ],
+            output="screen",
+            parameters=[{"use_sim_time": True}],
+    )
 
 
 
 
     frames_transform = Node(
-    package="psolar_localization",
-    executable="tilted_frames_publisher",
-    output="screen",
+        package="psolar_localization",
+        executable="imu_frame_correction",
+        output="screen",
     )
    
     return LaunchDescription([
         use_opennav_arg,
         gazebo,
+        rviz,
         localization,
         frames_transform,
         opennav_launch,

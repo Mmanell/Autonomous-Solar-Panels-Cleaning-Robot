@@ -50,7 +50,7 @@ def generate_launch_description():
                                     "navsat_params.yaml"), 
                     {"use_sim_time": use_sim_time}],
         remappings=[
-               ("imu/data", "imu"),
+               ("imu/data", "imu/corrected"),
                ("gps/fix", "navsat"),
                ("odometry/filtered", "odometry/global"),
                ("gps/filtered", "gps/filtered"),

@@ -1,6 +1,7 @@
 /home/manel/psolar_ws/build/psolar_localization/CMakeFiles/uninstall.dir
 /home/manel/psolar_ws/build/psolar_localization/CMakeFiles/psolar_localization_uninstall.dir
 /home/manel/psolar_ws/build/psolar_localization/CMakeFiles/gps_tilted_publisher.dir
+/home/manel/psolar_ws/build/psolar_localization/CMakeFiles/imu_frame_correction.dir
 /home/manel/psolar_ws/build/psolar_localization/CMakeFiles/odom_tilted_publisher.dir
 /home/manel/psolar_ws/build/psolar_localization/CMakeFiles/tilted_frames_publisher.dir
 /home/manel/psolar_ws/build/psolar_localization/CMakeFiles/test.dir

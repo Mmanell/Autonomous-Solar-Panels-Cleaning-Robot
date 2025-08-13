@@ -2,7 +2,7 @@ ekf_filter_node_map:
  ros__parameters:
    frequency: 30.0
    #It will fuse 0 values for all 3D variables (Z, roll, pitch, and their respective velocities and accelerations)
-   two_d_mode: true # Recommended to use 2d mode for nav2 in mostly planar environments
+   two_d_mode: false # Recommended to use 2d mode for nav2 in mostly planar environments
    #If true, the state estimation node will publish diagnostic messages to the /diagnostics topic. This is useful for debugging your configuration and sensor data.
    print_diagnostics: true
    debug: false
@@ -35,7 +35,7 @@ ekf_filter_node_map:
 #If this parameter is set to true, then any measurements from this sensor will be fused relative to the first measurement received from that sensor. This is useful if, for example, you want your state estimate to always start at (0,0,0) and with roll,pitch, and yaw values of (0,0,0). It is similar to the _differential parameter, but instead of removing the measurement at time t−1, we always remove the measurement at time 0, and the measurement is not converted to a velocity.
    
    odom1: odometry/gps
-   odom1_config: [true,  true,  false,
+   odom1_config: [true,  true,  true,
                  false, false, false,
                  false, false, false,
                  false, false, false,
@@ -45,11 +45,11 @@ ekf_filter_node_map:
    odom1_relative: false
 
 
-   imu0: imu
+   imu0: imu/corrected
    imu0_config: [false, false, false,
-                 false,  false,  true,
+                 true,  true,  true,
                  false, false, false,
-                 false,  false,  false,
+                 true,  true,  true,
                  false,  false,  false]
    imu0_differential: false  # If using a real robot you might want to set this to true, since usually absolute measurements from real imu's are not very accurate
    imu0_relative: false
@@ -63,7 +63,7 @@ ekf_filter_node_map:
 
    process_noise_covariance: [1.0,   0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
                              0.0,    1.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
-                             0.0,    0.0,    1e-3,   0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                             0.0,    0.0,    1.0,   0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
                              0.0,    0.0,    0.0,    0.3,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
                              0.0,    0.0,    0.0,    0.0,    0.3,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
                              0.0,    0.0,    0.0,    0.0,    0.0,    0.01,   0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
@@ -76,3 +76,4 @@ ekf_filter_node_map:
                              0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.3,    0.0,    0.0,
                              0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.3,    0.0,
                              0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.3]
+

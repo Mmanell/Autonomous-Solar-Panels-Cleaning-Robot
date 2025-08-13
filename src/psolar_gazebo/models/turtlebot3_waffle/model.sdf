@@ -51,24 +51,25 @@
         <always_on>true</always_on>
         <update_rate>200</update_rate>
         <topic>imu</topic>
+        <frame_id>imu_link</frame_id>
         <imu>
           <angular_velocity>
             <x>
               <noise type="gaussian">
                 <mean>0.0</mean>
-                <stddev>2e-4</stddev>
+                <stddev>0.0</stddev>
               </noise>
             </x>
             <y>
               <noise type="gaussian">
                 <mean>0.0</mean>
-                <stddev>2e-4</stddev>
+                <stddev>0.0</stddev>
               </noise>
             </y>
             <z>
               <noise type="gaussian">
                 <mean>0.0</mean>
-                <stddev>2e-4</stddev>
+                <stddev>0.0</stddev>
               </noise>
             </z>
           </angular_velocity>
@@ -76,19 +77,19 @@
             <x>
               <noise type="gaussian">
                 <mean>0.0</mean>
-                <stddev>1.7e-2</stddev>
+                <stddev>0.0</stddev>
               </noise>
             </x>
             <y>
               <noise type="gaussian">
                 <mean>0.0</mean>
-                <stddev>1.7e-2</stddev>
+                <stddev>0.0</stddev>
               </noise>
             </y>
             <z>
               <noise type="gaussian">
                 <mean>0.0</mean>
-                <stddev>1.7e-2</stddev>
+                <stddev>0.0</stddev>
               </noise>
             </z>
           </linear_acceleration>
@@ -139,7 +140,7 @@
      
       <sensor name="navsat_sensor" type="navsat">
           <always_on>1</always_on>
-          <update_rate>10</update_rate>
+          <update_rate>20</update_rate>
           <topic>navsat</topic>
               <gz_frame_id>base_scan</gz_frame_id>  <!-- For Ignition's internal TF -->
     <frame_id>base_scan</frame_id>        <!-- For ROS 2 messages -->

@@ -9,6 +9,7 @@
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/gps_tilted_publisher
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/odom_tilted_publisher
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/tilted_frames_publisher
+/home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/imu_frame_correction
 /home/manel/psolar_ws/install/psolar_localization/share/ament_index/resource_index/package_run_dependencies/psolar_localization
 /home/manel/psolar_ws/install/psolar_localization/share/ament_index/resource_index/parent_prefix_path/psolar_localization
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/environment/ament_prefix_path.sh

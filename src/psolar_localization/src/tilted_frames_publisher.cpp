@@ -47,10 +47,12 @@ private:
 
         // Create both transforms
         auto map_to_map_tilted   = make_transform("map",  "map_tilted");
-        auto odom_to_odom_tilted = make_transform("odom", "odom_tilted");
+        // auto odom_to_odom_tilted = make_transform("odom", "odom_tilted");
+        // auto base_to_base_tilted = make_transform("base_link", "base_link_tilted");
+        // auto footprint_to_footprint_tilted = make_transform("base_footprint", "base_footprint_tilted");
 
         // Send both transforms
-        static_broadcaster_->sendTransform({map_to_map_tilted, odom_to_odom_tilted});
+        static_broadcaster_->sendTransform({map_to_map_tilted });
 
         RCLCPP_INFO(this->get_logger(),
                     "Published static tilted transforms with roll = %.2f degrees",

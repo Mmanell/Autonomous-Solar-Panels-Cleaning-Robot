@@ -1,1 +1,1 @@
-navigation2;rclpy;std_msgs;robot_localization;rclcpp;nav_msgs;geometry_msgs;tf2;tf2_ros;tf2_geometry_msgs;tf_transformations;ament_lint_auto;ament_lint_common
+navigation2;rclpy;std_msgs;robot_localization;rclcpp;nav_msgs;geometry_msgs;sensor_msgs;tf2;tf2_ros;tf2_geometry_msgs;tf_transformations;ament_lint_auto;ament_lint_common

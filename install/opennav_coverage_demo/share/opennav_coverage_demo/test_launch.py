@@ -31,7 +31,7 @@ def generate_launch_description():
 
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value='/home/manel/turtlebot3_ws/src/opennav_coverage/opennav_coverage_demo/params/test_params.yaml',
+        default_value='/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_demo/params/test_params.yaml',
         description='Full path to param file to load')
 
     # Create component container node to load coverage server
