@@ -1,4 +1,0 @@
-Invoking command in '/home/manel/psolar_ws/build/psolar_decision_making': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_decision_making -- -j12 -l12
-Invoked command in '/home/manel/psolar_ws/build/psolar_decision_making' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/psolar_decision_making -- -j12 -l12
-Invoking command in '/home/manel/psolar_ws/build/psolar_decision_making': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_decision_making
-Invoked command in '/home/manel/psolar_ws/build/psolar_decision_making' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/psolar_decision_making

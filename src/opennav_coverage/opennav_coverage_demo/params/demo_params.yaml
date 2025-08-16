@@ -3,8 +3,8 @@ coverage_server:
     use_sim_time: True
 
     # Your robot’s size & behavior
-    robot_width: 0.18  # Actual TurtleBot3 Waffle width in meters
-    operation_width: 0.2 # Equal to robot width if no extra cleaning tool
+    robot_width: 0.35  # Actual TurtleBot3 Waffle width in meters
+    operation_width: 0.4 # Equal to robot width if no extra cleaning tool
     min_turning_radius: 0.30  # Tight turning radius, TurtleBot3 is capable
 
     # Headland: buffer zone around field border

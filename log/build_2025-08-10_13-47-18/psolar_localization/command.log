@@ -1,2 +1,0 @@
-Invoking command in '/home/manel/psolar_ws/build/psolar_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/psolar_localization -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/psolar_localization
-Invoked command in '/home/manel/psolar_ws/build/psolar_localization' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/psolar_localization -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/psolar_localization

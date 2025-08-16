@@ -1,9 +1,0 @@
-[0.027s] Invoking command in '/home/manel/psolar_ws/build/backported_bt_navigator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/backported_bt_navigator -- -j12 -l12
-[0.074s] [35m[1mConsolidate compiler generated dependencies of target nav2_navigate_to_pose_navigator[0m
-[0.080s] [35m[1mConsolidate compiler generated dependencies of target bt_navigator_core[0m
-[0.081s] [35m[1mConsolidate compiler generated dependencies of target nav2_navigate_through_poses[0m
-[0.123s] [ 25%] Built target bt_navigator_core
-[0.128s] [ 50%] Built target nav2_navigate_to_pose_navigator
-[0.135s] [ 75%] Built target nav2_navigate_through_poses
-[0.150s] [35m[1mConsolidate compiler generated dependencies of target bt_navigator[0m
-[0.181s] [100%] Built target bt_navigator

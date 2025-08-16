@@ -1,7 +1,0 @@
-[0.025s] Invoking command in '/home/manel/psolar_ws/build/psolar_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/psolar_localization -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/psolar_localization
-[0.032s] [31mCMake Error at CMakeLists.txt:15:
-[0.032s]   Parse error.  Function missing ending ")".  End of file reached.
-[0.032s] 
-[0.032s] [0m
-[0.033s] -- Configuring incomplete, errors occurred!
-[0.033s] Invoked command in '/home/manel/psolar_ws/build/psolar_localization' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/psolar_localization -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/psolar_localization

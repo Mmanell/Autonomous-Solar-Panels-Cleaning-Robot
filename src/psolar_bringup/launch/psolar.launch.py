@@ -28,7 +28,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(
             get_package_share_directory("psolar_localization"),
             "launch",
-            "dual_ekf_navsat.launch.py")),
+            "localization_on_slope.launch.py")),
     )
 
     opennav_launch = IncludeLaunchDescription(
@@ -54,11 +54,17 @@ def generate_launch_description():
 
 
 
-
     frames_transform = Node(
         package="psolar_localization",
-        executable="imu_frame_correction",
+        executable="tilted_frames_publisher",
         output="screen",
+    )
+
+    odom_clone= Node(
+        package="psolar_localization",
+        executable="corrected_odometry_publisher",
+        output="screen",
+        parameters=[{"use_sim_time": True}],
     )
    
     return LaunchDescription([
@@ -67,5 +73,6 @@ def generate_launch_description():
         rviz,
         localization,
         frames_transform,
+        odom_clone,
         opennav_launch,
     ])

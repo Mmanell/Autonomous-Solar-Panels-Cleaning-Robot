@@ -1,1 +1,0 @@
-Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_msgs -- -j12 -l12

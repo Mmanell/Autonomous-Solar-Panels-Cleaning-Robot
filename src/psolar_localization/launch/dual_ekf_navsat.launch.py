@@ -24,7 +24,7 @@ def generate_launch_description():
         output="screen",
         parameters=[os.path.join(pkg_share,
                                       "config", 
-                                      "local_ekf_params.yaml"),
+                                      "local_ekf_params_3d.yaml"),
                          {"use_sim_time": use_sim_time}],
         remappings=[("odometry/filtered", "odometry/local")]
         )
@@ -35,7 +35,7 @@ def generate_launch_description():
         output="screen",
         parameters=[os.path.join(pkg_share, 
                                     "config", 
-                                    "global_ekf_params.yaml"), 
+                                    "global_ekf_params_3d.yaml"), 
                     {"use_sim_time": use_sim_time}],
         remappings=[("odometry/filtered", "odometry/global")]
        )
@@ -47,10 +47,10 @@ def generate_launch_description():
         output="screen",
         parameters=[os.path.join(pkg_share, 
                                     "config",
-                                    "navsat_params.yaml"), 
+                                    "navsat_params_3d.yaml"), 
                     {"use_sim_time": use_sim_time}],
         remappings=[
-               ("imu/data", "imu/corrected"),
+               ("imu/data", "imu"),
                ("gps/fix", "navsat"),
                ("odometry/filtered", "odometry/global"),
                ("gps/filtered", "gps/filtered"),

@@ -38,7 +38,7 @@
 </spherical_coordinates>
 
 
-   <model name="solar_panel">
+ <model name="solar_panel">
    <static>true</static> <!-- Set to true if it's a static object in the world -->
    <link name="panel_link">
      <visual name="visual">
@@ -83,12 +83,19 @@
       
      </inertial>
    </link>
-   <pose>0.5 0.5 -0.5 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -0.3 -0.3-->
+   <pose>-0.3 -0.3 -0.2 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
 
 
+   <!-- Add a solar panel plugin if you want it to generate power -->
+   <!-- This is a conceptual plugin, you might need to find or create one -->
+   <!-- <plugin name="solar_panel_power_plugin" filename="libSolarPanelPowerPlugin.so">
+     <power_output>100.0</power_output>
+   </plugin> -->
 
 
  </model> 
+
+
 
 
     <include>

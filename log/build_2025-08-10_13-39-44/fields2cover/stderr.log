@@ -1,8 +1,0 @@
-[01m[K/home/manel/psolar_ws/build/fields2cover/_deps/tinyxml2-src/xmltest.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
-[01m[K/home/manel/psolar_ws/build/fields2cover/_deps/tinyxml2-src/xmltest.cpp:711:38:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kchar* fgets(char*, int, FILE*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
-  711 |                                 [01;35m[Kfgets( savedBuf, 256, saved )[m[K;
-      |                                 [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/home/manel/psolar_ws/build/fields2cover/_deps/tinyxml2-src/xmltest.cpp:1195:30:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kchar* fgets(char*, int, FILE*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
- 1195 |                         [01;35m[Kfgets( buf, 1024, textfile )[m[K;
-      |                         [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
-lto-wrapper: warning: using serial compilation of 8 LTRANS jobs

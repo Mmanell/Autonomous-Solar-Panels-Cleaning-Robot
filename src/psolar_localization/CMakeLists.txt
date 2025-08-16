@@ -14,9 +14,12 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(Eigen3 REQUIRED)
+
 
 
 include_directories(include)
+include_directories(${EIGEN3_INCLUDE_DIR})
 
 add_executable(gps_tilted_publisher src/gps_tilted_publisher.cpp)
 ament_target_dependencies(gps_tilted_publisher
@@ -28,11 +31,7 @@ ament_target_dependencies(gps_tilted_publisher
   tf2_geometry_msgs
   sensor_msgs
 )
-add_executable(imu_frame_correction src/imu_frame_correction.cpp)
-ament_target_dependencies(imu_frame_correction
-  rclcpp
-  sensor_msgs
-)
+
 add_executable(odom_tilted_publisher src/odom_tilted_publisher.cpp)
 ament_target_dependencies(odom_tilted_publisher
   rclcpp
@@ -46,6 +45,10 @@ ament_target_dependencies(tilted_frames_publisher
   tf2
 )
 
+add_executable(corrected_odometry_publisher src/corrected_odometry_publisher.cpp)
+ament_target_dependencies(corrected_odometry_publisher rclcpp geometry_msgs std_msgs sensor_msgs nav_msgs tf2_ros tf2 ${Eigen_LIBRARIES})
+
+
 install(DIRECTORY launch config
   DESTINATION share/${PROJECT_NAME}/
 )
@@ -54,8 +57,13 @@ install(TARGETS
   gps_tilted_publisher
   odom_tilted_publisher
   tilted_frames_publisher
-  imu_frame_correction
+  corrected_odometry_publisher
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  DIRECTORY include
+  DESTINATION include
 )
 
 

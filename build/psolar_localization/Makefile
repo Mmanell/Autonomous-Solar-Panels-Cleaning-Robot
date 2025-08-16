@@ -211,19 +211,6 @@ gps_tilted_publisher/fast:
 .PHONY : gps_tilted_publisher/fast
 
 #=============================================================================
-# Target rules for targets named imu_frame_correction
-
-# Build rule for target.
-imu_frame_correction: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imu_frame_correction
-.PHONY : imu_frame_correction
-
-# fast build rule for target.
-imu_frame_correction/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_frame_correction.dir/build.make CMakeFiles/imu_frame_correction.dir/build
-.PHONY : imu_frame_correction/fast
-
-#=============================================================================
 # Target rules for targets named odom_tilted_publisher
 
 # Build rule for target.
@@ -249,6 +236,43 @@ tilted_frames_publisher/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilted_frames_publisher.dir/build.make CMakeFiles/tilted_frames_publisher.dir/build
 .PHONY : tilted_frames_publisher/fast
 
+#=============================================================================
+# Target rules for targets named corrected_odometry_publisher
+
+# Build rule for target.
+corrected_odometry_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 corrected_odometry_publisher
+.PHONY : corrected_odometry_publisher
+
+# fast build rule for target.
+corrected_odometry_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/corrected_odometry_publisher.dir/build.make CMakeFiles/corrected_odometry_publisher.dir/build
+.PHONY : corrected_odometry_publisher/fast
+
+src/corrected_odometry_publisher.o: src/corrected_odometry_publisher.cpp.o
+.PHONY : src/corrected_odometry_publisher.o
+
+# target to build an object file
+src/corrected_odometry_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/corrected_odometry_publisher.dir/build.make CMakeFiles/corrected_odometry_publisher.dir/src/corrected_odometry_publisher.cpp.o
+.PHONY : src/corrected_odometry_publisher.cpp.o
+
+src/corrected_odometry_publisher.i: src/corrected_odometry_publisher.cpp.i
+.PHONY : src/corrected_odometry_publisher.i
+
+# target to preprocess a source file
+src/corrected_odometry_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/corrected_odometry_publisher.dir/build.make CMakeFiles/corrected_odometry_publisher.dir/src/corrected_odometry_publisher.cpp.i
+.PHONY : src/corrected_odometry_publisher.cpp.i
+
+src/corrected_odometry_publisher.s: src/corrected_odometry_publisher.cpp.s
+.PHONY : src/corrected_odometry_publisher.s
+
+# target to generate assembly for a file
+src/corrected_odometry_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/corrected_odometry_publisher.dir/build.make CMakeFiles/corrected_odometry_publisher.dir/src/corrected_odometry_publisher.cpp.s
+.PHONY : src/corrected_odometry_publisher.cpp.s
+
 src/gps_tilted_publisher.o: src/gps_tilted_publisher.cpp.o
 .PHONY : src/gps_tilted_publisher.o
 
@@ -272,30 +296,6 @@ src/gps_tilted_publisher.s: src/gps_tilted_publisher.cpp.s
 src/gps_tilted_publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_tilted_publisher.dir/build.make CMakeFiles/gps_tilted_publisher.dir/src/gps_tilted_publisher.cpp.s
 .PHONY : src/gps_tilted_publisher.cpp.s
-
-src/imu_frame_correction.o: src/imu_frame_correction.cpp.o
-.PHONY : src/imu_frame_correction.o
-
-# target to build an object file
-src/imu_frame_correction.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_frame_correction.dir/build.make CMakeFiles/imu_frame_correction.dir/src/imu_frame_correction.cpp.o
-.PHONY : src/imu_frame_correction.cpp.o
-
-src/imu_frame_correction.i: src/imu_frame_correction.cpp.i
-.PHONY : src/imu_frame_correction.i
-
-# target to preprocess a source file
-src/imu_frame_correction.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_frame_correction.dir/build.make CMakeFiles/imu_frame_correction.dir/src/imu_frame_correction.cpp.i
-.PHONY : src/imu_frame_correction.cpp.i
-
-src/imu_frame_correction.s: src/imu_frame_correction.cpp.s
-.PHONY : src/imu_frame_correction.s
-
-# target to generate assembly for a file
-src/imu_frame_correction.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_frame_correction.dir/build.make CMakeFiles/imu_frame_correction.dir/src/imu_frame_correction.cpp.s
-.PHONY : src/imu_frame_correction.cpp.s
 
 src/odom_tilted_publisher.o: src/odom_tilted_publisher.cpp.o
 .PHONY : src/odom_tilted_publisher.o
@@ -360,16 +360,16 @@ help:
 	@echo "... test"
 	@echo "... psolar_localization_uninstall"
 	@echo "... uninstall"
+	@echo "... corrected_odometry_publisher"
 	@echo "... gps_tilted_publisher"
-	@echo "... imu_frame_correction"
 	@echo "... odom_tilted_publisher"
 	@echo "... tilted_frames_publisher"
+	@echo "... src/corrected_odometry_publisher.o"
+	@echo "... src/corrected_odometry_publisher.i"
+	@echo "... src/corrected_odometry_publisher.s"
 	@echo "... src/gps_tilted_publisher.o"
 	@echo "... src/gps_tilted_publisher.i"
 	@echo "... src/gps_tilted_publisher.s"
-	@echo "... src/imu_frame_correction.o"
-	@echo "... src/imu_frame_correction.i"
-	@echo "... src/imu_frame_correction.s"
 	@echo "... src/odom_tilted_publisher.o"
 	@echo "... src/odom_tilted_publisher.i"
 	@echo "... src/odom_tilted_publisher.s"

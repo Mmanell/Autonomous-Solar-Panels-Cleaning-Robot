@@ -1,6 +1,0 @@
-Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/opennav_coverage_msgs
-Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs -DCMAKE_INSTALL_PREFIX=/home/manel/psolar_ws/install/opennav_coverage_msgs
-Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_msgs -- -j12 -l12
-Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manel/psolar_ws/build/opennav_coverage_msgs -- -j12 -l12
-Invoking command in '/home/manel/psolar_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_msgs
-Invoked command in '/home/manel/psolar_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manel/psolar_ws/build/opennav_coverage_msgs

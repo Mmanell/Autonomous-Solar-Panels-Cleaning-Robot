@@ -19,56 +19,49 @@ def generate_launch_description():
 
     ekf_filter_node_odom=Node(
         package="robot_localization",
-        executable="ekf_node",            
+        executable="ekf_node", 
+        name="ekf_filter_node_odom",           
         output="screen",
         parameters=[os.path.join(pkg_share,
                                       "config", 
-                                      "local_ekf_params_slope.yaml"),
-                         {"use_sim_time": LaunchConfiguration("use_sim_time")}],
-        remappings=[("odometry/filtered", "odometry/local/slope")]
+                                      "local_ekf_params_2d.yaml"),
+                         {"use_sim_time": use_sim_time}],
+        remappings=[("odometry/filtered", "odometry/local")]
         )
     ekf_filter_node_map=Node(
         package="robot_localization",
         executable="ekf_node",
+        name="ekf_filter_node_map",
         output="screen",
         parameters=[os.path.join(pkg_share, 
                                     "config", 
-                                    "global_ekf_params_slope.yaml"), {"use_sim_time": LaunchConfiguration("use_sim_time")}],
-        remappings=[("odometry/filtered", "odometry/global/slope")]
+                                    "global_ekf_params_2d.yaml"), 
+                    {"use_sim_time": use_sim_time}],
+        remappings=[("odometry/filtered", "odometry/global")]
        )
 
     navsat_transform= Node(
         package="robot_localization",
         executable="navsat_transform_node",
+        name="navsat_transform",
         output="screen",
         parameters=[os.path.join(pkg_share, 
                                     "config",
-                                    "navsat_params_slope.yaml"), {"use_sim_time": LaunchConfiguration("use_sim_time")}],
+                                    "navsat_params_2d.yaml"), 
+                    {"use_sim_time": use_sim_time}],
         remappings=[
                ("imu/data", "imu"),
                ("gps/fix", "navsat"),
-               ("odometry/filtered", "odometry/global/slope"),
-               ("gps/filtered", "gps/filtered/slope"),
-               ("odometry/gps", "odometry/gps/slope"),              
+               ("odometry/filtered", "odometry/global"),
+               ("gps/filtered", "gps/filtered"),
+               ("odometry/gps", "odometry/gps"),              
            ]
-       )
-    
-    gps_tilted_publisher=Node(
-        package="psolar_localization",
-        executable="gps_tilted_publisher",
-        output="screen",
-       )
-    odom_tilted_publisher=Node(
-        package="psolar_localization",
-        executable="odom_tilted_publisher",
-        output="screen",
        )
         
     return LaunchDescription([
             use_sim_time_arg,
             ekf_filter_node_odom,
             ekf_filter_node_map,
-            gps_tilted_publisher,
-            odom_tilted_publisher,
             navsat_transform,
+            
     ])
