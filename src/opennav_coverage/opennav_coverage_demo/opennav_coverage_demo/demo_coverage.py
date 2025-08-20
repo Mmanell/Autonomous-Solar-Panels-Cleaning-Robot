@@ -148,11 +148,11 @@ def main():
     # Some example field
     #1m*1m Brosse: 1.2
     field = [
-        [0.1, 0.1],
-        [3.5, 0.1],
-        [3.5, 3.5],
-        [0.1, 3.5],
-        [0.1, 0.1]
+        [0.2, 0.2],
+        [4.0, 0.2],
+        [4.0, 4.0],
+        [0.2, 4.0],
+        [0.2, 0.2]
     ]
     navigator.navigateCoverage(field)
 

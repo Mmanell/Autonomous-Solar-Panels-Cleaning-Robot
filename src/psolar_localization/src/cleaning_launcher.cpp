@@ -33,7 +33,7 @@ private:
       std::system("ros2 run psolar_localization gps_tilted_publisher");
 
       // Optionally launch another node or script
-      std::system("ros2 launch opennav_coverage_demo test_complete_launch.py");
+      //std::system("ros2 launch opennav_coverage_demo test_complete_launch.py");
     }
   }
 };

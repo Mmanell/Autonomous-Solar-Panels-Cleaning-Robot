@@ -40,6 +40,9 @@ private:
   tf2_ros::TransformListener tf_listener_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;
   rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr publisher_;
+  bool start_pos_set_ = false;
+  double start_x_ = 0.0;
+  double start_y_ = 0.0;
 
   void odometryCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
   {
@@ -48,11 +51,22 @@ private:
       RCLCPP_WARN(this->get_logger(), "Incoming odom has empty header.frame_id, skipping");
       return;
     }
+    // Store the starting position at first reading
+    if (!start_pos_set_) {
+        start_x_ = msg->pose.pose.position.x;
+        start_y_ = msg->pose.pose.position.y;
+        start_pos_set_ = true;
+        RCLCPP_INFO(this->get_logger(), "Starting position set: x=%.3f, y=%.3f", start_x_, start_y_);
+    }
 
     if (source_frame == target_frame_) {
       publisher_->publish(*msg);
       return;
     }
+    // Subtract starting position to make first point (0,0)
+    nav_msgs::msg::Odometry shifted_odom = *msg;  // copy original message
+    shifted_odom.pose.pose.position.x -= start_x_;
+    shifted_odom.pose.pose.position.y -= start_y_;
 
     geometry_msgs::msg::TransformStamped tf_map_to_tilted;
     try {
@@ -74,7 +88,7 @@ private:
     geometry_msgs::msg::PoseStamped robot_pose_in_map;
     robot_pose_in_map.header.stamp = msg->header.stamp;
     robot_pose_in_map.header.frame_id = msg->header.frame_id;
-    robot_pose_in_map.pose = msg->pose.pose;
+    robot_pose_in_map.pose = shifted_odom.pose.pose;
 
     // Create a new Pose message for the transformed pose
     geometry_msgs::msg::PoseStamped robot_pose_in_tilted;

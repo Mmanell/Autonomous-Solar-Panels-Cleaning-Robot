@@ -2,10 +2,10 @@
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch/localization_3d.launch.py
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/local_ekf_params_2d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/navsat_params_3d.yaml
-/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/which_cmd.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params_3d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/local_ekf_params_3d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params_2d.yaml
+/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/twist_mux.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/navsat_params_2d.yaml
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/gps_tilted_publisher
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/odom_tilted_publisher

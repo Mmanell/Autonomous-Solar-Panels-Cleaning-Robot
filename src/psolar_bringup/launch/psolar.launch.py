@@ -16,6 +16,13 @@ def generate_launch_description():
         default_value="false",
         description="Whether to launch OpenNav path planning"
     )
+    #launch_arguments={'use_sim_time': use_sim_time}.items()
+    use_sim_time_arg = DeclareLaunchArgument(
+            "use_sim_time",
+            default_value="true",
+            description="Use simulation time"
+        )
+
 
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(
@@ -73,6 +80,29 @@ def generate_launch_description():
         parameters=[{"use_sim_time": True}],
     )
 
+    
+        # Path to your localization package where the config is
+    psolar_localization_pkg = get_package_share_directory("psolar_localization")
+
+    # --- Twist Mux Launch ---
+    twist_mux_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(get_package_share_directory("twist_mux"), "launch", "twist_mux_launch.py")
+        ),
+        launch_arguments={
+            # Set the final output topic for your robot controller
+            "cmd_vel_out": "cmd_vel",
+            # Point to the YAML file you just created
+            "config_topics": os.path.join(psolar_localization_pkg, "config", "twist_mux.yaml"),
+            # You can omit locks and joy if you aren't using them by providing an empty string
+            # or a path to an empty file.
+            "config_locks": "", # Set to empty if you have no locks
+            "use_sim_time": LaunchConfiguration("use_sim_time"),
+        }.items(),
+    )
+
+            
+
     # odom_slope= Node(
     #     package="psolar_localization",
     #     executable="gps_tilted_publisher",
@@ -80,23 +110,18 @@ def generate_launch_description():
     #     parameters=[{"use_sim_time": True}],
     # )
 
-    Node(
-    package='twist_mux',
-    executable='twist_mux_node',
-    name='twist_mux',
-    output='screen',
-    parameters=[{'config_file': '/path/to/twist_mux.yaml'}]
-    )
 
    
     return LaunchDescription([
         use_opennav_arg,
+        use_sim_time_arg,
         gazebo,
         rviz,
         localization,
         odom_clone,
         frames_transform,
         cleaning,
+        twist_mux_launch,
         #odom_slope,
         #opennav_launch,
     ])
