@@ -1,0 +1,11 @@
+twist_mux:
+  topic: cmd_vel
+  timeout: 0.5
+  low_latency: true
+  subscribers:
+    teleop:
+      topic: cmd_vel/teleop
+      priority: 10   # lower
+    nav2:
+      topic: cmd_vel
+      priority: 20   # higher

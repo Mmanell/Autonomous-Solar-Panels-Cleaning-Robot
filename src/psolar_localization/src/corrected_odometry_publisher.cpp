@@ -10,10 +10,9 @@
 #include <chrono>
 #include <deque>
 #include <numeric>
-#include <mutex>
 #include <iostream>
 
-// RollingMean class is unchanged
+// RollingMean class unchanged
 class RollingMean
 {
 public:
@@ -80,52 +79,49 @@ public:
       linearMean(10),
       angularMean(10)
     {
-        // Use a subscriber to get the latest joint state
         joint_sub_ = create_subscription<sensor_msgs::msg::JointState>(
             "/joint_states", 10,
             std::bind(&DiffDriveClone::jointCallback, this, std::placeholders::_1));
 
-        // Use a subscriber to get the latest IMU data
         imu_sub_ = create_subscription<sensor_msgs::msg::Imu>(
             "/imu", 10,
             std::bind(&DiffDriveClone::imuCallback, this, std::placeholders::_1));
+
+        odom_sub_ = create_subscription<nav_msgs::msg::Odometry>(
+            "/odom", 10,
+            std::bind(&DiffDriveClone::odomCallback, this, std::placeholders::_1));
 
         odom_pub_ = create_publisher<nav_msgs::msg::Odometry>("/odom_clone", 10);
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
         last_time_ = now();
 
-        // Create a fixed-rate timer for odometry updates (50 Hz)
         update_timer_ = this->create_wall_timer(
             std::chrono::milliseconds(20),
             std::bind(&DiffDriveClone::updateOdometry, this));
     }
 
 private:
-    // Store the latest joint state in a member variable
     void jointCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
     {
-        std::lock_guard<std::mutex> lock(joint_state_mutex_);
         latest_joint_state_ = *msg;
         joint_state_received_ = true;
     }
 
-    // Store the latest IMU data in a member variable
     void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
     {
-        std::lock_guard<std::mutex> lock(imu_mutex_);
         latest_imu_data_ = *msg;
         imu_data_received_ = true;
     }
 
-    // This function will be called at a fixed rate by the timer
+    void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
+    {
+        latest_odom_ = *msg;
+        odom_received_ = true;
+    }
+
     void updateOdometry()
     {
-        // Acquire mutexes for both joint states and IMU data
-        std::lock_guard<std::mutex> joint_lock(joint_state_mutex_);
-        std::lock_guard<std::mutex> imu_lock(imu_mutex_);
-
-        // Check if we have received data from both sensors
-        if (!joint_state_received_ || !imu_data_received_)
+        if (!joint_state_received_ || !imu_data_received_ || !odom_received_)
         {
             return;
         }
@@ -133,7 +129,6 @@ private:
         double left_pos = 0.0, right_pos = 0.0;
         bool left_found = false, right_found = false;
         
-        // Find joint positions from the stored latest message
         for (size_t i = 0; i < latest_joint_state_.name.size(); ++i)
         {
             if (latest_joint_state_.name[i] == "wheel_left_joint") { left_pos = latest_joint_state_.position[i]; left_found = true; }
@@ -144,7 +139,6 @@ private:
         rclcpp::Time current_time = now();
         double dt = (current_time - last_time_).seconds();
 
-        // Handle the first reading and zero dt
         if (first_reading_ || dt <= 0.0)
         {
             left_old_pos_ = left_pos;
@@ -154,13 +148,11 @@ private:
             return;
         }
 
-        // Calculate wheel displacements and update old positions
         double left_delta = (left_pos - left_old_pos_) * wheel_radius_;
         double right_delta = (right_pos - right_old_pos_) * wheel_radius_;
         left_old_pos_ = left_pos;
         right_old_pos_ = right_pos;
 
-        // Get Roll and Pitch from the IMU
         tf2::Quaternion q(
             latest_imu_data_.orientation.x,
             latest_imu_data_.orientation.y,
@@ -170,26 +162,21 @@ private:
         double roll, pitch, yaw;
         m.getRPY(roll, pitch, yaw);
 
-        // Set a threshold for when to apply the pitch correction
-        const double pitch_threshold = 7.0 * M_PI / 180.0; // Convert 10 degrees to radians
+        const double pitch_threshold = 4.0 * M_PI / 180.0; 
         double linear_disp;
+        double angular_disp;
         
-        // Conditionally apply the pitch correction
         if (std::fabs(pitch) > pitch_threshold)
         {
-            // Correct linear displacement by projecting it onto the horizontal plane
             linear_disp = (right_delta + left_delta) * 0.5 * std::cos(pitch);
+            angular_disp = (right_delta - left_delta) / wheel_separation_ * std::cos(pitch);
         }
         else
         {
-            // Use the standard 2D odometry calculation
             linear_disp = (right_delta + left_delta) * 0.5;
+            angular_disp = (right_delta - left_delta) / wheel_separation_;
         }
 
-        // Angular displacement remains the same
-        double angular_disp = (right_delta - left_delta) / wheel_separation_;
-        
-        // IntegrateExact - This part remains the same
         if (std::fabs(angular_disp) < 1e-6)
         {
             const double direction = heading_ + angular_disp * 0.5;
@@ -206,15 +193,14 @@ private:
             y_ += -ratio * (std::cos(heading_) - std::cos(heading_old));
         }
 
-        // Calculate and filter velocities using the fixed dt
-        linearMean.Push(linear_disp / dt);
-        angularMean.Push(angular_disp / dt);
-        double filtered_linear = linearMean.Mean();
-        double filtered_angular = angularMean.Mean();
-        
+        double linear_vel = latest_odom_.twist.twist.linear.x;
+        double angular_vel = latest_odom_.twist.twist.angular.z;
+        if (fabs(pitch) > pitch_threshold) {
+            linear_vel *= cos(pitch);
+        }
+
         last_time_ = current_time;
 
-        // Publish odometry message
         nav_msgs::msg::Odometry odom;
         odom.header.stamp = current_time;
         odom.header.frame_id = "odom";
@@ -223,11 +209,10 @@ private:
         odom.pose.pose.position.y = y_;
         odom.pose.pose.orientation.z = std::sin(heading_ / 2.0);
         odom.pose.pose.orientation.w = std::cos(heading_ / 2.0);
-        odom.twist.twist.linear.x = filtered_linear;
-        odom.twist.twist.angular.z = filtered_angular;
+        odom.twist.twist.linear.x = linear_vel;
+        odom.twist.twist.angular.z = angular_vel;
         odom_pub_->publish(odom);
 
-        // Publish TF
         geometry_msgs::msg::TransformStamped tf;
         tf.header.stamp = current_time;
         tf.header.frame_id = "odom";
@@ -238,18 +223,19 @@ private:
         tf_broadcaster_->sendTransform(tf);
     }
     
-    // Member variables
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_sub_;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
     rclcpp::TimerBase::SharedPtr update_timer_;
     std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+    
+    nav_msgs::msg::Odometry latest_odom_;
+    bool odom_received_ = false;
 
-    std::mutex joint_state_mutex_;
     sensor_msgs::msg::JointState latest_joint_state_;
     bool joint_state_received_ = false;
 
-    std::mutex imu_mutex_;
     sensor_msgs::msg::Imu latest_imu_data_;
     bool imu_data_received_ = false;
 

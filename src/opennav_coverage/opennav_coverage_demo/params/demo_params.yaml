@@ -3,9 +3,9 @@ coverage_server:
     use_sim_time: True
 
     # Your robot’s size & behavior
-    robot_width: 0.35  # Actual TurtleBot3 Waffle width in meters
+    robot_width: 0.35 # Actual TurtleBot3 Waffle width in meters
     operation_width: 0.4 # Equal to robot width if no extra cleaning tool
-    min_turning_radius: 0.30  # Tight turning radius, TurtleBot3 is capable
+    min_turning_radius: 0.30  
 
     # Headland: buffer zone around field border
     default_headland_width: 0.0 # Smaller since the robot is small, but still adds margin from edges
@@ -20,6 +20,9 @@ coverage_server:
     # Swath angle: direction of coverage
     default_swath_angle_type: "SET_ANGLE"
     default_swath_angle: 0.0   # 0 rad = sweep along X-axis (horizontal). Adjust depending on panel layout
+    
+    default_path_type: "REEDS_SHEPP"
+    default_path_continuity_type: "DISCONTINUOUS"
 
 row_coverage_server:
   ros__parameters:
@@ -35,9 +38,9 @@ row_coverage_server:
 bt_navigator:
   ros__parameters:
     use_sim_time: True
-    global_frame: map
+    global_frame: solar_panel
     robot_base_frame: base_link
-    odom_topic: /odometry/global
+    odom_topic: /odometry/global/slope
     bt_loop_duration: 10
     default_server_timeout: 20
     # 'default_coverage_bt_xml' uses defaults:
@@ -109,7 +112,7 @@ local_costmap:
     ros__parameters:
       update_frequency: 5.0
       publish_frequency: 2.0
-      global_frame: map
+      global_frame: solar_panel
       robot_base_frame: base_link
       use_sim_time: True
       rolling_window: true
@@ -162,7 +165,7 @@ velocity_smoother:
     min_velocity: [-0.5, 0.0, -2.0]
     max_accel: [2.5, 0.0, 5.2]
     max_decel: [-2.5, 0.0, -5.2]
-    odom_topic: "odometry/global"
+    odom_topic: "odometry/global/slope"
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]
     velocity_timeout: 1.0

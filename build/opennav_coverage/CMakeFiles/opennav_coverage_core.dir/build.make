@@ -308,7 +308,7 @@ libopennav_coverage_core.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_types
 libopennav_coverage_core.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 libopennav_coverage_core.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
 libopennav_coverage_core.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-libopennav_coverage_core.so: /home/manel/turtlebot3_ws/install/fields2cover/lib/libFields2Cover.so
+libopennav_coverage_core.so: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
 libopennav_coverage_core.so: /opt/ros/humble/lib/librcl_lifecycle.so
 libopennav_coverage_core.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
 libopennav_coverage_core.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so

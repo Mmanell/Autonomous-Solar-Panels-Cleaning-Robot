@@ -60,7 +60,7 @@ def generate_launch_description():
         
     return LaunchDescription([
             use_sim_time_arg,
-            ekf_filter_node_odom,
+            #ekf_filter_node_odom,
             ekf_filter_node_map,
             navsat_transform,
             

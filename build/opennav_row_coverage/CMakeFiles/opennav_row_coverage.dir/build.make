@@ -276,7 +276,7 @@ opennav_row_coverage: /home/manel/psolar_ws/install/opennav_coverage_msgs/lib/li
 opennav_row_coverage: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 opennav_row_coverage: /home/manel/psolar_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_c.so
 opennav_row_coverage: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
-opennav_row_coverage: /home/manel/turtlebot3_ws/install/fields2cover/lib/libFields2Cover.so
+opennav_row_coverage: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
 opennav_row_coverage: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9.0.0
 opennav_row_coverage: /opt/ros/humble/lib/libnav2_msgs__rosidl_generator_c.so
 opennav_row_coverage: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_c.so

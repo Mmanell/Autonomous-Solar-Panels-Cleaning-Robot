@@ -251,7 +251,7 @@ FastRTPS_LIBRARY_DEBUG:FILEPATH=FastRTPS_LIBRARY_DEBUG-NOTFOUND
 FastRTPS_LIBRARY_RELEASE:FILEPATH=/opt/ros/humble/lib/libfastrtps.so
 
 //The directory containing a CMake configuration file for Fields2Cover.
-Fields2Cover_DIR:PATH=/home/manel/turtlebot3_ws/build/fields2cover
+Fields2Cover_DIR:PATH=/home/manel/psolar_ws/build/fields2cover
 
 //Path to the gdal-config tool
 GDAL_CONFIG:FILEPATH=/usr/bin/gdal-config

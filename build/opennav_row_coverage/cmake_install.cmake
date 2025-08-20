@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopennav_row_coverage_core.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopennav_row_coverage_core.so"
-         OLD_RPATH "/opt/ros/humble/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/turtlebot3_ws/install/fields2cover/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/fields2cover/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopennav_row_coverage_core.so")
@@ -77,7 +77,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opennav_row_coverage/opennav_row_coverage")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opennav_row_coverage/opennav_row_coverage"
-         OLD_RPATH "/home/manel/psolar_ws/build/opennav_row_coverage:/opt/ros/humble/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/fields2cover/lib:/home/manel/turtlebot3_ws/install/fields2cover/lib:"
+         OLD_RPATH "/home/manel/psolar_ws/build/opennav_row_coverage:/opt/ros/humble/lib:/home/manel/psolar_ws/install/opennav_coverage_msgs/lib:/home/manel/psolar_ws/install/opennav_coverage/lib:/home/manel/psolar_ws/install/fields2cover/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/opennav_row_coverage/opennav_row_coverage")

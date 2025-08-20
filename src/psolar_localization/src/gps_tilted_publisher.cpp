@@ -19,15 +19,15 @@ public: GpsTilted(): Node("gps_tilted"),
     tf_buffer_(this->get_clock()),
     tf_listener_(tf_buffer_)
   {
-    this->declare_parameter<std::string>("target_frame", "map_tilted");
+    this->declare_parameter<std::string>("target_frame", "solar_panel");
     target_frame_ = this->get_parameter("target_frame").as_string();
 
     subscription_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "odometry/gps",
+      "odometry/global",
       10,
       std::bind(&GpsTilted::odometryCallback, this, _1));
 
-    publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odometry/gps_tilted", 10);
+    publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odometry/global/slope", 10);
 
     RCLCPP_INFO(this->get_logger(),
                 "GPS Tilted node started, transforming to '%s' frame.",
@@ -89,24 +89,6 @@ private:
       tf_map_to_tilted.transform.rotation.w
     );
 
-    // Linear velocity vector from odom.twist.twist
-    tf2::Vector3 lin_vel(
-      msg->twist.twist.linear.x,
-      msg->twist.twist.linear.y,
-      msg->twist.twist.linear.z
-    );
-
-    tf2::Vector3 ang_vel(
-      msg->twist.twist.angular.x,
-      msg->twist.twist.angular.y,
-      msg->twist.twist.angular.z
-    );
-
-    tf2::Vector3 ang_vel_rotated = tf2::quatRotate(q, ang_vel);
-
-
-    // Rotate it into the target frame
-    tf2::Vector3 lin_vel_rotated = tf2::quatRotate(q, lin_vel);
 
 
     nav_msgs::msg::Odometry odom_msg;
@@ -117,12 +99,7 @@ private:
     odom_msg.child_frame_id = msg->child_frame_id;
     odom_msg.pose.pose = robot_pose_in_tilted.pose;
     odom_msg.pose.covariance=msg->pose.covariance;
-    odom_msg.twist.twist.linear.x  = lin_vel_rotated.x();
-    odom_msg.twist.twist.linear.y  = lin_vel_rotated.y();
-    odom_msg.twist.twist.linear.z  = lin_vel_rotated.z();
-    odom_msg.twist.twist.angular.x = ang_vel_rotated.x();
-    odom_msg.twist.twist.angular.y = ang_vel_rotated.y();
-    odom_msg.twist.twist.angular.z = ang_vel_rotated.z();
+    odom_msg.twist.twist = msg->twist.twist;
     odom_msg.twist.covariance=msg->twist.covariance;
 
     publisher_->publish(odom_msg);

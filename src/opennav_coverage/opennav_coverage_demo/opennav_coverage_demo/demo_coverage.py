@@ -65,7 +65,7 @@ class CoverageNavigatorTester(Node):
             print('"NavigateCompleteCoverage" action server not available, waiting...')
 
         goal_msg = NavigateCompleteCoverage.Goal()
-        goal_msg.frame_id = 'map'
+        goal_msg.frame_id = 'solar_panel'
         goal_msg.polygons.append(self.toPolygon(field))
 
         print('Navigating to with field of size: ' + str(len(field)) + '...')
@@ -146,12 +146,13 @@ def main():
     navigator.startup()
 
     # Some example field
+    #1m*1m Brosse: 1.2
     field = [
-        [0.0, 0.0],
-        [3.0, 0.0],
-        [3.0, 3.0],
-        [0.0, 3.0],
-        [0.0, 0.0]
+        [0.1, 0.1],
+        [3.5, 0.1],
+        [3.5, 3.5],
+        [0.1, 3.5],
+        [0.1, 0.1]
     ]
     navigator.navigateCoverage(field)
 

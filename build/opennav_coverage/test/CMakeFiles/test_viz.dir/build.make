@@ -462,7 +462,7 @@ test/test_viz: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
 test/test_viz: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 test/test_viz: /opt/ros/humble/lib/librosidl_runtime_c.so
 test/test_viz: /opt/ros/humble/lib/librcutils.so
-test/test_viz: /home/manel/turtlebot3_ws/install/fields2cover/lib/libFields2Cover.so
+test/test_viz: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
 test/test_viz: /usr/lib/libgdal.so
 test/test_viz: test/CMakeFiles/test_viz.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manel/psolar_ws/build/opennav_coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_viz"

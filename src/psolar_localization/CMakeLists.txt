@@ -45,6 +45,9 @@ ament_target_dependencies(tilted_frames_publisher
   tf2
 )
 
+add_executable(cleaning_launcher src/cleaning_launcher.cpp)
+ament_target_dependencies(cleaning_launcher rclcpp nav_msgs)
+
 add_executable(corrected_odometry_publisher src/corrected_odometry_publisher.cpp)
 ament_target_dependencies(corrected_odometry_publisher rclcpp geometry_msgs std_msgs sensor_msgs nav_msgs tf2_ros tf2 ${Eigen_LIBRARIES})
 
@@ -58,6 +61,7 @@ install(TARGETS
   odom_tilted_publisher
   tilted_frames_publisher
   corrected_odometry_publisher
+  cleaning_launcher
   DESTINATION lib/${PROJECT_NAME}
 )
 

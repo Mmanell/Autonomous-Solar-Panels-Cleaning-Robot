@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/manel/psolar_ws/build/psolar_localization
 all: CMakeFiles/gps_tilted_publisher.dir/all
 all: CMakeFiles/odom_tilted_publisher.dir/all
 all: CMakeFiles/tilted_frames_publisher.dir/all
+all: CMakeFiles/cleaning_launcher.dir/all
 all: CMakeFiles/corrected_odometry_publisher.dir/all
 .PHONY : all
 
@@ -79,6 +80,7 @@ clean: CMakeFiles/psolar_localization_uninstall.dir/clean
 clean: CMakeFiles/gps_tilted_publisher.dir/clean
 clean: CMakeFiles/odom_tilted_publisher.dir/clean
 clean: CMakeFiles/tilted_frames_publisher.dir/clean
+clean: CMakeFiles/cleaning_launcher.dir/clean
 clean: CMakeFiles/corrected_odometry_publisher.dir/clean
 .PHONY : clean
 
@@ -141,7 +143,7 @@ CMakeFiles/psolar_localization_uninstall.dir/clean:
 CMakeFiles/gps_tilted_publisher.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_tilted_publisher.dir/build.make CMakeFiles/gps_tilted_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_tilted_publisher.dir/build.make CMakeFiles/gps_tilted_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=3,4 "Built target gps_tilted_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=5,6 "Built target gps_tilted_publisher"
 .PHONY : CMakeFiles/gps_tilted_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -167,7 +169,7 @@ CMakeFiles/gps_tilted_publisher.dir/clean:
 CMakeFiles/odom_tilted_publisher.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/odom_tilted_publisher.dir/build.make CMakeFiles/odom_tilted_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/odom_tilted_publisher.dir/build.make CMakeFiles/odom_tilted_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=5,6 "Built target odom_tilted_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=7,8 "Built target odom_tilted_publisher"
 .PHONY : CMakeFiles/odom_tilted_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -193,7 +195,7 @@ CMakeFiles/odom_tilted_publisher.dir/clean:
 CMakeFiles/tilted_frames_publisher.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilted_frames_publisher.dir/build.make CMakeFiles/tilted_frames_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilted_frames_publisher.dir/build.make CMakeFiles/tilted_frames_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=7,8 "Built target tilted_frames_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=9,10 "Built target tilted_frames_publisher"
 .PHONY : CMakeFiles/tilted_frames_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -213,13 +215,39 @@ CMakeFiles/tilted_frames_publisher.dir/clean:
 .PHONY : CMakeFiles/tilted_frames_publisher.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/cleaning_launcher.dir
+
+# All Build rule for target.
+CMakeFiles/cleaning_launcher.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cleaning_launcher.dir/build.make CMakeFiles/cleaning_launcher.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cleaning_launcher.dir/build.make CMakeFiles/cleaning_launcher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=1,2 "Built target cleaning_launcher"
+.PHONY : CMakeFiles/cleaning_launcher.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cleaning_launcher.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/manel/psolar_ws/build/psolar_localization/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cleaning_launcher.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/manel/psolar_ws/build/psolar_localization/CMakeFiles 0
+.PHONY : CMakeFiles/cleaning_launcher.dir/rule
+
+# Convenience name for target.
+cleaning_launcher: CMakeFiles/cleaning_launcher.dir/rule
+.PHONY : cleaning_launcher
+
+# clean rule for target.
+CMakeFiles/cleaning_launcher.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cleaning_launcher.dir/build.make CMakeFiles/cleaning_launcher.dir/clean
+.PHONY : CMakeFiles/cleaning_launcher.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/corrected_odometry_publisher.dir
 
 # All Build rule for target.
 CMakeFiles/corrected_odometry_publisher.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/corrected_odometry_publisher.dir/build.make CMakeFiles/corrected_odometry_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/corrected_odometry_publisher.dir/build.make CMakeFiles/corrected_odometry_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=1,2 "Built target corrected_odometry_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/psolar_localization/CMakeFiles --progress-num=3,4 "Built target corrected_odometry_publisher"
 .PHONY : CMakeFiles/corrected_odometry_publisher.dir/all
 
 # Build rule for subdir invocation for target.

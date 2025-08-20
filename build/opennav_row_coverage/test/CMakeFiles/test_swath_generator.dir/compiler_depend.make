@@ -329,7 +329,7 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
   /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-typed-test.h \
   /opt/ros/humble/src/gtest_vendor/include/gtest/gtest_pred_impl.h \
   /home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage/include/opennav_row_coverage/utils.hpp \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/tinyxml2.h \
+  /home/manel/psolar_ws/install/fields2cover/include/tinyxml2.h \
   /usr/include/c++/11/climits \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -342,8 +342,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/cstring \
   /home/manel/psolar_ws/install/opennav_coverage/include/opennav_coverage/types.hpp \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types.h \
   /usr/include/gdal/ogr_geometry.h \
   /usr/include/gdal/cpl_conv.h \
   /usr/include/gdal/cpl_port.h \
@@ -383,8 +383,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
   /usr/include/gdal/ogr_spatialref.h \
   /usr/include/gdal/cpl_string.h \
   /usr/include/gdal/ogr_srs_api.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Point.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometry.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Point.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry.h \
   /usr/include/gdal/ogr_core.h \
   /usr/include/boost/math/constants/constants.hpp \
   /usr/include/boost/math/tools/config.hpp \
@@ -939,72 +939,72 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
   /usr/include/boost/math/constants/calculate_constants.hpp \
   /usr/include/boost/math/special_functions/trunc.hpp \
   /usr/include/boost/math/policies/error_handling.hpp \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometry_impl.hpp \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry_impl.hpp \
   /usr/include/gdal/cpl_conv.h \
   /usr/include/geos_c.h \
   /usr/include/geos/export.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/MultiPoint.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometries.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometries_impl.hpp \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/LinearRing.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/LineString.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/MultiLineString.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Cell.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Cells.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Strip.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Field.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Swath.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Swaths.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Route.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiPoint.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries_impl.hpp \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LinearRing.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LineString.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiLineString.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cell.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cells.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Strip.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Field.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swath.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swaths.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Route.h \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Path.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Path.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/OptimizationParams.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Robot.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/OptimizationParams.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Robot.h \
   /usr/include/c++/11/optional \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/random.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/random.h \
   /usr/include/c++/11/random \
   /usr/include/c++/11/bits/random.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
   /usr/include/c++/11/bits/random.tcc \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/transformation.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/transformation.h \
   /usr/include/gdal/ogr_spatialref.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/parser.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/visualizer.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/base_objective.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/hg_objective.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/rem_area.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/sg_objective.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/n_swath.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/field_coverage.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/overlaps.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/swath_length.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/rp_objective.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/direct_dist_path_obj.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/complete_turn_path_obj.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/pp_objective.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/turning_base.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/path_length.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/headland_generator/headland_generator_base.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/headland_generator/constant_headland.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base_impl.hpp \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/swath_generator/brute_force.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/single_cell_swaths_order_base.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/boustrophedon_order.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/snake_order.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/spiral_order.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/custom_order.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves_cc.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves_hc.h \
-  /home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/path_planning.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/parser.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/visualizer.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/base_objective.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/hg_objective.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rem_area.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/sg_objective.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/n_swath.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/field_coverage.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/overlaps.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/swath_length.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rp_objective.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/direct_dist_path_obj.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/complete_turn_path_obj.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/pp_objective.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/turning_base.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/path_length.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/headland_generator_base.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/constant_headland.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base_impl.hpp \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/brute_force.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/single_cell_swaths_order_base.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/boustrophedon_order.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/snake_order.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/spiral_order.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/custom_order.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves_cc.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves_hc.h \
+  /home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/path_planning.h \
   /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/compute_coverage_path.hpp \
   /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__struct.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
@@ -1591,8 +1591,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
@@ -1609,11 +1607,7 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp:
 
@@ -1747,8 +1741,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
@@ -1843,8 +1835,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/future_return_code.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_options.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
@@ -1868,8 +1858,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 
@@ -1930,8 +1918,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
-
-/opt/ros/humble/include/tracetools/tracetools/config.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
 
@@ -1997,9 +1983,13 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/visibility_control.hpp:
 
 /usr/include/c++/11/unordered_set:
 
@@ -2008,6 +1998,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
+
+/opt/ros/humble/include/rmw/rmw/qos_profiles.h:
 
 /opt/ros/humble/include/rmw/rmw/publisher_options.h:
 
@@ -2073,6 +2065,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
+/opt/ros/humble/include/rcutils/rcutils/logging.h:
+
 /usr/include/kdl/frames.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
@@ -2080,6 +2074,10 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rmw/rmw/types.h:
 
 /opt/ros/humble/include/rcl/rcl/types.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
+
+/opt/ros/humble/include/rcl/rcl/macros.h:
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
@@ -2123,11 +2121,9 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/clear_fwd.hpp:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries.h:
+
 /usr/include/boost/mpl/list/aux_/push_back.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Robot.h:
-
-/usr/include/boost/mpl/pop_front_fwd.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
@@ -2147,11 +2143,11 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/preprocessor/control/detail/while.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Swaths.h:
-
 /usr/include/boost/preprocessor/logical/compl.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
+
+/usr/include/boost/mpl/aux_/type_wrapper.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -2162,6 +2158,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/mpl/void_fwd.hpp:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/n_swath.h:
 
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
 
@@ -2177,9 +2175,17 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/preprocessor/repeat.hpp:
 
-/usr/include/boost/preprocessor/control/if.hpp:
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/direct_dist_path_obj.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cell.h:
+
+/usr/include/boost/preprocessor/control/iif.hpp:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/boost/mpl/aux_/largest_int.hpp:
+
+/usr/include/boost/preprocessor/control/if.hpp:
 
 /usr/include/boost/preprocessor/comma_if.hpp:
 
@@ -2233,10 +2239,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/visibility_control.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/MultiLineString.h:
-
 /opt/ros/humble/include/rcl/rcl/subscription.h:
 
 /usr/include/boost/mpl/aux_/config/static_constant.hpp:
@@ -2255,25 +2257,25 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/aux_/na.hpp:
 
+/usr/include/boost/mpl/list/list20.hpp:
+
 /usr/include/boost/predef/os/bsd/net.h:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/visualizer.h:
+
 /usr/include/boost/mpl/list.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Point.h:
 
 /usr/include/boost/mpl/deref.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
-
-/usr/include/boost/mpl/list/list20.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/sg_objective.h:
 
 /opt/ros/humble/include/tracetools/tracetools/tracetools.h:
 
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__builder.hpp:
 
 /usr/include/boost/math/policies/policy.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/parser.h:
 
 /usr/include/boost/math/tools/cxx03_warn.hpp:
 
@@ -2282,6 +2284,10 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp:
 
 /usr/include/boost/math/tools/user.hpp:
+
+/usr/include/boost/type_traits/integral_constant.hpp:
+
+/usr/include/boost/type_traits/add_reference.hpp:
 
 /usr/include/boost/type_traits/type_identity.hpp:
 
@@ -2307,7 +2313,7 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometry.h:
+/usr/include/boost/mpl/pop_front_fwd.hpp:
 
 /usr/include/c++/11/tr1/ell_integral.tcc:
 
@@ -2335,8 +2341,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/gdal/cpl_vsi.h:
 
-/usr/include/boost/mpl/list/aux_/tag.hpp:
-
 /usr/include/limits.h:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
@@ -2345,19 +2349,23 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/aux_/static_cast.hpp:
 
-/usr/include/c++/11/tr1/hypergeometric.tcc:
+/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/base_objective.h:
+/usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /usr/include/boost/preprocessor/list/reverse.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Swath.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LinearRing.h:
 
 /usr/include/boost/mpl/bool.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/boost/mpl/vector/vector20.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
+/usr/include/c++/11/tr1/bessel_function.tcc:
 
 /usr/include/boost/type_traits/declval.hpp:
 
@@ -2368,6 +2376,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/overlaps.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
@@ -2399,13 +2409,13 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/gdal/ogr_geometry.h:
 
-/usr/include/boost/preprocessor/control/iif.hpp:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover.h:
 
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/boost/mpl/aux_/largest_int.hpp:
+/usr/include/boost/mpl/aux_/has_size.hpp:
 
 /usr/include/boost/type_traits/is_float.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
@@ -2419,6 +2429,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/parser.h:
+
 /usr/include/boost/preprocessor/detail/auto_rec.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
@@ -2431,11 +2443,9 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
-/usr/include/boost/type_traits/integral_constant.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/future_return_code.hpp:
 
-/usr/include/boost/type_traits/add_reference.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/tinyxml2.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
@@ -2469,11 +2479,17 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/pop_back_fwd.hpp:
 
+/usr/include/boost/range/detail/extract_optional_type.hpp:
+
 /opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-param-util.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/boost/mpl/aux_/push_front_impl.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/turning_base.h:
 
 /usr/include/boost/mpl/integral_c_fwd.hpp:
 
@@ -2491,9 +2507,17 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/c++/11/bits/invoke.h:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/complete_turn_path_obj.h:
+
 /usr/include/boost/preprocessor/arithmetic/sub.hpp:
 
 /usr/include/boost/mpl/list/aux_/O1_size.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry.h:
+
+/usr/include/c++/11/cstring:
+
+/usr/include/c++/11/bits/atomic_futex.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
 
@@ -2523,6 +2547,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
 
+/usr/include/c++/11/bits/stl_tree.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
 /usr/include/boost/mpl/aux_/has_begin.hpp:
@@ -2533,9 +2559,9 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/aux_/inserter_algorithm.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/logging.h:
+/opt/ros/humble/include/tracetools/tracetools/config.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometry_impl.hpp:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/hg_objective.h:
 
 /usr/include/boost/config/platform/linux.hpp:
 
@@ -2549,13 +2575,13 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/boost/preprocessor/list/fold_right.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/tinyxml2.h:
 
 /usr/include/boost/mpl/assert.hpp:
 
@@ -2603,10 +2629,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-printers.h:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
-
-/usr/include/boost/mpl/list/aux_/iterator.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
 
 /usr/include/boost/config/detail/suffix.hpp:
@@ -2623,8 +2645,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
-/usr/include/boost/preprocessor/cat.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /usr/include/gdal/cpl_port.h:
@@ -2634,6 +2654,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/c++/11/tuple:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rp_objective.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
 
@@ -2673,6 +2695,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/predef/architecture/x86/32.h:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/headland_generator_base.h:
+
 /usr/include/c++/11/cmath:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
@@ -2682,6 +2706,12 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/c++/11/ext/atomicity.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/sg_objective.h:
 
 /usr/include/assert.h:
 
@@ -2725,8 +2755,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/strings.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/single_cell_swaths_order_base.h:
-
 /usr/include/boost/preprocessor/facilities/empty.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
@@ -2765,8 +2793,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/type_traits/conditional.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometries.h:
-
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
@@ -2780,8 +2806,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/random.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
@@ -2813,6 +2837,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/field_coverage.h:
+
 /usr/include/c++/11/bits/stl_set.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
@@ -2820,6 +2846,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
 
 /usr/include/c++/11/algorithm:
+
+/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-internal.h:
 
 /usr/include/boost/mpl/aux_/contains_impl.hpp:
 
@@ -2838,8 +2866,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/MultiPoint.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
@@ -2869,15 +2895,17 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/c++/11/backward/binders.h:
 
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
 /usr/include/boost/preprocessor/detail/is_binary.hpp:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/single_cell_swaths_order_base.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
 
 /usr/include/c++/11/bits/hash_bytes.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves_cc.h:
 
 /usr/include/boost/lexical_cast/detail/inf_nan.hpp:
 
@@ -2896,10 +2924,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/mpl/push_front_fwd.hpp:
 
 /usr/include/boost/mpl/int.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/usr/include/c++/11/streambuf:
 
 /usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
@@ -2983,6 +3007,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/aux_/arity.hpp:
 
+/usr/include/boost/iterator/iterator_concepts.hpp:
+
 /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h:
 
 /usr/include/boost/mpl/aux_/size_impl.hpp:
@@ -3063,7 +3089,11 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
 
+/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-test-part.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Strip.h:
 
 /usr/include/boost/math/special_functions/math_fwd.hpp:
 
@@ -3080,6 +3110,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/mpl/equal_to.hpp:
 
 /usr/include/boost/math/constants/constants.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/boost/type_traits/is_scalar.hpp:
 
@@ -3133,25 +3165,19 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/list/list0.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/c++/11/limits:
 
 /opt/ros/humble/include/rcl/rcl/wait.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Point.h:
-
 /usr/include/c++/11/bits/predefined_ops.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves_hc.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/11/bits/specfun.h:
-
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
-
-/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:
 
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__struct.hpp:
 
@@ -3162,8 +3188,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/stdc-predef.h:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types.h:
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-type-util.h:
 
@@ -3183,10 +3207,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/c++/11/bits/charconv.h:
 
-/usr/include/c++/11/cstring:
-
-/usr/include/c++/11/bits/atomic_futex.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -3196,6 +3216,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/c++/11/backward/auto_ptr.h:
 
 /usr/include/boost/assert.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves.h:
 
 /usr/include/gdal/ogr_srs_api.h:
 
@@ -3217,6 +3239,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/c++/11/typeinfo:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/spiral_order.h:
+
 /usr/include/c++/11/exception:
 
 /usr/include/c++/11/bits/nested_exception.h:
@@ -3226,6 +3250,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/preprocessor/logical/and.hpp:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/brute_force.h:
 
 /usr/include/x86_64-linux-gnu/sys/wait.h:
 
@@ -3268,6 +3294,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp:
 
 /usr/include/boost/iterator/iterator_facade.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swath.h:
 
 /usr/include/boost/config/no_tr1/cmath.hpp:
 
@@ -3367,6 +3395,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/alloca.h:
 
+/usr/include/c++/11/cstdio:
+
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
 /usr/include/boost/mpl/int_fwd.hpp:
@@ -3388,6 +3418,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/c++/11/cerrno:
 
 /usr/include/boost/mpl/comparison.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/OptimizationParams.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -3415,8 +3447,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/path_planning.h:
-
 /usr/include/boost/type_traits/is_integral.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
@@ -3428,10 +3458,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/src/gtest_vendor/include/gtest/internal/custom/gtest-printers.h:
 
 /usr/include/boost/type_traits/make_void.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
-
-/usr/include/c++/11/ios:
 
 /usr/include/c++/11/utility:
 
@@ -3477,8 +3503,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/snake_order.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
@@ -3504,8 +3528,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/unistd.h:
 
 /usr/include/boost/exception/exception.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-death-test.h:
 
@@ -3559,6 +3581,10 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/preprocessor/detail/check.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/rem_area.h:
+
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/include/boost/preprocessor/debug/error.hpp:
@@ -3568,10 +3594,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/stl_algo.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/visualizer.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
@@ -3588,8 +3610,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/rp_objective.h:
 
 /usr/include/boost/predef/detail/test.h:
 
@@ -3673,10 +3693,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/preprocessor/array/size.hpp:
 
-/usr/include/boost/mpl/aux_/type_wrapper.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/swath_generator/brute_force.h:
-
 /usr/include/boost/preprocessor/repetition/enum_params.hpp:
 
 /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
@@ -3692,6 +3708,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/mpl/aux_/begin_end_impl.hpp:
 
 /usr/include/boost/range/empty.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Field.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
 
@@ -3715,6 +3733,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/iterator/advance.hpp:
 
+/usr/include/boost/mpl/find_if.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/boost/numeric/conversion/converter_policies.hpp:
@@ -3726,6 +3746,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/base_objective.h:
 
 /usr/include/boost/mpl/apply_wrap.hpp:
 
@@ -3805,8 +3827,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/fold.hpp:
 
-/usr/include/boost/mpl/aux_/has_size.hpp:
-
 /usr/include/c++/11/bits/move.h:
 
 /usr/include/boost/mpl/aux_/fold_impl.hpp:
@@ -3855,6 +3875,10 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/vector/vector0.hpp:
 
+/usr/include/boost/mpl/list/aux_/tag.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Path.h:
+
 /usr/include/boost/mpl/aux_/config/typeof.hpp:
 
 /usr/include/boost/mpl/vector/aux_/front.hpp:
@@ -3887,8 +3911,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/vector/aux_/clear.hpp:
 
-/usr/include/boost/predef/library/c/gnu.h:
-
 /usr/include/boost/preprocessor/logical/bool.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
@@ -3899,13 +3921,15 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/mpl/plus.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/swath_length.h:
-
 /usr/include/boost/mpl/aux_/preprocessor/params.hpp:
 
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__struct.hpp:
 
 /usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/pp_objective.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
@@ -3920,8 +3944,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/c++/11/bits/exception_defines.h:
 
 /usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/pp_objective.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp:
 
@@ -3947,8 +3969,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/range/distance.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/custom_order.h:
-
 /usr/include/c++/11/bits/std_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -3962,6 +3982,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/transformation.h:
 
 /usr/include/boost/mpl/advance.hpp:
 
@@ -4019,17 +4041,11 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/math/tools/precision.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Cell.h:
-
 /usr/include/boost/limits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
 /usr/include/boost/range/detail/common.hpp:
-
-/usr/include/boost/lexical_cast/detail/widest_char.hpp:
-
-/usr/include/boost/type_traits/is_constructible.hpp:
 
 /usr/include/boost/type_traits/is_destructible.hpp:
 
@@ -4038,6 +4054,12 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/type_traits/is_reference.hpp:
 
 /usr/include/boost/type_traits/is_lvalue_reference.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/usr/include/c++/11/ios:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/utils/random.h:
 
 /usr/include/boost/type_traits/is_function.hpp:
 
@@ -4064,6 +4086,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:
 
 /usr/include/boost/iterator/iterator_traits.hpp:
+
+/usr/include/boost/type_traits/intrinsics.hpp:
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-string.h:
 
@@ -4092,10 +4116,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/type_traits/is_pointer.hpp:
 
 /usr/include/boost/type_traits/is_class.hpp:
-
-/usr/include/boost/range/detail/extract_optional_type.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves.h:
 
 /usr/include/boost/type_traits/is_volatile.hpp:
 
@@ -4139,15 +4159,13 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/range/functions.hpp:
 
-/opt/ros/humble/include/rmw/rmw/qos_profiles.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/OptimizationParams.h:
-
 /usr/include/boost/range/begin.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_adapter.hpp:
 
 /usr/include/boost/range/mutable_iterator.hpp:
+
+/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
 
 /usr/include/boost/type_traits/is_const.hpp:
 
@@ -4156,12 +4174,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/range/const_iterator.hpp:
 
 /usr/include/boost/range/detail/implementation_help.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
-
-/opt/ros/humble/include/rcl/rcl/macros.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/LineString.h:
 
 /usr/include/boost/range/size_type.hpp:
 
@@ -4211,6 +4223,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/type_traits/is_signed.hpp:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/direct_dist_path_obj.h:
+
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/boost/type_traits/is_unsigned.hpp:
@@ -4250,6 +4264,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/boost/core/noncopyable.hpp:
 
 /usr/include/boost/iterator/distance.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/snake_order.h:
 
 /usr/include/boost/mpl/vector/aux_/vector0.hpp:
 
@@ -4299,6 +4315,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/current_function.hpp:
 
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiPoint.h:
+
 /usr/include/boost/lexical_cast/try_lexical_convert.hpp:
 
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.hpp:
@@ -4307,9 +4325,7 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/lexical_cast/detail/is_character.hpp:
 
-/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-test-part.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Geometries_impl.hpp:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/boustrophedon_order.h:
 
 /usr/include/boost/type_traits/is_base_of.hpp:
 
@@ -4341,8 +4357,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/boustrophedon_order.h:
-
 /usr/include/boost/mpl/multiplies.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
@@ -4367,19 +4381,17 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/numeric/conversion/detail/bounds.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/LinearRing.h:
-
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
 
 /usr/include/boost/type_traits/has_left_shift.hpp:
 
 /usr/include/boost/core/swap.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves.h:
-
 /usr/include/wctype.h:
 
 /usr/include/boost/container/detail/std_fwd.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base.h:
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp:
 
@@ -4399,17 +4411,15 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/boost/math/special_functions/detail/round_fwd.hpp:
 
+/usr/include/boost/lexical_cast/detail/widest_char.hpp:
+
+/usr/include/boost/type_traits/is_constructible.hpp:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometry_impl.hpp:
+
 /usr/include/boost/predef/other/endian.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/reeds_shepp_curves_hc.h:
-
 /usr/include/boost/predef/library/c/_prefix.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
-
-/opt/ros/humble/include/rcl/rcl/client.h:
-
-/usr/include/boost/predef/detail/_cassert.h:
 
 /usr/include/boost/predef/os/macos.h:
 
@@ -4426,8 +4436,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
 
 /usr/include/boost/math/special_functions/fpclassify.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -4455,17 +4463,27 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/geos/export.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Cells.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Geometries_impl.hpp:
 
-/usr/include/c++/11/bits/stl_tree.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Strip.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/LineString.h:
 
-/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/MultiLineString.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Field.h:
+/usr/include/boost/predef/library/c/gnu.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Route.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Cells.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Swaths.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
+
+/opt/ros/humble/include/rcl/rcl/client.h:
+
+/usr/include/boost/predef/detail/_cassert.h:
+
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Route.h:
 
 /usr/include/c++/11/numeric:
 
@@ -4473,61 +4491,43 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 
 /usr/include/c++/11/pstl/glue_numeric_defs.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/types/Path.h:
-
 /usr/include/c++/11/fstream:
 
 /usr/include/boost/type_traits/is_floating_point.hpp:
 
 /usr/include/c++/11/bits/fstream.tcc:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/utils/transformation.h:
+/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/hg_objective.h:
+/usr/include/boost/mpl/list/aux_/iterator.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/types/Robot.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/rem_area.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/swath_length.h:
 
-/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-internal.h:
+/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/n_swath.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/objectives/path_length.h:
 
-/usr/include/boost/type_traits/intrinsics.hpp:
+/usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/field_coverage.h:
+/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:
 
-/usr/include/boost/iterator/iterator_concepts.hpp:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/headland_generator/constant_headland.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/overlaps.h:
+/usr/include/boost/preprocessor/cat.hpp:
 
-/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base_impl.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/complete_turn_path_obj.h:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/objectives/path_length.h:
+/usr/include/c++/11/streambuf:
 
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/route_planning/custom_order.h:
 
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/headland_generator/headland_generator_base.h:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/dubins_curves_cc.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
-
-/usr/include/c++/11/tr1/bessel_function.tcc:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/route_planning/spiral_order.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/headland_generator/constant_headland.h:
-
-/usr/include/c++/11/cstdio:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base.h:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/boost/mpl/find_if.hpp:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/swath_generator/swath_generator_base_impl.hpp:
+/home/manel/psolar_ws/install/fields2cover/include/fields2cover/path_planning/path_planning.h:
 
 /usr/include/c++/11/ctime:
 
@@ -4578,8 +4578,6 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
-
-/home/manel/turtlebot3_ws/install/fields2cover/include/fields2cover/path_planning/turning_base.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_info.hpp:
 
@@ -4644,6 +4642,8 @@ test/CMakeFiles/test_swath_generator.dir/test_swath_generator.cpp.o: /home/manel
 /usr/include/c++/11/mutex:
 
 /usr/include/c++/11/ratio:
+
+/usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/bits/unique_lock.h:
 

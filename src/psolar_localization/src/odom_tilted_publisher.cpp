@@ -8,9 +8,9 @@ public:
   OdomTiltedNode()
   : Node("odom_tilted_node")
   {
-    publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odom_tilted", 10);
+    publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odometry/global/panel", 10);
     subscription_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "odom",
+      "odometry/global",
       10,
       std::bind(&OdomTiltedNode::odomCallback, this, std::placeholders::_1)
     );
@@ -29,9 +29,11 @@ private:
     new_msg.child_frame_id = msg->child_frame_id;
     new_msg.pose = msg->pose;
     new_msg.twist = msg->twist;
+    new_msg.pose.pose.position.x += 0.1;   // add 0.1 to x
+    new_msg.pose.pose.position.y -= 0.2;   // subtract 0.2 from y
 
     // Change frame id
-    new_msg.header.frame_id = "odom_tilted";
+    new_msg.header.frame_id = "solar_panel";
 
     publisher_->publish(new_msg);
   }

@@ -1,7 +1,8 @@
-/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch/dual_ekf_navsat.launch.py
-/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch/localization_on_slope.launch.py
+/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch/localization_2d.launch.py
+/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//launch/localization_3d.launch.py
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/local_ekf_params_2d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/navsat_params_3d.yaml
+/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/which_cmd.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params_3d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/local_ekf_params_3d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params_2d.yaml
@@ -10,7 +11,7 @@
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/odom_tilted_publisher
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/tilted_frames_publisher
 /home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/corrected_odometry_publisher
-/home/manel/psolar_ws/install/psolar_localization/include/include/psolar_localization/corrected_odometry_publisher.hpp
+/home/manel/psolar_ws/install/psolar_localization/lib/psolar_localization/cleaning_launcher
 /home/manel/psolar_ws/install/psolar_localization/share/ament_index/resource_index/package_run_dependencies/psolar_localization
 /home/manel/psolar_ws/install/psolar_localization/share/ament_index/resource_index/parent_prefix_path/psolar_localization
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization/environment/ament_prefix_path.sh

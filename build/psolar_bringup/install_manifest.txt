@@ -1,5 +1,6 @@
 /home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup//launch/psolar.launch.py
 /home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup//rviz/opennav_rviz.rviz
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup//rviz/openav_rviz.rviz
 /home/manel/psolar_ws/install/psolar_bringup/share/ament_index/resource_index/package_run_dependencies/psolar_bringup
 /home/manel/psolar_ws/install/psolar_bringup/share/ament_index/resource_index/parent_prefix_path/psolar_bringup
 /home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/ament_prefix_path.sh

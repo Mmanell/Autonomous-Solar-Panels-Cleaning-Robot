@@ -148,9 +148,9 @@
             <horizontal_position_noise>0.1</horizontal_position_noise>
             <vertical_position_noise>0.1</vertical_position_noise>
               <position_covariance>
-                <x>1.0</x>  <!-- Diagonal elements -->
-                <y>1.0</y>
-                <z>4.0</z>  <!-- Typically higher for altitude -->
+                <x>0.01</x>
+                <y>0.01</y>
+                <z>0.04</z>
               </position_covariance>          
         </navsat>
           <!-- Processes the NavSat sensor -->

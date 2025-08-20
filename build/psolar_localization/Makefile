@@ -237,6 +237,19 @@ tilted_frames_publisher/fast:
 .PHONY : tilted_frames_publisher/fast
 
 #=============================================================================
+# Target rules for targets named cleaning_launcher
+
+# Build rule for target.
+cleaning_launcher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cleaning_launcher
+.PHONY : cleaning_launcher
+
+# fast build rule for target.
+cleaning_launcher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cleaning_launcher.dir/build.make CMakeFiles/cleaning_launcher.dir/build
+.PHONY : cleaning_launcher/fast
+
+#=============================================================================
 # Target rules for targets named corrected_odometry_publisher
 
 # Build rule for target.
@@ -248,6 +261,30 @@ corrected_odometry_publisher: cmake_check_build_system
 corrected_odometry_publisher/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/corrected_odometry_publisher.dir/build.make CMakeFiles/corrected_odometry_publisher.dir/build
 .PHONY : corrected_odometry_publisher/fast
+
+src/cleaning_launcher.o: src/cleaning_launcher.cpp.o
+.PHONY : src/cleaning_launcher.o
+
+# target to build an object file
+src/cleaning_launcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cleaning_launcher.dir/build.make CMakeFiles/cleaning_launcher.dir/src/cleaning_launcher.cpp.o
+.PHONY : src/cleaning_launcher.cpp.o
+
+src/cleaning_launcher.i: src/cleaning_launcher.cpp.i
+.PHONY : src/cleaning_launcher.i
+
+# target to preprocess a source file
+src/cleaning_launcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cleaning_launcher.dir/build.make CMakeFiles/cleaning_launcher.dir/src/cleaning_launcher.cpp.i
+.PHONY : src/cleaning_launcher.cpp.i
+
+src/cleaning_launcher.s: src/cleaning_launcher.cpp.s
+.PHONY : src/cleaning_launcher.s
+
+# target to generate assembly for a file
+src/cleaning_launcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cleaning_launcher.dir/build.make CMakeFiles/cleaning_launcher.dir/src/cleaning_launcher.cpp.s
+.PHONY : src/cleaning_launcher.cpp.s
 
 src/corrected_odometry_publisher.o: src/corrected_odometry_publisher.cpp.o
 .PHONY : src/corrected_odometry_publisher.o
@@ -360,10 +397,14 @@ help:
 	@echo "... test"
 	@echo "... psolar_localization_uninstall"
 	@echo "... uninstall"
+	@echo "... cleaning_launcher"
 	@echo "... corrected_odometry_publisher"
 	@echo "... gps_tilted_publisher"
 	@echo "... odom_tilted_publisher"
 	@echo "... tilted_frames_publisher"
+	@echo "... src/cleaning_launcher.o"
+	@echo "... src/cleaning_launcher.i"
+	@echo "... src/cleaning_launcher.s"
 	@echo "... src/corrected_odometry_publisher.o"
 	@echo "... src/corrected_odometry_publisher.i"
 	@echo "... src/corrected_odometry_publisher.s"

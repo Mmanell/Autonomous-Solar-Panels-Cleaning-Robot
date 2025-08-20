@@ -514,7 +514,7 @@ test/test_utils: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator
 test/test_utils: /opt/ros/humble/lib/librosidl_runtime_c.so
 test/test_utils: /opt/ros/humble/lib/librcutils.so
 test/test_utils: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-test/test_utils: /home/manel/turtlebot3_ws/install/fields2cover/lib/libFields2Cover.so
+test/test_utils: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
 test/test_utils: /usr/lib/libgdal.so
 test/test_utils: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9.0.0
 test/test_utils: test/CMakeFiles/test_utils.dir/link.txt

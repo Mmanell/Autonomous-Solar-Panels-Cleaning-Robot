@@ -362,7 +362,7 @@ opennav_coverage: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
 opennav_coverage: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 opennav_coverage: /opt/ros/humble/lib/librosidl_runtime_c.so
 opennav_coverage: /opt/ros/humble/lib/librcutils.so
-opennav_coverage: /home/manel/turtlebot3_ws/install/fields2cover/lib/libFields2Cover.so
+opennav_coverage: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
 opennav_coverage: /usr/lib/libgdal.so
 opennav_coverage: CMakeFiles/opennav_coverage.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manel/psolar_ws/build/opennav_coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opennav_coverage"

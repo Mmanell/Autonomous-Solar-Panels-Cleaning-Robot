@@ -11,7 +11,7 @@ public:
     TiltedFramesPublisher()
     : Node("tilted_frames_publisher")
     {
-        constexpr double roll_angle_deg = 10.0; // Tilt angle in degrees
+        constexpr double roll_angle_deg = 5.0; // Tilt angle in degrees
         double roll_angle_rad = tf2Radians(roll_angle_deg);
 
         static_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
@@ -35,8 +35,8 @@ private:
             t.header.stamp = this->get_clock()->now();
             t.header.frame_id = parent;
             t.child_frame_id = child;
-            t.transform.translation.x = 0.0;
-            t.transform.translation.y = 0.0;
+            t.transform.translation.x = -0.1;
+            t.transform.translation.y = 0.2;
             t.transform.translation.z = 0.0;
             t.transform.rotation.x = q.x();
             t.transform.rotation.y = q.y();
@@ -46,7 +46,7 @@ private:
         };
 
         // Create both transforms
-        auto map_to_map_tilted   = make_transform("map",  "map_tilted");
+        auto map_to_map_tilted   = make_transform("map",  "solar_panel");
         // auto odom_to_odom_tilted = make_transform("odom", "odom_tilted");
         // auto base_to_base_tilted = make_transform("base_link", "base_link_tilted");
         // auto footprint_to_footprint_tilted = make_transform("base_footprint", "base_footprint_tilted");

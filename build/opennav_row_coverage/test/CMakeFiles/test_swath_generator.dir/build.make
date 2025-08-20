@@ -514,7 +514,7 @@ test/test_swath_generator: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl
 test/test_swath_generator: /opt/ros/humble/lib/librosidl_runtime_c.so
 test/test_swath_generator: /opt/ros/humble/lib/librcutils.so
 test/test_swath_generator: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-test/test_swath_generator: /home/manel/turtlebot3_ws/install/fields2cover/lib/libFields2Cover.so
+test/test_swath_generator: /home/manel/psolar_ws/install/fields2cover/lib/libFields2Cover.so
 test/test_swath_generator: /usr/lib/libgdal.so
 test/test_swath_generator: /home/manel/psolar_ws/install/fields2cover/lib/libtinyxml2.so.9.0.0
 test/test_swath_generator: test/CMakeFiles/test_swath_generator.dir/link.txt
