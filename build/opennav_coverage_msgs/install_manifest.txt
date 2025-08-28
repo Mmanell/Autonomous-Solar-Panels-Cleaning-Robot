@@ -11,6 +11,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__struct.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/coordinate.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/row_swath_mode.h
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/fields.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/path_mode.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/rosidl_generator_c__visibility_control.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/swath_mode.h
@@ -22,8 +23,11 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__functions.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__type_support.h
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__type_support.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.h
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__struct.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__type_support.h
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__functions.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__type_support.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__struct.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__functions.c
@@ -46,6 +50,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__functions.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__type_support.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__functions.c
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__functions.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__struct.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__struct.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__functions.h
@@ -66,6 +71,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__rosidl_typesupport_fastrtps_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__rosidl_typesupport_fastrtps_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__rosidl_typesupport_fastrtps_c.h
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__rosidl_typesupport_fastrtps_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__rosidl_typesupport_fastrtps_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__rosidl_typesupport_fastrtps_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h
@@ -88,6 +94,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/path_mode.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/swath_mode.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/row_swath_mode.hpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/fields.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/route_mode.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/swath.hpp
@@ -114,6 +121,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__type_support.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__struct.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__traits.hpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__traits.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__struct.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__builder.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__struct.hpp
@@ -122,10 +130,13 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__struct.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__builder.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__type_support.hpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__type_support.hpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__struct.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__builder.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__builder.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__builder.hpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__builder.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__type_support.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__rosidl_typesupport_fastrtps_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__rosidl_typesupport_fastrtps_cpp.hpp
@@ -139,6 +150,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__rosidl_typesupport_fastrtps_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__rosidl_typesupport_fastrtps_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__rosidl_typesupport_fastrtps_cpp.hpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__rosidl_typesupport_fastrtps_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.so
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__rosidl_typesupport_introspection_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__type_support.c
@@ -155,9 +167,11 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__rosidl_typesupport_introspection_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__type_support.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__rosidl_typesupport_introspection_c.h
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__type_support.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__rosidl_typesupport_introspection_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__rosidl_typesupport_introspection_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__type_support.c
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__rosidl_typesupport_introspection_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__type_support.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__rosidl_typesupport_introspection_c.h
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__rosidl_typesupport_introspection_c.h
@@ -173,11 +187,13 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__type_support.cpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__type_support.cpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__rosidl_typesupport_introspection_cpp.hpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__type_support.cpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.cpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__type_support.cpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__type_support.cpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__rosidl_typesupport_introspection_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__type_support.cpp
+/home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/fields__rosidl_typesupport_introspection_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__rosidl_typesupport_introspection_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__rosidl_typesupport_introspection_cpp.hpp
 /home/manel/psolar_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__type_support.cpp
@@ -212,6 +228,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath_mode.py
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_headland_mode_s.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_path_mode_s.c
+/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_fields.py
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_row_swath_mode_s.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_route_mode.py
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/__init__.py
@@ -227,12 +244,14 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_route_mode_s.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath_s.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_coordinates.py
+/home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_fields_s.c
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
 /home/manel/psolar_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
 /home/manel/psolar_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_generator_py.so
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinate.idl
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinates.idl
+/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Fields.idl
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/HeadlandMode.idl
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/SwathMode.idl
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/RowSwathMode.idl
@@ -244,6 +263,7 @@
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/action/NavigateCompleteCoverage.idl
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinate.msg
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinates.msg
+/home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Fields.msg
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/HeadlandMode.msg
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/SwathMode.msg
 /home/manel/psolar_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/RowSwathMode.msg

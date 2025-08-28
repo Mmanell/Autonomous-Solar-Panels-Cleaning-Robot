@@ -5,6 +5,7 @@
   "idl_tuples": [
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs:msg/Coordinate.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs:msg/Coordinates.idl",
+    "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs:msg/Fields.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs:msg/HeadlandMode.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs:msg/SwathMode.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs:msg/RowSwathMode.idl",
@@ -102,6 +103,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/Coordinate.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/Coordinates.idl",
+    "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/Fields.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/HeadlandMode.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/SwathMode.idl",
     "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/RowSwathMode.idl",

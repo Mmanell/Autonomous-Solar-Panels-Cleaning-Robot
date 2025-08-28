@@ -6,9 +6,16 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
-
+from nav2_common.launch import RewrittenYaml
+from launch_ros.descriptions import ParameterFile
 
 def generate_launch_description():
+    autostart = True
+    use_sim_time = True
+    param_substitutions = {
+        'use_sim_time': str(use_sim_time),
+        'autostart': str(autostart)}
+
     use_opennav = LaunchConfiguration("use_opennav")
 
     use_opennav_arg = DeclareLaunchArgument(
@@ -73,6 +80,7 @@ def generate_launch_description():
         output="screen",
         parameters=[{"use_sim_time": True}],
     )
+
     cleaning = Node(
         package="psolar_localization",
         executable="cleaning_launcher",
@@ -110,6 +118,24 @@ def generate_launch_description():
     #     parameters=[{"use_sim_time": True}],
     # )
 
+    nav2_params = os.path.join(get_package_share_directory("psolar_bringup"),"config", "to_panel.yaml")
+
+
+    configured_params = ParameterFile(
+        RewrittenYaml(
+            source_file=nav2_params,
+            root_key='',
+            param_rewrites=param_substitutions,
+            convert_types=True),
+            allow_substs=True)
+
+
+
+    # rviz_cmd = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         os.path.join(get_package_share_directory('nav2_bringup'), "launch", 'rviz_launch.py')),
+    # )
+
 
    
     return LaunchDescription([
@@ -118,10 +144,10 @@ def generate_launch_description():
         gazebo,
         rviz,
         localization,
+        twist_mux_launch,
         odom_clone,
         frames_transform,
         cleaning,
-        twist_mux_launch,
         #odom_slope,
         #opennav_launch,
     ])

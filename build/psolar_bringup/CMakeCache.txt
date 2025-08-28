@@ -247,6 +247,9 @@ ament_cmake_core_DIR:PATH=/opt/ros/humble/share/ament_cmake_core/cmake
 //The directory containing a CMake configuration file for ament_cmake_cppcheck.
 ament_cmake_cppcheck_DIR:PATH=/opt/ros/humble/share/ament_cmake_cppcheck/cmake
 
+//The directory containing a CMake configuration file for ament_cmake_cpplint.
+ament_cmake_cpplint_DIR:PATH=/opt/ros/humble/share/ament_cmake_cpplint/cmake
+
 //The directory containing a CMake configuration file for ament_cmake_export_definitions.
 ament_cmake_export_definitions_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_definitions/cmake
 
@@ -321,6 +324,9 @@ ament_pep257_BIN:FILEPATH=/opt/ros/humble/bin/ament_pep257
 
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
+
+//The directory containing a CMake configuration file for nav2_bringup.
+nav2_bringup_DIR:PATH=/opt/ros/humble/share/nav2_bringup/cmake
 
 //Value Computed by CMake
 psolar_bringup_BINARY_DIR:STATIC=/home/manel/psolar_ws/build/psolar_bringup

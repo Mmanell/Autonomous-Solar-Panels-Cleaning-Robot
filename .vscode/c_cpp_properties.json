@@ -22,9 +22,9 @@
         "/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_navigator/include/**",
         "/home/manel/psolar_ws/src/opennav_coverage/opennav_row_coverage/include/**",
         "/home/manel/psolar_ws/src/psolar_decision_making/include/**",
+        "/home/manel/psolar_ws/src/psolar_docking/include/**",
         "/home/manel/psolar_ws/src/psolar_gazebo/include/**",
         "/home/manel/psolar_ws/src/psolar_localization/include/**",
-        "/home/manel/psolar_ws/src/psolar_path_planning/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

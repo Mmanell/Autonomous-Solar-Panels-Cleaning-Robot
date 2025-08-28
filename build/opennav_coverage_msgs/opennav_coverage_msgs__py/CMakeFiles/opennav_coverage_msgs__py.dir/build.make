@@ -71,6 +71,7 @@ opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_c.c
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate.py
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates.py
+opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_fields.py
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode.py
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_swath_mode.py
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_row_swath_mode.py
@@ -84,6 +85,7 @@ opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/action/__init__.py
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate_s.c
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c
+opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_fields_s.c
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_swath_mode_s.c
 opennav_coverage_msgs__py/CMakeFiles/opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_row_swath_mode_s.c
@@ -109,6 +111,7 @@ rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typ
 rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/opennav_coverage_msgs/msg/Coordinate.idl
 rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/opennav_coverage_msgs/msg/Coordinates.idl
+rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/opennav_coverage_msgs/msg/Fields.idl
 rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/opennav_coverage_msgs/msg/HeadlandMode.idl
 rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/opennav_coverage_msgs/msg/SwathMode.idl
 rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/opennav_coverage_msgs/msg/RowSwathMode.idl
@@ -209,6 +212,9 @@ rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate.py: rosidl_generator_p
 rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates.py: rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates.py
 
+rosidl_generator_py/opennav_coverage_msgs/msg/_fields.py: rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/opennav_coverage_msgs/msg/_fields.py
+
 rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode.py: rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode.py
 
@@ -247,6 +253,9 @@ rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate_s.c: rosidl_generator_
 
 rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c: rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c
+
+rosidl_generator_py/opennav_coverage_msgs/msg/_fields_s.c: rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/opennav_coverage_msgs/msg/_fields_s.c
 
 rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c: rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c
@@ -289,6 +298,8 @@ opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordi
 opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate_s.c
 opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates.py
 opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c
+opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_fields.py
+opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_fields_s.c
 opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode.py
 opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c
 opennav_coverage_msgs__py: rosidl_generator_py/opennav_coverage_msgs/msg/_path_components.py

@@ -68,6 +68,7 @@ include CMakeFiles/opennav_coverage_msgs.dir/progress.make
 
 CMakeFiles/opennav_coverage_msgs: /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/Coordinate.msg
 CMakeFiles/opennav_coverage_msgs: /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/Coordinates.msg
+CMakeFiles/opennav_coverage_msgs: /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/Fields.msg
 CMakeFiles/opennav_coverage_msgs: /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/HeadlandMode.msg
 CMakeFiles/opennav_coverage_msgs: /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/SwathMode.msg
 CMakeFiles/opennav_coverage_msgs: /home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/RowSwathMode.msg

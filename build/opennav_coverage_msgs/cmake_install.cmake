@@ -364,6 +364,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opennav_coverage_msgs/msg" TYPE FILE FILES "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/Fields.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opennav_coverage_msgs/msg" TYPE FILE FILES "/home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_adapter/opennav_coverage_msgs/msg/HeadlandMode.idl")
 endif()
 
@@ -405,6 +409,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opennav_coverage_msgs/msg" TYPE FILE FILES "/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/Coordinates.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opennav_coverage_msgs/msg" TYPE FILE FILES "/home/manel/psolar_ws/src/opennav_coverage/opennav_coverage_msgs/msg/Fields.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

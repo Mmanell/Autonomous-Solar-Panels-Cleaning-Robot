@@ -24,7 +24,9 @@ import rclpy
 from rclpy.action import ActionClient
 from rclpy.duration import Duration
 from rclpy.node import Node
-
+from ament_index_python.packages import get_package_share_directory
+from opennav_coverage_msgs.msg import Fields, Coordinates, Coordinate
+from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy
 
 class TaskResult(Enum):
     UNKNOWN = 0
@@ -43,7 +45,20 @@ class CoverageNavigatorTester(Node):
         self.feedback = None
 
         self.coverage_client = ActionClient(self, NavigateCompleteCoverage,
-                                            'navigate_complete_coverage')
+                                                'navigate_complete_coverage')
+        qos_profile = QoSProfile(
+            depth=10,
+            reliability=ReliabilityPolicy.RELIABLE,
+            durability=DurabilityPolicy.TRANSIENT_LOCAL
+        )
+        self.subscription = self.create_subscription(
+            Fields,
+            'field_topic',  # same topic your C++ publisher uses
+            self.field_callback,
+            qos_profile
+        )
+        self.received_fields = []  # store incoming fields
+
 
     def destroy_node(self):
         self.coverage_client.destroy()
@@ -57,6 +72,18 @@ class CoverageNavigatorTester(Node):
             pt.y = coord[1]
             poly.points.append(pt)
         return poly
+    
+    def field_callback(self, msg: Fields):
+        self.received_fields = []
+        for coordinates_msg in msg.fields:
+            field = []
+            for coord in coordinates_msg.coordinates:
+                field.append([coord.axis1, coord.axis2])
+            self.received_fields.append(field)
+        self.get_logger().info(f"Received {len(self.received_fields)} fields")
+
+    
+    
 
     def navigateCoverage(self, field):
         """Send a `NavToPose` action request."""
@@ -65,8 +92,9 @@ class CoverageNavigatorTester(Node):
             print('"NavigateCompleteCoverage" action server not available, waiting...')
 
         goal_msg = NavigateCompleteCoverage.Goal()
-        goal_msg.frame_id = 'solar_panel'
+        goal_msg.frame_id = 'map'
         goal_msg.polygons.append(self.toPolygon(field))
+
 
         print('Navigating to with field of size: ' + str(len(field)) + '...')
         send_goal_future = self.coverage_client.send_goal_async(goal_msg,
@@ -147,13 +175,15 @@ def main():
 
     # Some example field
     #1m*1m Brosse: 1.2
-    field = [
-        [0.2, 0.2],
-        [3.5, 0.2],
-        [3.5, 3.5],
-        [0.2, 3.5],
-        [0.2, 0.2]
-    ]
+    # Wait until at least one field is received
+    print("Waiting for fields to be published...")
+    while rclpy.ok() and not navigator.received_fields:
+        rclpy.spin_once(navigator, timeout_sec=0.5)
+
+    print(f"Got {len(navigator.received_fields)} fields")
+    field = navigator.received_fields[0]  # take the first one for now
+
+   
     navigator.navigateCoverage(field)
 
     i = 0

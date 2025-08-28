@@ -84,6 +84,7 @@ rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: /opt/ros/humble/share
 rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: rosidl_adapter/opennav_coverage_msgs/msg/Coordinate.idl
 rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: rosidl_adapter/opennav_coverage_msgs/msg/Coordinates.idl
+rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: rosidl_adapter/opennav_coverage_msgs/msg/Fields.idl
 rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: rosidl_adapter/opennav_coverage_msgs/msg/HeadlandMode.idl
 rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: rosidl_adapter/opennav_coverage_msgs/msg/SwathMode.idl
 rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h: rosidl_adapter/opennav_coverage_msgs/msg/RowSwathMode.idl
@@ -192,6 +193,18 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__struct.h: rosid
 
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__type_support.h: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__type_support.h
+
+rosidl_generator_c/opennav_coverage_msgs/msg/fields.h: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/fields.h
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.h: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.h
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__struct.h: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__struct.h
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__type_support.h: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__type_support.h
 
 rosidl_generator_c/opennav_coverage_msgs/msg/headland_mode.h: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/headland_mode.h
@@ -307,6 +320,9 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinate__functions.c: ros
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c
 
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c
+
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c: rosidl_generator_c/opennav_coverage_msgs/msg/coordinate.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c
 
@@ -362,10 +378,24 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c.s
 
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c
+
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c > CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.i
+
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.s
+
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.i: cmake_force
@@ -379,7 +409,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.i: cmake_force
@@ -393,7 +423,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.i: cmake_force
@@ -407,7 +437,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.i: cmake_force
@@ -421,7 +451,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.i: cmake_force
@@ -435,7 +465,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.i: cmake_force
@@ -449,7 +479,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.i: cmake_force
@@ -463,7 +493,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.i: cmake_force
@@ -477,7 +507,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o: rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o -MF CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o.d -o CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o -c /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c
 
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.i: cmake_force
@@ -492,6 +522,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/open
 opennav_coverage_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinate__functions.c.o" \
 "CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c.o" \
+"CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o" \
 "CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o" \
 "CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o" \
 "CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o" \
@@ -507,6 +538,7 @@ opennav_coverage_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libopennav_coverage_msgs__rosidl_generator_c.so: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinate__functions.c.o
 libopennav_coverage_msgs__rosidl_generator_c.so: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c.o
+libopennav_coverage_msgs__rosidl_generator_c.so: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c.o
 libopennav_coverage_msgs__rosidl_generator_c.so: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o
 libopennav_coverage_msgs__rosidl_generator_c.so: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o
 libopennav_coverage_msgs__rosidl_generator_c.so: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o
@@ -526,7 +558,7 @@ libopennav_coverage_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_
 libopennav_coverage_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libopennav_coverage_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libopennav_coverage_msgs__rosidl_generator_c.so: CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C shared library libopennav_coverage_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libopennav_coverage_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -557,6 +589,10 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__struct.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__type_support.h
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.c
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.h
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__struct.h
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__type_support.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__struct.h
@@ -585,6 +621,7 @@ CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__struct.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__type_support.h
+CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/fields.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/headland_mode.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/path_components.h
 CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/opennav_coverage_msgs/msg/path_mode.h

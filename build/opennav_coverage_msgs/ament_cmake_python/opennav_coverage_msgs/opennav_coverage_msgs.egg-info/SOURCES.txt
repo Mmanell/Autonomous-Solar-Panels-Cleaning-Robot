@@ -10,6 +10,7 @@ opennav_coverage_msgs/action/_navigate_complete_coverage.py
 opennav_coverage_msgs/msg/__init__.py
 opennav_coverage_msgs/msg/_coordinate.py
 opennav_coverage_msgs/msg/_coordinates.py
+opennav_coverage_msgs/msg/_fields.py
 opennav_coverage_msgs/msg/_headland_mode.py
 opennav_coverage_msgs/msg/_path_components.py
 opennav_coverage_msgs/msg/_path_mode.py

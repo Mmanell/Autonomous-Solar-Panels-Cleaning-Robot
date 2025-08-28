@@ -57,7 +57,7 @@
       <geometry>
         <mesh filename="package://turtlebot3_gazebo/models/turtlebot3_common/meshes/bases/waffle_pi_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="light_black"/>
+      <material name="light_black"/> # the frame id us
     </visual>
 
     <collision>

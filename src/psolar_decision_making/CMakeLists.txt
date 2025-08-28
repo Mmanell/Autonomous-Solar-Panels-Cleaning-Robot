@@ -7,9 +7,25 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(opennav_coverage_msgs REQUIRED)
+find_package(yaml-cpp REQUIRED)
+
+
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+add_executable(panel_publisher src/panel_publisher.cpp)
+ament_target_dependencies(panel_publisher rclcpp opennav_coverage_msgs)
+target_link_libraries(panel_publisher yaml-cpp)
+
+install(TARGETS
+  panel_publisher
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

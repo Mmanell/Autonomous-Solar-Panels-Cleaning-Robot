@@ -249,6 +249,9 @@ CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext.dir/
   rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__type_support.h \
   rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__struct.h \
   rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.h \
+  rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__type_support.h \
+  rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__struct.h \
+  rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.h \
   rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__type_support.h \
   rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
@@ -313,11 +316,13 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h:
 
-rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__struct.h:
-
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__type_support.h:
 
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__struct.h:
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.h:
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__struct.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -339,6 +344,10 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.h:
 
 /usr/include/python3.10/longobject.h:
 
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.h:
+
+/usr/include/linux/stat.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/python3.10/cpython/bytesobject.h:
@@ -352,6 +361,8 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.h:
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -439,10 +450,6 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__type_support.h:
 
 /usr/include/python3.10/methodobject.h:
 
-rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h:
@@ -497,8 +504,6 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__struct.h:
-
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__type_support.h:
 
 /usr/include/python3.10/cpython/traceback.h:
@@ -524,10 +529,6 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__type_support.h:
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/linux/stat.h:
-
-rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.h:
 
 /usr/include/python3.10/cpython/pyctype.h:
 
@@ -628,6 +629,12 @@ rosidl_generator_c/opennav_coverage_msgs/msg/rosidl_generator_c__visibility_cont
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.h:
 
 /usr/include/time.h:
 
@@ -853,6 +860,10 @@ rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__struct.h:
 
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.h:
 
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__struct.h:
+
+rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__struct.h:
+
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__type_support.h:
 
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__struct.h:
@@ -864,5 +875,3 @@ rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverag
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.h:
-
-rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.h:

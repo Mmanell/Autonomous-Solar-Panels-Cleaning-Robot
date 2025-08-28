@@ -3,7 +3,7 @@
         greening_subsidy="0.1667" id="boundary" increment="0.05" lineage="Unknown"
         penalty_additnl_swath="7.285" sprayer_width="39" swath_width="3">
         <geometry>
-            <gml:Polygon srsName="map">
+            <gml:Polygon srsName="EPSG:4978">
                 <gml:outerBoundaryIs>
                     <gml:LinearRing>
                         <gml:coordinates>5.0,5.0 5.0,15.0 15.0,15.0 10.0,5.0 5.0,5.0</gml:coordinates>

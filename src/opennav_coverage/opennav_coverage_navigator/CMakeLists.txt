@@ -43,6 +43,7 @@ include_directories(
 add_library(opennav_coverage_navigator SHARED src/coverage_navigator.cpp)
 ament_target_dependencies(opennav_coverage_navigator ${dependencies})
 
+
 pluginlib_export_plugin_description_file(backported_bt_navigator navigator_plugins.xml)
 
 install(TARGETS opennav_coverage_navigator

@@ -6,6 +6,8 @@ msg/Coordinate.idl
 msg/Coordinate.msg
 msg/Coordinates.idl
 msg/Coordinates.msg
+msg/Fields.idl
+msg/Fields.msg
 msg/HeadlandMode.idl
 msg/HeadlandMode.msg
 msg/PathComponents.idl

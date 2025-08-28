@@ -9,6 +9,7 @@
     ],
     "files.associations": {
         "array": "cpp",
-        "geometry": "cpp"
+        "geometry": "cpp",
+        "filesystem": "cpp"
     }
 }

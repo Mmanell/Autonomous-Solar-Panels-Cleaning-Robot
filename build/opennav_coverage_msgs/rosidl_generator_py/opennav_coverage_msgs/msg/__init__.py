@@ -1,5 +1,6 @@
 from opennav_coverage_msgs.msg._coordinate import Coordinate  # noqa: F401
 from opennav_coverage_msgs.msg._coordinates import Coordinates  # noqa: F401
+from opennav_coverage_msgs.msg._fields import Fields  # noqa: F401
 from opennav_coverage_msgs.msg._headland_mode import HeadlandMode  # noqa: F401
 from opennav_coverage_msgs.msg._path_components import PathComponents  # noqa: F401
 from opennav_coverage_msgs.msg._path_mode import PathMode  # noqa: F401

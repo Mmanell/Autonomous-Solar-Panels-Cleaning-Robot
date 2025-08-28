@@ -25,7 +25,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
     coverage_demo_dir = get_package_share_directory('opennav_coverage_demo')
-    param_file_path = os.path.join(coverage_demo_dir, 'demo_params.yaml')
+    param_file_path = os.path.join(coverage_demo_dir, 'param_on_panel.yaml')
 
 
     # start navigation

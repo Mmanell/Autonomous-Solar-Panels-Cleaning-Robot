@@ -68,10 +68,10 @@ private:
     shifted_odom.pose.pose.position.x -= start_x_;
     shifted_odom.pose.pose.position.y -= start_y_;
 
-    geometry_msgs::msg::TransformStamped tf_map_to_tilted;
+    geometry_msgs::msg::TransformStamped tf_map_to_panel;
     try {
 
-      tf_map_to_tilted = tf_buffer_.lookupTransform(
+      tf_map_to_panel = tf_buffer_.lookupTransform(
         target_frame_,
         source_frame,
         tf2::TimePointZero
@@ -91,17 +91,17 @@ private:
     robot_pose_in_map.pose = shifted_odom.pose.pose;
 
     // Create a new Pose message for the transformed pose
-    geometry_msgs::msg::PoseStamped robot_pose_in_tilted;
+    geometry_msgs::msg::PoseStamped robot_pose_in_panel;
 
     // Use doTransform to apply the map_to_tilted transform to the robot's pose
-    tf2::doTransform(robot_pose_in_map, robot_pose_in_tilted, tf_map_to_tilted);
+    tf2::doTransform(robot_pose_in_map, robot_pose_in_panel, tf_map_to_panel);
     
-    tf2::Quaternion q(
-      tf_map_to_tilted.transform.rotation.x,
-      tf_map_to_tilted.transform.rotation.y,
-      tf_map_to_tilted.transform.rotation.z,
-      tf_map_to_tilted.transform.rotation.w
-    );
+    // tf2::Quaternion q(
+    //   tf_map_to_tilted.transform.rotation.x,
+    //   tf_map_to_tilted.transform.rotation.y,
+    //   tf_map_to_tilted.transform.rotation.z,
+    //   tf_map_to_tilted.transform.rotation.w
+    // );
 
 
 
@@ -111,7 +111,7 @@ private:
     odom_msg.header.stamp = msg->header.stamp;
     odom_msg.header.frame_id = target_frame_;
     odom_msg.child_frame_id = msg->child_frame_id;
-    odom_msg.pose.pose = robot_pose_in_tilted.pose;
+    odom_msg.pose.pose = robot_pose_in_panel.pose;
     odom_msg.pose.covariance=msg->pose.covariance;
     odom_msg.twist.twist = msg->twist.twist;
     odom_msg.twist.covariance=msg->twist.covariance;

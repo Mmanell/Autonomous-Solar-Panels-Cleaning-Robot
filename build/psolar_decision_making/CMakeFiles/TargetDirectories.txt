@@ -1,5 +1,6 @@
 /home/manel/psolar_ws/build/psolar_decision_making/CMakeFiles/uninstall.dir
 /home/manel/psolar_ws/build/psolar_decision_making/CMakeFiles/psolar_decision_making_uninstall.dir
+/home/manel/psolar_ws/build/psolar_decision_making/CMakeFiles/panel_publisher.dir
 /home/manel/psolar_ws/build/psolar_decision_making/CMakeFiles/test.dir
 /home/manel/psolar_ws/build/psolar_decision_making/CMakeFiles/edit_cache.dir
 /home/manel/psolar_ws/build/psolar_decision_making/CMakeFiles/rebuild_cache.dir

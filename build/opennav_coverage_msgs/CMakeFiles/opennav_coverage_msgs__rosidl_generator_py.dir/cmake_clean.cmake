@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate_s.c.o.d"
   "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c.o"
   "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c.o.d"
+  "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_fields_s.c.o"
+  "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_fields_s.c.o.d"
   "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c.o"
   "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c.o.d"
   "CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_path_components_s.c.o"

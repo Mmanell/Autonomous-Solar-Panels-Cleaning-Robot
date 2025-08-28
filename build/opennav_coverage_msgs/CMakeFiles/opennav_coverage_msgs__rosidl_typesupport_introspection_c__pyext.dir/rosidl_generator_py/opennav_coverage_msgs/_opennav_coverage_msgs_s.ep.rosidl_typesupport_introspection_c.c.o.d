@@ -208,6 +208,9 @@ CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext.dir/
  /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__type_support.h \
  /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__struct.h \
  /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.h \
+ /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__type_support.h \
+ /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__struct.h \
+ /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/fields__functions.h \
  /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__type_support.h \
  /home/manel/psolar_ws/build/opennav_coverage_msgs/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \

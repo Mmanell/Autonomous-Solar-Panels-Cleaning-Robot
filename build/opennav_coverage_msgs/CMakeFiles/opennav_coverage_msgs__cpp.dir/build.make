@@ -76,6 +76,11 @@ CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msg
 CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__struct.hpp
 CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__traits.hpp
 CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__type_support.hpp
+CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/fields.hpp
+CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__builder.hpp
+CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__struct.hpp
+CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__traits.hpp
+CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__type_support.hpp
 CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/headland_mode.hpp
 CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/headland_mode__builder.hpp
 CMakeFiles/opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/headland_mode__struct.hpp
@@ -140,6 +145,7 @@ rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: /opt/ros/humble/s
 rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: rosidl_adapter/opennav_coverage_msgs/msg/Coordinate.idl
 rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: rosidl_adapter/opennav_coverage_msgs/msg/Coordinates.idl
+rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: rosidl_adapter/opennav_coverage_msgs/msg/Fields.idl
 rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: rosidl_adapter/opennav_coverage_msgs/msg/HeadlandMode.idl
 rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: rosidl_adapter/opennav_coverage_msgs/msg/SwathMode.idl
 rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp: rosidl_adapter/opennav_coverage_msgs/msg/RowSwathMode.idl
@@ -254,6 +260,21 @@ rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__traits.hpp: r
 
 rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__type_support.hpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__type_support.hpp
+
+rosidl_generator_cpp/opennav_coverage_msgs/msg/fields.hpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/opennav_coverage_msgs/msg/fields.hpp
+
+rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__builder.hpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__builder.hpp
+
+rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__struct.hpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__struct.hpp
+
+rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__traits.hpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__traits.hpp
+
+rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__type_support.hpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__type_support.hpp
 
 rosidl_generator_cpp/opennav_coverage_msgs/msg/headland_mode.hpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/coordinate.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/opennav_coverage_msgs/msg/headland_mode.hpp
@@ -411,6 +432,10 @@ opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detai
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__struct.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__traits.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/coordinates__type_support.hpp
+opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__builder.hpp
+opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__struct.hpp
+opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__traits.hpp
+opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/fields__type_support.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/headland_mode__builder.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/headland_mode__struct.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/headland_mode__traits.hpp
@@ -439,6 +464,7 @@ opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detai
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/swath_mode__struct.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/swath_mode__traits.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/detail/swath_mode__type_support.hpp
+opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/fields.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/headland_mode.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/path_components.hpp
 opennav_coverage_msgs__cpp: rosidl_generator_cpp/opennav_coverage_msgs/msg/path_mode.hpp

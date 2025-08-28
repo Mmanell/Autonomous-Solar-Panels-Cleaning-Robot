@@ -197,6 +197,43 @@ psolar_decision_making_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/psolar_decision_making_uninstall.dir/build.make CMakeFiles/psolar_decision_making_uninstall.dir/build
 .PHONY : psolar_decision_making_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named panel_publisher
+
+# Build rule for target.
+panel_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 panel_publisher
+.PHONY : panel_publisher
+
+# fast build rule for target.
+panel_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/panel_publisher.dir/build.make CMakeFiles/panel_publisher.dir/build
+.PHONY : panel_publisher/fast
+
+src/panel_publisher.o: src/panel_publisher.cpp.o
+.PHONY : src/panel_publisher.o
+
+# target to build an object file
+src/panel_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/panel_publisher.dir/build.make CMakeFiles/panel_publisher.dir/src/panel_publisher.cpp.o
+.PHONY : src/panel_publisher.cpp.o
+
+src/panel_publisher.i: src/panel_publisher.cpp.i
+.PHONY : src/panel_publisher.i
+
+# target to preprocess a source file
+src/panel_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/panel_publisher.dir/build.make CMakeFiles/panel_publisher.dir/src/panel_publisher.cpp.i
+.PHONY : src/panel_publisher.cpp.i
+
+src/panel_publisher.s: src/panel_publisher.cpp.s
+.PHONY : src/panel_publisher.s
+
+# target to generate assembly for a file
+src/panel_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/panel_publisher.dir/build.make CMakeFiles/panel_publisher.dir/src/panel_publisher.cpp.s
+.PHONY : src/panel_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... psolar_decision_making_uninstall"
 	@echo "... uninstall"
+	@echo "... panel_publisher"
+	@echo "... src/panel_publisher.o"
+	@echo "... src/panel_publisher.i"
+	@echo "... src/panel_publisher.s"
 .PHONY : help
 
 

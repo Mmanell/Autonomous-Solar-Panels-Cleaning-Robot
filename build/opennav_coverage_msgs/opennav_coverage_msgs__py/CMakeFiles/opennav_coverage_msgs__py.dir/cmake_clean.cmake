@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate_s.c"
   "../rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates.py"
   "../rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c"
+  "../rosidl_generator_py/opennav_coverage_msgs/msg/_fields.py"
+  "../rosidl_generator_py/opennav_coverage_msgs/msg/_fields_s.c"
   "../rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode.py"
   "../rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c"
   "../rosidl_generator_py/opennav_coverage_msgs/msg/_path_components.py"

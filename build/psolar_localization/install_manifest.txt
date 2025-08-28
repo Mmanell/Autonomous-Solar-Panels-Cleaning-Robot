@@ -4,6 +4,7 @@
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/navsat_params_3d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params_3d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/local_ekf_params_3d.yaml
+/home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/rviz_nav2.mvc
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/global_ekf_params_2d.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/twist_mux.yaml
 /home/manel/psolar_ws/install/psolar_localization/share/psolar_localization//config/navsat_params_2d.yaml
