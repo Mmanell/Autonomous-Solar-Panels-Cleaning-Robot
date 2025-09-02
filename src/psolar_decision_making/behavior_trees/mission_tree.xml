@@ -1,0 +1,39 @@
+<root main_tree_to_execute="MainTree" BTCPP_format="4">
+  <BehaviorTree ID="MainTree">
+
+    <Sequence name="Mission">
+
+      <!-- Run planner once -->
+      <Action ID="Planner" name="Planner" planned_fields="{planned_fields}" />
+
+      <!-- Repeat until planned fields are empty -->
+      <KeepRunningUntilFailure>
+        <Fallback name="CleaningOrDocking">
+
+          <!-- Dock if battery is low -->
+          <Sequence name="DockIfLowBattery">          
+            <Condition ID="BatteryLow"/>
+            <Action ID="Undock"/>
+          </Sequence>
+
+          <!-- Cleaning step -->
+          <Sequence name="CleaningStep">
+            <Action ID="PopField" planned_fields="{planned_fields}" remaining_fields="{remaining_fields}"/>            
+
+            <!-- 
+            <Action ID="WhichGoal" planned_fields="{planned_fields}" goal1="{goal1}" goal2="{goal2}"/>
+            <Action ID="NavigateToGoal" goal="{goal1}"/> 
+            <Action ID="NavigateToGoal" goal="{goal2}"/> 
+            <Action ID="WhichField" planned_fields="{planned_fields}" field="{field}"/>
+            <Action ID="NavigateCoverage" field="{field}" goal3="{goal3}"/>
+            <Action ID="NavigateToGoal" goal="{goal3}"/> 
+            -->
+          </Sequence>
+
+        </Fallback>
+      </KeepRunningUntilFailure>
+
+    </Sequence>
+
+  </BehaviorTree>
+</root>

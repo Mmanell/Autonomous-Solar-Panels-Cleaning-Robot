@@ -2,20 +2,16 @@
 # Copyright 2023 Open Navigation LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 
 from enum import Enum
 import time
-
+from nav2_msgs.action import NavigateToPose
 from action_msgs.msg import GoalStatus
 from geometry_msgs.msg import Point32, Polygon
 from lifecycle_msgs.srv import GetState
@@ -24,9 +20,9 @@ import rclpy
 from rclpy.action import ActionClient
 from rclpy.duration import Duration
 from rclpy.node import Node
-from ament_index_python.packages import get_package_share_directory
-from opennav_coverage_msgs.msg import Fields, Coordinates, Coordinate
+from opennav_coverage_msgs.msg import Fields
 from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy
+
 
 class TaskResult(Enum):
     UNKNOWN = 0
@@ -39,13 +35,14 @@ class CoverageNavigatorTester(Node):
 
     def __init__(self):
         super().__init__(node_name='coverage_navigator_tester')
-        self.goal_handle = None
-        self.result_future = None
-        self.status = None
-        self.feedback = None
 
-        self.coverage_client = ActionClient(self, NavigateCompleteCoverage,
-                                                'navigate_complete_coverage')
+        # Coverage action client
+        self.coverage_client = ActionClient(self, NavigateCompleteCoverage, 'navigate_complete_coverage')
+
+        # Pose action client
+        self.pose_client = ActionClient(self, NavigateToPose, '/goto_pose/navigate_to_pose')
+
+        # Field subscription
         qos_profile = QoSProfile(
             depth=10,
             reliability=ReliabilityPolicy.RELIABLE,
@@ -57,22 +54,12 @@ class CoverageNavigatorTester(Node):
             self.field_callback,
             qos_profile
         )
-        self.received_fields = []  # store incoming fields
+        self.received_fields = []
 
+        # Feedback tracking
+        self.pose_feedback = None
+        self.coverage_feedback = None
 
-    def destroy_node(self):
-        self.coverage_client.destroy()
-        super().destroy_node()
-
-    def toPolygon(self, field):
-        poly = Polygon()
-        for coord in field:
-            pt = Point32()
-            pt.x = coord[0]
-            pt.y = coord[1]
-            poly.points.append(pt)
-        return poly
-    
     def field_callback(self, msg: Fields):
         self.received_fields = []
         for coordinates_msg in msg.fields:
@@ -82,131 +69,132 @@ class CoverageNavigatorTester(Node):
             self.received_fields.append(field)
         self.get_logger().info(f"Received {len(self.received_fields)} fields")
 
-    
-    
+    def toPolygon(self, field):
+        poly = Polygon()
+        for coord in field:
+            pt = Point32()
+            pt.x = coord[0]
+            pt.y = coord[1]
+            poly.points.append(pt)
+        return poly
 
+    # ------------------ Coverage navigation ------------------
     def navigateCoverage(self, field):
-        """Send a `NavToPose` action request."""
-        print("Waiting for 'NavigateCompleteCoverage' action server")
-        while not self.coverage_client.wait_for_server(timeout_sec=1.0):
-            print('"NavigateCompleteCoverage" action server not available, waiting...')
-
+        """Send a coverage goal and wait until completion"""
+        self.coverage_client.wait_for_server()
         goal_msg = NavigateCompleteCoverage.Goal()
         goal_msg.frame_id = 'map'
         goal_msg.polygons.append(self.toPolygon(field))
 
-
-        print('Navigating to with field of size: ' + str(len(field)) + '...')
-        send_goal_future = self.coverage_client.send_goal_async(goal_msg,
-                                                                self._feedbackCallback)
+        send_goal_future = self.coverage_client.send_goal_async(goal_msg, self.coverage_feedback_callback)
         rclpy.spin_until_future_complete(self, send_goal_future)
-        self.goal_handle = send_goal_future.result()
-
-        if not self.goal_handle.accepted:
-            print('Navigate Coverage request was rejected!')
+        goal_handle = send_goal_future.result()
+        if not goal_handle.accepted:
+            self.get_logger().error("Coverage goal rejected")
             return False
 
-        self.result_future = self.goal_handle.get_result_async()
-        return True
+        result_future = goal_handle.get_result_async()
+        rclpy.spin_until_future_complete(self, result_future)
+        result = result_future.result()
 
-    def isTaskComplete(self):
-        """Check if the task request of any type is complete yet."""
-        if not self.result_future:
-            # task was cancelled or completed
+        if result.status == GoalStatus.STATUS_SUCCEEDED:
+            self.get_logger().info("Coverage completed successfully")
             return True
-        rclpy.spin_until_future_complete(self, self.result_future, timeout_sec=0.10)
-        if self.result_future.result():
-            self.status = self.result_future.result().status
-            if self.status != GoalStatus.STATUS_SUCCEEDED:
-                print(f'Task with failed with status code: {self.status}')
-                return True
         else:
-            # Timed out, still processing, not complete yet
+            self.get_logger().error(f"Coverage failed with status {result.status}")
             return False
 
-        print('Task succeeded!')
-        return True
+    def coverage_feedback_callback(self, msg):
+        self.coverage_feedback = msg.feedback
+        self.get_logger().info("Coverage feedback received.")
 
-    def _feedbackCallback(self, msg):
-        self.feedback = msg.feedback
-        return
+    # ------------------ Pose navigation ------------------
+    def sendPoseGoal(self, x, y, yaw=0.0):
+        """Send a pose goal and wait until completion"""
+        import tf_transformations
 
-    def getFeedback(self):
-        """Get the pending action feedback message."""
-        return self.feedback
+        goal_msg = NavigateToPose.Goal()
+        goal_msg.pose.header.frame_id = 'map'
+        goal_msg.pose.pose.position.x = x
+        goal_msg.pose.pose.position.y = y
+        goal_msg.pose.pose.position.z = 0.0
 
-    def getResult(self):
-        """Get the pending action result message."""
-        if self.status == GoalStatus.STATUS_SUCCEEDED:
-            return TaskResult.SUCCEEDED
-        elif self.status == GoalStatus.STATUS_ABORTED:
-            return TaskResult.FAILED
-        elif self.status == GoalStatus.STATUS_CANCELED:
-            return TaskResult.CANCELED
+        q = tf_transformations.quaternion_from_euler(0, 0, yaw)
+        goal_msg.pose.pose.orientation.x = q[0]
+        goal_msg.pose.pose.orientation.y = q[1]
+        goal_msg.pose.pose.orientation.z = q[2]
+        goal_msg.pose.pose.orientation.w = q[3]
+
+        self.pose_client.wait_for_server()
+        send_goal_future = self.pose_client.send_goal_async(goal_msg, feedback_callback=self.pose_feedback_callback)
+        rclpy.spin_until_future_complete(self, send_goal_future)
+        goal_handle = send_goal_future.result()
+        if not goal_handle.accepted:
+            self.get_logger().error("Pose goal rejected")
+            return False
+
+        result_future = goal_handle.get_result_async()
+        rclpy.spin_until_future_complete(self, result_future)
+        result = result_future.result()
+
+        if result.status == GoalStatus.STATUS_SUCCEEDED:
+            self.get_logger().info(f"Pose ({x}, {y}) reached successfully")
+            return True
         else:
-            return TaskResult.UNKNOWN
+            self.get_logger().error(f"Pose navigation failed with status {result.status}")
+            return False
 
+    def pose_feedback_callback(self, msg):
+        self.pose_feedback = msg.feedback
+        self.get_logger().info("Pose feedback received.")
+
+    # ------------------ Node startup ------------------
     def startup(self, node_name='bt_navigator'):
-        # Waits for the node within the tester namespace to become active
-        print(f'Waiting for {node_name} to become active..')
+        self.get_logger().info(f'Waiting for {node_name} to become active...')
         node_service = f'{node_name}/get_state'
         state_client = self.create_client(GetState, node_service)
         while not state_client.wait_for_service(timeout_sec=1.0):
-            print(f'{node_service} service not available, waiting...')
+            self.get_logger().info(f'{node_service} service not available, waiting...')
 
         req = GetState.Request()
         state = 'unknown'
         while state != 'active':
-            print(f'Getting {node_name} state...')
             future = state_client.call_async(req)
             rclpy.spin_until_future_complete(self, future)
             if future.result() is not None:
                 state = future.result().current_state.label
-                print(f'Result of get_state: {state}')
+                self.get_logger().info(f'Result of get_state: {state}')
             time.sleep(2)
-        return
 
 
+# ------------------ Main ------------------
 def main():
     rclpy.init()
-
     navigator = CoverageNavigatorTester()
     navigator.startup()
 
-    # Some example field
-    #1m*1m Brosse: 1.2
-    # Wait until at least one field is received
-    print("Waiting for fields to be published...")
+    # Wait for fields to be published
+    print("Waiting for fields...")
     while rclpy.ok() and not navigator.received_fields:
         rclpy.spin_once(navigator, timeout_sec=0.5)
 
-    print(f"Got {len(navigator.received_fields)} fields")
-    field = navigator.received_fields[0]  # take the first one for now
+    print(f"Received {len(navigator.received_fields)} fields")
 
-   
-    navigator.navigateCoverage(field)
+    # --- Example sequential tasks ---
+    tasks = [
+        {"type": "pose", "x": 1.0, "y": 1.0, "yaw": 0.0},
+        {"type": "coverage", "field": navigator.received_fields[0]},
+        {"type": "pose", "x": 1.0, "y": 4.0, "yaw": 0.0},
+        {"type": "coverage", "field": navigator.received_fields[1] if len(navigator.received_fields) > 1 else navigator.received_fields[0]}
+    ]
 
-    i = 0
-    while not navigator.isTaskComplete():
-        # Do something with the feedback
-        i = i + 1
-        feedback = navigator.getFeedback()
-        if feedback and i % 5 == 0:
-            print('Estimated time of arrival: ' + '{0:.0f}'.format(
-                  Duration.from_msg(feedback.estimated_time_remaining).nanoseconds / 1e9)
-                  + ' seconds.')
-        time.sleep(1)
+    for task in tasks:
+        if task["type"] == "pose":
+            navigator.sendPoseGoal(task["x"], task["y"], task["yaw"])
+        elif task["type"] == "coverage":
+            navigator.navigateCoverage(task["field"])
 
-    # Do something depending on the return code
-    result = navigator.getResult()
-    if result == TaskResult.SUCCEEDED:
-        print('Goal succeeded!')
-    elif result == TaskResult.CANCELED:
-        print('Goal was canceled!')
-    elif result == TaskResult.FAILED:
-        print('Goal failed!')
-    else:
-        print('Goal has an invalid return status!')
+    print("All tasks completed!")
 
 
 if __name__ == '__main__':

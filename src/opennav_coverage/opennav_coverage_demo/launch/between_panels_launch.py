@@ -27,6 +27,9 @@ def generate_launch_description():
     coverage_demo_dir = get_package_share_directory('opennav_coverage_demo')
     param_file_path = os.path.join(coverage_demo_dir, 'param_to_panel.yaml')
 
+    # Rewrite YAML for namespace
+ 
+
 
     # start navigation
     bringup_cmd = IncludeLaunchDescription(

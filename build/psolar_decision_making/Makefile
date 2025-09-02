@@ -198,6 +198,19 @@ psolar_decision_making_uninstall/fast:
 .PHONY : psolar_decision_making_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named mission_bt
+
+# Build rule for target.
+mission_bt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mission_bt
+.PHONY : mission_bt
+
+# fast build rule for target.
+mission_bt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/build
+.PHONY : mission_bt/fast
+
+#=============================================================================
 # Target rules for targets named panel_publisher
 
 # Build rule for target.
@@ -209,6 +222,102 @@ panel_publisher: cmake_check_build_system
 panel_publisher/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/panel_publisher.dir/build.make CMakeFiles/panel_publisher.dir/build
 .PHONY : panel_publisher/fast
+
+src/battery_low_node.o: src/battery_low_node.cpp.o
+.PHONY : src/battery_low_node.o
+
+# target to build an object file
+src/battery_low_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/battery_low_node.cpp.o
+.PHONY : src/battery_low_node.cpp.o
+
+src/battery_low_node.i: src/battery_low_node.cpp.i
+.PHONY : src/battery_low_node.i
+
+# target to preprocess a source file
+src/battery_low_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/battery_low_node.cpp.i
+.PHONY : src/battery_low_node.cpp.i
+
+src/battery_low_node.s: src/battery_low_node.cpp.s
+.PHONY : src/battery_low_node.s
+
+# target to generate assembly for a file
+src/battery_low_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/battery_low_node.cpp.s
+.PHONY : src/battery_low_node.cpp.s
+
+src/clean_field_node.o: src/clean_field_node.cpp.o
+.PHONY : src/clean_field_node.o
+
+# target to build an object file
+src/clean_field_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/clean_field_node.cpp.o
+.PHONY : src/clean_field_node.cpp.o
+
+src/clean_field_node.i: src/clean_field_node.cpp.i
+.PHONY : src/clean_field_node.i
+
+# target to preprocess a source file
+src/clean_field_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/clean_field_node.cpp.i
+.PHONY : src/clean_field_node.cpp.i
+
+src/clean_field_node.s: src/clean_field_node.cpp.s
+.PHONY : src/clean_field_node.s
+
+# target to generate assembly for a file
+src/clean_field_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/clean_field_node.cpp.s
+.PHONY : src/clean_field_node.cpp.s
+
+src/mission_bt.o: src/mission_bt.cpp.o
+.PHONY : src/mission_bt.o
+
+# target to build an object file
+src/mission_bt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/mission_bt.cpp.o
+.PHONY : src/mission_bt.cpp.o
+
+src/mission_bt.i: src/mission_bt.cpp.i
+.PHONY : src/mission_bt.i
+
+# target to preprocess a source file
+src/mission_bt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/mission_bt.cpp.i
+.PHONY : src/mission_bt.cpp.i
+
+src/mission_bt.s: src/mission_bt.cpp.s
+.PHONY : src/mission_bt.s
+
+# target to generate assembly for a file
+src/mission_bt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/mission_bt.cpp.s
+.PHONY : src/mission_bt.cpp.s
+
+src/navigate_to_goal_node.o: src/navigate_to_goal_node.cpp.o
+.PHONY : src/navigate_to_goal_node.o
+
+# target to build an object file
+src/navigate_to_goal_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/navigate_to_goal_node.cpp.o
+.PHONY : src/navigate_to_goal_node.cpp.o
+
+src/navigate_to_goal_node.i: src/navigate_to_goal_node.cpp.i
+.PHONY : src/navigate_to_goal_node.i
+
+# target to preprocess a source file
+src/navigate_to_goal_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/navigate_to_goal_node.cpp.i
+.PHONY : src/navigate_to_goal_node.cpp.i
+
+src/navigate_to_goal_node.s: src/navigate_to_goal_node.cpp.s
+.PHONY : src/navigate_to_goal_node.s
+
+# target to generate assembly for a file
+src/navigate_to_goal_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/navigate_to_goal_node.cpp.s
+.PHONY : src/navigate_to_goal_node.cpp.s
 
 src/panel_publisher.o: src/panel_publisher.cpp.o
 .PHONY : src/panel_publisher.o
@@ -234,6 +343,126 @@ src/panel_publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/panel_publisher.dir/build.make CMakeFiles/panel_publisher.dir/src/panel_publisher.cpp.s
 .PHONY : src/panel_publisher.cpp.s
 
+src/planner_node.o: src/planner_node.cpp.o
+.PHONY : src/planner_node.o
+
+# target to build an object file
+src/planner_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/planner_node.cpp.o
+.PHONY : src/planner_node.cpp.o
+
+src/planner_node.i: src/planner_node.cpp.i
+.PHONY : src/planner_node.i
+
+# target to preprocess a source file
+src/planner_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/planner_node.cpp.i
+.PHONY : src/planner_node.cpp.i
+
+src/planner_node.s: src/planner_node.cpp.s
+.PHONY : src/planner_node.s
+
+# target to generate assembly for a file
+src/planner_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/planner_node.cpp.s
+.PHONY : src/planner_node.cpp.s
+
+src/pop_field_node.o: src/pop_field_node.cpp.o
+.PHONY : src/pop_field_node.o
+
+# target to build an object file
+src/pop_field_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/pop_field_node.cpp.o
+.PHONY : src/pop_field_node.cpp.o
+
+src/pop_field_node.i: src/pop_field_node.cpp.i
+.PHONY : src/pop_field_node.i
+
+# target to preprocess a source file
+src/pop_field_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/pop_field_node.cpp.i
+.PHONY : src/pop_field_node.cpp.i
+
+src/pop_field_node.s: src/pop_field_node.cpp.s
+.PHONY : src/pop_field_node.s
+
+# target to generate assembly for a file
+src/pop_field_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/pop_field_node.cpp.s
+.PHONY : src/pop_field_node.cpp.s
+
+src/undock_node.o: src/undock_node.cpp.o
+.PHONY : src/undock_node.o
+
+# target to build an object file
+src/undock_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/undock_node.cpp.o
+.PHONY : src/undock_node.cpp.o
+
+src/undock_node.i: src/undock_node.cpp.i
+.PHONY : src/undock_node.i
+
+# target to preprocess a source file
+src/undock_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/undock_node.cpp.i
+.PHONY : src/undock_node.cpp.i
+
+src/undock_node.s: src/undock_node.cpp.s
+.PHONY : src/undock_node.s
+
+# target to generate assembly for a file
+src/undock_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/undock_node.cpp.s
+.PHONY : src/undock_node.cpp.s
+
+src/which_field_node.o: src/which_field_node.cpp.o
+.PHONY : src/which_field_node.o
+
+# target to build an object file
+src/which_field_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/which_field_node.cpp.o
+.PHONY : src/which_field_node.cpp.o
+
+src/which_field_node.i: src/which_field_node.cpp.i
+.PHONY : src/which_field_node.i
+
+# target to preprocess a source file
+src/which_field_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/which_field_node.cpp.i
+.PHONY : src/which_field_node.cpp.i
+
+src/which_field_node.s: src/which_field_node.cpp.s
+.PHONY : src/which_field_node.s
+
+# target to generate assembly for a file
+src/which_field_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/which_field_node.cpp.s
+.PHONY : src/which_field_node.cpp.s
+
+src/which_goal_node.o: src/which_goal_node.cpp.o
+.PHONY : src/which_goal_node.o
+
+# target to build an object file
+src/which_goal_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/which_goal_node.cpp.o
+.PHONY : src/which_goal_node.cpp.o
+
+src/which_goal_node.i: src/which_goal_node.cpp.i
+.PHONY : src/which_goal_node.i
+
+# target to preprocess a source file
+src/which_goal_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/which_goal_node.cpp.i
+.PHONY : src/which_goal_node.cpp.i
+
+src/which_goal_node.s: src/which_goal_node.cpp.s
+.PHONY : src/which_goal_node.s
+
+# target to generate assembly for a file
+src/which_goal_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/which_goal_node.cpp.s
+.PHONY : src/which_goal_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +478,38 @@ help:
 	@echo "... test"
 	@echo "... psolar_decision_making_uninstall"
 	@echo "... uninstall"
+	@echo "... mission_bt"
 	@echo "... panel_publisher"
+	@echo "... src/battery_low_node.o"
+	@echo "... src/battery_low_node.i"
+	@echo "... src/battery_low_node.s"
+	@echo "... src/clean_field_node.o"
+	@echo "... src/clean_field_node.i"
+	@echo "... src/clean_field_node.s"
+	@echo "... src/mission_bt.o"
+	@echo "... src/mission_bt.i"
+	@echo "... src/mission_bt.s"
+	@echo "... src/navigate_to_goal_node.o"
+	@echo "... src/navigate_to_goal_node.i"
+	@echo "... src/navigate_to_goal_node.s"
 	@echo "... src/panel_publisher.o"
 	@echo "... src/panel_publisher.i"
 	@echo "... src/panel_publisher.s"
+	@echo "... src/planner_node.o"
+	@echo "... src/planner_node.i"
+	@echo "... src/planner_node.s"
+	@echo "... src/pop_field_node.o"
+	@echo "... src/pop_field_node.i"
+	@echo "... src/pop_field_node.s"
+	@echo "... src/undock_node.o"
+	@echo "... src/undock_node.i"
+	@echo "... src/undock_node.s"
+	@echo "... src/which_field_node.o"
+	@echo "... src/which_field_node.i"
+	@echo "... src/which_field_node.s"
+	@echo "... src/which_goal_node.o"
+	@echo "... src/which_goal_node.i"
+	@echo "... src/which_goal_node.s"
 .PHONY : help
 
 

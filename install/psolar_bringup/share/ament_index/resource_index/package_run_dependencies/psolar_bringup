@@ -1,1 +1,1 @@
-navigation2;psolar_gazebo;psolar_localization;turtlebot3_teleop;rviz2;nav2_bringup;ament_lint_auto;ament_lint_common
+navigation2;rclpy;sensor_msgs;psolar_gazebo;psolar_localization;turtlebot3_teleop;rviz2;nav2_bringup;ament_lint_auto;ament_lint_common

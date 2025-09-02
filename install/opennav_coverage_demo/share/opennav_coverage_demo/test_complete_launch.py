@@ -48,5 +48,5 @@ def generate_launch_description():
 
 
     ld.add_action(bringup_cmd)
-    ld.add_action(demo_cmd)
+    #ld.add_action(demo_cmd)
     return ld

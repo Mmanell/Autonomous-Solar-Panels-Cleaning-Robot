@@ -1,1 +1,1 @@
-rclcpp;opennav_coverage_msgs;ament_lint_auto;ament_lint_common
+rclcpp;rclcpp_action;geometry_msgs;nav2_msgs;std_msgs;opennav_coverage_msgs;yaml-cpp;behaviortree_cpp;sensor_msgs;ament_lint_auto;ament_lint_common

@@ -22,6 +22,12 @@ def generate_launch_description():
         convert_types=True
     )
 
+    configured_params_2 = RewrittenYaml(
+        source_file=params_file,
+        param_rewrites={},  # <-- required, can be empty
+        convert_types=True
+    )
+
 
     ld = LaunchDescription()
     ld.add_action(stdout_linebuf_envvar)
@@ -70,26 +76,36 @@ def generate_launch_description():
         remappings=remappings,
         output='screen'
     ))
+    ld.add_action(Node(
+        package='opennav_docking',
+        executable='opennav_docking',
+        name='docking_server',
+        namespace=namespace,
+        parameters=[{'use_sim_time': use_sim_time}, configured_params],
+        remappings=remappings,
+        output='screen'
+    ))
     
    
-#     ld.add_action(TimerAction(
-#     period=2.0,  # 2 seconds should be enough
-#     actions=[Node(
-#         package='nav2_lifecycle_manager',
-#         executable='lifecycle_manager',
-#         name='lifecycle_manager_navigation',
-#         parameters=[{
-#             'use_sim_time': use_sim_time,
-#             'autostart': True,
-#             'node_names': [
-#                 '/goto_pose/planner_server',
-#                 '/goto_pose/controller_server',
-#                 '/goto_pose/behavior_server',
-#                 '/goto_pose/bt_navigator'
-#             ]
-#         }],
-#         output='screen'
-#     )]
-# ))
+    # ld.add_action(TimerAction(
+    # period=2.0,  # 2 seconds should be enough
+    # actions=[Node(
+    #     package='nav2_lifecycle_manager',
+    #     executable='lifecycle_manager',
+    #     name='lifecycle_manager_navigation',
+    #     parameters=[{
+    #         'use_sim_time': use_sim_time,
+    #         'bond_timeout': 10.0 ,
+    #         'autostart': True,
+    #         'node_names': [
+    #             '/goto_pose/planner_server',
+    #             '/goto_pose/controller_server',
+    #             '/goto_pose/behavior_server',
+    #             '/goto_pose/bt_navigator'
+    #         ]
+    #     }],
+    #     output='screen'
+    # )]
+    # ))
 
     return ld 

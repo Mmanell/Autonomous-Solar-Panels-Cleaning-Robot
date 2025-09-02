@@ -10,6 +10,7 @@ ros2 lifecycle set /goto_pose/planner_server activate
 ros2 lifecycle set /goto_pose/controller_server configure
 ros2 lifecycle set /goto_pose/controller_server activate
 
+
 ros2 lifecycle set /goto_pose/behavior_server configure
 ros2 lifecycle set /goto_pose/behavior_server activate
 

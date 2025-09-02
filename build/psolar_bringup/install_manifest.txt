@@ -1,6 +1,15 @@
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/pythonpath.sh
+/home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/pythonpath.dsv
+/home/manel/psolar_ws/install/psolar_bringup/local/lib/python3.10/dist-packages/psolar_bringup-0.0.0-py3.10.egg-info/PKG-INFO
+/home/manel/psolar_ws/install/psolar_bringup/local/lib/python3.10/dist-packages/psolar_bringup-0.0.0-py3.10.egg-info/top_level.txt
+/home/manel/psolar_ws/install/psolar_bringup/local/lib/python3.10/dist-packages/psolar_bringup-0.0.0-py3.10.egg-info/dependency_links.txt
+/home/manel/psolar_ws/install/psolar_bringup/local/lib/python3.10/dist-packages/psolar_bringup-0.0.0-py3.10.egg-info/SOURCES.txt
+/home/manel/psolar_ws/install/psolar_bringup/local/lib/python3.10/dist-packages/psolar_bringup/__init__.py
+/home/manel/psolar_ws/install/psolar_bringup/local/lib/python3.10/dist-packages/psolar_bringup/battery_simulation.py
 /home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup//launch/psolar.launch.py
 /home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup//rviz/opennav_rviz.rviz
 /home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup//rviz/openav_rviz.rviz
+/home/manel/psolar_ws/install/psolar_bringup/lib/psolar_bringup/battery_simulation.py
 /home/manel/psolar_ws/install/psolar_bringup/share/ament_index/resource_index/package_run_dependencies/psolar_bringup
 /home/manel/psolar_ws/install/psolar_bringup/share/ament_index/resource_index/parent_prefix_path/psolar_bringup
 /home/manel/psolar_ws/install/psolar_bringup/share/psolar_bringup/environment/ament_prefix_path.sh
