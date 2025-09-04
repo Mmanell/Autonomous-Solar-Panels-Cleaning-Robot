@@ -36,8 +36,13 @@ BT::NodeStatus PopField::tick()
     if (!initialized_) {
         remaining_fields_ = planned_fields;
         initialized_ = true;
+        if (!setOutput("remaining_fields", planned_fields)) {
+            RCLCPP_ERROR(node_->get_logger(), "PopField: Failed to update planned_fields");
+            return BT::NodeStatus::FAILURE;
+        }
         return BT::NodeStatus::SUCCESS;
     }
+
     if (remaining_fields_.fields.empty()) {
         RCLCPP_INFO(node_->get_logger(), "PopField: No remaining fields left to pop");
         return BT::NodeStatus::FAILURE;

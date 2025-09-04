@@ -15,6 +15,7 @@
 #include "psolar_decision_making/planner_node.hpp"
 #include "psolar_decision_making/pop_field_node.hpp"
 #include "psolar_decision_making/battery_low_node.hpp"
+#include "psolar_decision_making/dock_node.hpp"
 
 int main(int argc, char **argv)
 {
@@ -29,11 +30,12 @@ int main(int argc, char **argv)
     factory.registerNodeType<Planner>("Planner");
     factory.registerNodeType<UndockAction>("Undock");
     factory.registerNodeType<BatteryLow>("BatteryLow");
-    // factory.registerNodeType<WhichGoal>("WhichGoal");
-    // factory.registerNodeType<NavigateToGoal>("NavigateToGoal");
-    // factory.registerNodeType<WhichField>("WhichField");
-    //factory.registerNodeType<NavigateCoverage>("NavigateCoverage");
+    factory.registerNodeType<WhichGoal>("WhichGoal");
+    factory.registerNodeType<NavigateToGoal>("NavigateToGoal");
+    factory.registerNodeType<WhichField>("WhichField");
+    factory.registerNodeType<NavigateCoverage>("NavigateCoverage");
     factory.registerNodeType<PopField>("PopField");
+    factory.registerNodeType<DockRobotNode>("DockRobotNode");
 
 
 
@@ -43,24 +45,6 @@ int main(int argc, char **argv)
     std::string xml_file = pkg_path + "/behavior_trees/mission_tree.xml";
     auto tree = factory.createTreeFromFile(xml_file,blackboard);
 
-    // Create a blackboard and set the goal for NavigateToGoal
-    
-    // blackboard->set("node", node);
-
-
-    // geometry_msgs::msg::PoseStamped goal;
-    // goal.header.frame_id = "map";
-    // goal.pose.position.x = 2.0;
-    // goal.pose.position.y = 1.0;
-    // goal.pose.position.z = 0.0;
-    // goal.pose.orientation.w = 1.0;
-
-
-    // blackboard->set("goal", goal);
-
-    //tree.rootBlackboard() = blackboard;
-
-    // Optional: logger to see BT progress
     BT::StdCoutLogger logger_cout(tree);
 
     // Tick the tree until success or failure

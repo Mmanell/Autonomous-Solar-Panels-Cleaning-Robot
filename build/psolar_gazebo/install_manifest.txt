@@ -35,10 +35,11 @@
 /home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/turtlebot3_common/meshes/7l4w_panel.dae
 /home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/turtlebot3_common/meshes/wheels/left_tire.stl
 /home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/turtlebot3_common/meshes/wheels/right_tire.stl
-/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/Apriltag36_11_00000/model.sdf
-/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/Apriltag36_11_00000/model.config
-/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/Apriltag36_11_00000/materials/textures/tag36_11_00000.png
-/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/Apriltag36_11_00000/materials/scripts/Apriltag.material
+/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/April Tag 0/model.sdf
+/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/April Tag 0/model.config
+/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/April Tag 0/thumbnails/0.png
+/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/April Tag 0/meshes/AprilTags0.dae
+/home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/April Tag 0/materials/textures/tag36h11-0.png
 /home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/turtlebot3_waffle/model.sdf
 /home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//models/turtlebot3_waffle/model.config
 /home/manel/psolar_ws/install/psolar_gazebo/share/psolar_gazebo//rviz/tb3_gazebo.rviz

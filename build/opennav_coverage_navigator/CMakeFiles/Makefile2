@@ -193,9 +193,9 @@ CMakeFiles/opennav_coverage_navigator.dir/clean:
 # Target rules for target test/CMakeFiles/test_coverage_navigator.dir
 
 # All Build rule for target.
-test/CMakeFiles/test_coverage_navigator.dir/all: CMakeFiles/opennav_coverage_navigator.dir/all
 test/CMakeFiles/test_coverage_navigator.dir/all: gtest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/test_coverage_navigator.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/test_coverage_navigator.dir/all: CMakeFiles/opennav_coverage_navigator.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_coverage_navigator.dir/build.make test/CMakeFiles/test_coverage_navigator.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_coverage_navigator.dir/build.make test/CMakeFiles/test_coverage_navigator.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/manel/psolar_ws/build/opennav_coverage_navigator/CMakeFiles --progress-num=7,8 "Built target test_coverage_navigator"

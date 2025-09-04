@@ -14,6 +14,7 @@
   <depend>nav2_msgs</depend>
   <depend>std_msgs</depend>
   <depend>opennav_coverage_msgs</depend>
+  <depend>opennav_docking_msgs</depend>
   <depend>yaml-cpp</depend>
   <depend>behaviortree_cpp</depend>
   <depend>sensor_msgs</depend>

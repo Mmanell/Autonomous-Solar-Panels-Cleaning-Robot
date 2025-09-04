@@ -3,6 +3,7 @@
 #include <behaviortree_cpp/action_node.h>
 #include "opennav_coverage_msgs/msg/fields.hpp"
 #include "geometry_msgs/msg/polygon.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include <vector>
 
 class WhichField : public BT::SyncActionNode

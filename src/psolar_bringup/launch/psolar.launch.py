@@ -88,6 +88,13 @@ def generate_launch_description():
         parameters=[{"use_sim_time": True}],
     )
 
+    battery_sim = Node(
+        package="psolar_bringup",
+        executable="battery_simulation.py",
+        output="screen",
+        parameters=[{"use_sim_time": True}],
+    )
+
     
         # Path to your localization package where the config is
     psolar_localization_pkg = get_package_share_directory("psolar_localization")
@@ -111,30 +118,9 @@ def generate_launch_description():
 
             
 
-    # odom_slope= Node(
-    #     package="psolar_localization",
-    #     executable="gps_tilted_publisher",
-    #     output="screen",
-    #     parameters=[{"use_sim_time": True}],
-    # )
-
-    nav2_params = os.path.join(get_package_share_directory("psolar_bringup"),"config", "to_panel.yaml")
-
-
-    configured_params = ParameterFile(
-        RewrittenYaml(
-            source_file=nav2_params,
-            root_key='',
-            param_rewrites=param_substitutions,
-            convert_types=True),
-            allow_substs=True)
 
 
 
-    # rviz_cmd = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource(
-    #         os.path.join(get_package_share_directory('nav2_bringup'), "launch", 'rviz_launch.py')),
-    # )
 
 
    
@@ -148,6 +134,6 @@ def generate_launch_description():
         odom_clone,
         frames_transform,
         cleaning,
-        #odom_slope,
-        #opennav_launch,
+        battery_sim,
+
     ])

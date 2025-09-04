@@ -271,6 +271,30 @@ src/clean_field_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/clean_field_node.cpp.s
 .PHONY : src/clean_field_node.cpp.s
 
+src/dock_node.o: src/dock_node.cpp.o
+.PHONY : src/dock_node.o
+
+# target to build an object file
+src/dock_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/dock_node.cpp.o
+.PHONY : src/dock_node.cpp.o
+
+src/dock_node.i: src/dock_node.cpp.i
+.PHONY : src/dock_node.i
+
+# target to preprocess a source file
+src/dock_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/dock_node.cpp.i
+.PHONY : src/dock_node.cpp.i
+
+src/dock_node.s: src/dock_node.cpp.s
+.PHONY : src/dock_node.s
+
+# target to generate assembly for a file
+src/dock_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mission_bt.dir/build.make CMakeFiles/mission_bt.dir/src/dock_node.cpp.s
+.PHONY : src/dock_node.cpp.s
+
 src/mission_bt.o: src/mission_bt.cpp.o
 .PHONY : src/mission_bt.o
 
@@ -486,6 +510,9 @@ help:
 	@echo "... src/clean_field_node.o"
 	@echo "... src/clean_field_node.i"
 	@echo "... src/clean_field_node.s"
+	@echo "... src/dock_node.o"
+	@echo "... src/dock_node.i"
+	@echo "... src/dock_node.s"
 	@echo "... src/mission_bt.o"
 	@echo "... src/mission_bt.i"
 	@echo "... src/mission_bt.s"

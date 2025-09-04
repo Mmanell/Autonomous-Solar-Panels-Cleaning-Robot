@@ -16,6 +16,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(behaviortree_cpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(opennav_docking_msgs REQUIRED)
 
 
 
@@ -27,6 +28,7 @@ set(dependencies
   nav2_msgs
   behaviortree_cpp
   opennav_coverage_msgs
+  opennav_docking_msgs
   sensor_msgs
 ) 
 
@@ -42,9 +44,12 @@ install(DIRECTORY config behavior_trees
 # add_executable(mission_bt src/mission_bt.cpp src/undock_node.cpp src/which_goal_node.cpp src/navigate_to_goal_node.cpp src/which_field_node.cpp)
 # ament_target_dependencies(mission_bt ${dependencies})
 
-add_executable(mission_bt src/mission_bt.cpp src/planner_node.cpp src/undock_node.cpp src/which_field_node.cpp src/clean_field_node.cpp src/which_goal_node.cpp src/navigate_to_goal_node.cpp src/pop_field_node.cpp src/battery_low_node.cpp)
+add_executable(mission_bt src/mission_bt.cpp src/planner_node.cpp src/undock_node.cpp src/which_field_node.cpp src/clean_field_node.cpp src/which_goal_node.cpp src/navigate_to_goal_node.cpp src/pop_field_node.cpp src/battery_low_node.cpp src/dock_node.cpp)
 ament_target_dependencies(mission_bt ${dependencies})
 target_link_libraries(mission_bt yaml-cpp)
+
+# add_executable(dock_node src/dock_node.cpp)
+# ament_target_dependencies(dock_node rclcpp opennav_docking_msgs rclcpp_action)
 
 
 

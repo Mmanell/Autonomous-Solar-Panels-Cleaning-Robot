@@ -11,6 +11,6 @@ twist_mux:
         timeout : 0.5
         priority: 30   # higher
       go_to_pose:
-        topic: /cmd_vel/go_to_pose
+        topic: /go_to_pose/cmd_vel
         timeout : 0.5
         priority: 20   # highest

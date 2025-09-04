@@ -45,7 +45,7 @@ class BatteryStatePublisher(Node):
      
     # Initialize battery level
     self.battery_voltage = 9.0 # Initialize the battery voltage level
-    self.percent_charge_level = 0.14  # Initialize the percentage charge level
+    self.percent_charge_level = 0.05  # Initialize the percentage charge level
     self.decrement_factor = 0.99 # Used to reduce battery level each cycle
       
   def get_battery_state(self):

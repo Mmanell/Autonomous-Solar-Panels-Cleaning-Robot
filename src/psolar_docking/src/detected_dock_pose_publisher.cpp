@@ -78,7 +78,7 @@ public:
 
     // Create a publisher for the dock pose
     dock_pose_pub_ = this->create_publisher<geometry_msgs::msg::PoseStamped>(
-      "detected_dock_pose", 10);
+      "/goto_pose/detected_dock_pose", 10);
 
     // Create a timer that will trigger pose updates
     timer_ = this->create_wall_timer(

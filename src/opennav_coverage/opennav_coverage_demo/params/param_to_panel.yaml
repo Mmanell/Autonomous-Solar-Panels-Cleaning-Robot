@@ -43,7 +43,7 @@ controller_server:
     controller_frequency: 20.0
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
-    min_theta_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.1
     failure_tolerance: 0.3
     progress_checker_plugin: "progress_checker"
     goal_checker_plugins: ["general_goal_checker"] 
@@ -57,8 +57,8 @@ controller_server:
     general_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.35
+      yaw_goal_tolerance: 0.8
 
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
@@ -67,28 +67,29 @@ controller_server:
       min_vel_y: 0.0
       max_vel_x: 0.26
       max_vel_y: 0.0
-      max_vel_theta: 1.0
+      max_vel_theta: 2.0
       min_speed_xy: 0.0
       max_speed_xy: 0.26
       min_speed_theta: 0.0
       acc_lim_x: 2.5
       acc_lim_y: 0.0
-      acc_lim_theta: 3.2
+      acc_lim_theta: 5.0
       decel_lim_x: -2.5
       decel_lim_y: 0.0
-      decel_lim_theta: -3.2
+      decel_lim_theta: -5.0
       vx_samples: 20
       vy_samples: 5
-      vtheta_samples: 20
+      vtheta_samples: 40
       sim_time: 1.7
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.2
-      xy_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.2
+      #yaw_goal_tolerance: 0.3
       trans_stopped_velocity: 0.25
       short_circuit_trajectory_evaluation: True
       stateful: True
-      critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
+      critics: ["RotateToGoal",  "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
       BaseObstacle.scale: 0.02
       PathAlign.scale: 32.0
       PathAlign.forward_point_distance: 0.1
@@ -96,8 +97,8 @@ controller_server:
       GoalAlign.forward_point_distance: 0.1
       PathDist.scale: 32.0
       GoalDist.scale: 24.0
-      RotateToGoal.scale: 32.0
-      RotateToGoal.slowing_factor: 5.0
+      RotateToGoal.scale: 64.0
+      RotateToGoal.slowing_factor: 2.0
       RotateToGoal.lookahead_time: -1.0
 
 # GPS WPF CHANGE: Remove static layer
@@ -150,13 +151,13 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_link
       robot_radius: 0.22
-      resolution: 0.1
+      resolution: 0.2
       # When using GPS navigation you will potentially traverse huge environments which are not practical to
       # fit on a big static costmap. Thus it is recommended to use a rolling global costmap large enough to 
       # contain each pair of successive waypoints. See: https://github.com/ros-planning/navigation2/issues/2174
       rolling_window: True
-      width: 50
-      height: 50
+      width: 30
+      height: 30
       track_unknown_space: true
       # no static map
       plugins: ["obstacle_layer", "inflation_layer"]
@@ -233,7 +234,7 @@ behavior_server:
       plugin: "nav2_behaviors/Wait"
     assisted_teleop:
       plugin: "nav2_behaviors/AssistedTeleop"
-    local_frame: odometry/global
+    local_frame: odom
     global_frame: map
     robot_base_frame: base_link
     transform_tolerance: 0.1
@@ -276,7 +277,7 @@ docking_server:
     undock_angular_tolerance: 0.05
     max_retries: 3
     base_frame: "base_link"
-    fixed_frame: "odom"
+    fixed_frame: "map"
     dock_backwards: false
     dock_prestaging_tolerance: 0.5
  
@@ -303,8 +304,13 @@ docking_server:
       filter_coef: 0.1
  
     # Dock instances
-    dock_database: /home/manel/psolar_ws/install/psolar_docking/share/psolar_docking/config/dock_database.yaml
- 
+    #dock_database: /home/manel/psolar_ws/install/psolar_docking/share/psolar_docking/config/dock_database.yaml
+    docks: ['dock0']
+    dock0:
+      type: "nova_carter_dock"
+      frame: "map"
+      pose: [-0.5, 0.0, 0.0]
+      id: "dock0"
     controller:
       k_phi: 3.0
       k_delta: 2.0

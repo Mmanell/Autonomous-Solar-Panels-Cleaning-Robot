@@ -1,37 +1,35 @@
 <root main_tree_to_execute="MainTree" BTCPP_format="4">
   <BehaviorTree ID="MainTree">
 
+    <!-- Top-level mission sequence -->
     <Sequence name="Mission">
 
-      <!-- Run planner once -->
-      <Action ID="Planner" name="Planner" planned_fields="{planned_fields}" />
+      <!-- Plan and prepare -->
+      <Action ID="Planner" planned_fields="{planned_fields}" />
+      <!-- <Action ID="Undock"/> -->
 
-      <!-- Repeat until planned fields are empty -->
+      <!-- Main loop: repeat until there are no more fields -->
       <KeepRunningUntilFailure>
         <Fallback name="CleaningOrDocking">
 
           <!-- Dock if battery is low -->
           <Sequence name="DockIfLowBattery">          
             <Condition ID="BatteryLow"/>
-            <Action ID="Undock"/>
+            <Action ID="DockRobotNode"/>
           </Sequence>
-
-          <!-- Cleaning step -->
-          <Sequence name="CleaningStep">
-            <Action ID="PopField" planned_fields="{planned_fields}" remaining_fields="{remaining_fields}"/>            
-
-            <!-- 
-            <Action ID="WhichGoal" planned_fields="{planned_fields}" goal1="{goal1}" goal2="{goal2}"/>
-            <Action ID="NavigateToGoal" goal="{goal1}"/> 
-            <Action ID="NavigateToGoal" goal="{goal2}"/> 
-            <Action ID="WhichField" planned_fields="{planned_fields}" field="{field}"/>
-            <Action ID="NavigateCoverage" field="{field}" goal3="{goal3}"/>
-            <Action ID="NavigateToGoal" goal="{goal3}"/> 
-            -->
-          </Sequence>
-
+        <Sequence name="CleanFields">
+          <Action ID="PopField" planned_fields="{planned_fields}" remaining_fields="{remaining_fields}"/>                        
+          <Action ID="WhichGoal" remaining_fields="{remaining_fields}" goal1="{goal1}" goal2="{goal2}"/>
+          <Action ID="NavigateToGoal" goal="{goal1}"/> 
+          <Action ID="NavigateToGoal" goal="{goal2}"/> 
+          <Action ID="WhichField" remaining_fields="{remaining_fields}" field="{field}" goal3="{goal3}"/>
+          <Action ID="NavigateCoverage" field="{field}"/>
+          <Action ID="NavigateToGoal" goal="{goal3}"/> 
+        </Sequence>      
         </Fallback>
       </KeepRunningUntilFailure>
+
+      <Action ID="DockRobotNode"/>
 
     </Sequence>
 

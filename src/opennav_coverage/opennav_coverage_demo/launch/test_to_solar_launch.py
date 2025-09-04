@@ -95,7 +95,7 @@ def generate_launch_description():
     #     name='lifecycle_manager_navigation',
     #     parameters=[{
     #         'use_sim_time': use_sim_time,
-    #         'bond_timeout': 10.0 ,
+    #         'bond_timeout': 60.0 ,
     #         'autostart': True,
     #         'node_names': [
     #             '/goto_pose/planner_server',
