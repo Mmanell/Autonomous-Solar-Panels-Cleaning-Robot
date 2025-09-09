@@ -1,3 +1,0 @@
-repository='https://github.com/Fields2Cover/matplotlib-cpp.git'
-module=''
-tag='origin'

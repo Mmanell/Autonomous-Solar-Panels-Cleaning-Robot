@@ -1,3 +1,0 @@
-repository='https://github.com/Fields2Cover/spline.git'
-module=''
-tag='origin'
