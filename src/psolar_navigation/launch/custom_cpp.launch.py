@@ -2,15 +2,14 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable, GroupAction
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from nav2_common.launch import RewrittenYaml
-from launch_ros.actions import PushRosNamespace
 
 def generate_launch_description():
     # Parameters file
     bringup_dir = get_package_share_directory('psolar_navigation')
-    default_params_file = os.path.join(bringup_dir, 'config', 'nav_params.yaml')
+    default_params_file = os.path.join(bringup_dir, 'config', 'custom_cpp_params.yaml')
     params_file = LaunchConfiguration('params_file', default=default_params_file)
 
     # Settings
@@ -23,17 +22,22 @@ def generate_launch_description():
         ('cmd_vel_smoothed', '/cmd_vel/nav')
     ]
 
+    map_path = PathJoinSubstitution([
+        get_package_share_directory("psolar_navigation"),
+        "maps",
+        "cleaning_5x5.yaml"
+    ])
+
     # Parameter substitutions
     param_substitutions = {
         'use_sim_time': str(use_sim_time),
         'autostart': str(autostart)
     }
 
-    namespace = 'goto_pose'  
-
+    # No namespace
     configured_params = RewrittenYaml(
         source_file=params_file,
-        root_key=namespace,
+        root_key='',  
         param_rewrites=param_substitutions,
         convert_types=True
     )
@@ -48,9 +52,8 @@ def generate_launch_description():
         description='Full path to the ROS2 parameters file to use'
     )
 
-    # Launch nodes without namespaces
+    # Launch nodes without namespace
     bringup_nodes = GroupAction([
-        PushRosNamespace(namespace),
         Node(
             package='nav2_controller',
             executable='controller_server',
@@ -84,14 +87,16 @@ def generate_launch_description():
             output='screen'
         ),
         Node(
-            package='opennav_docking',
-            executable='opennav_docking',
-            name='docking_server',
-            parameters=[configured_params],
-            remappings=remappings,
-            output='screen'
+            package="nav2_map_server",
+            executable="map_server",
+            name="map_server",
+            output="screen",
+            parameters=[
+                {"yaml_filename": map_path},
+                {"use_sim_time": use_sim_time}
+            ],
         ),
-        #Lifecycle manager
+        # Lifecycle manager
         Node(
             package='nav2_lifecycle_manager',
             executable='lifecycle_manager',
@@ -104,7 +109,7 @@ def generate_launch_description():
                     'planner_server',
                     'behavior_server',
                     'bt_navigator',
-                    'docking_server',
+                    # 'map_server' 
                 ]
             }],
             output='screen'

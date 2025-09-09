@@ -1,7 +1,5 @@
-# Ignore build and install directories
-build/
-install/
-log/
-
-# Ignore VSCode settings folder
-.vscode/
+# Ignore any build/install/log folders
+**/build/
+**/install/
+**/log/
+**/.vscode/

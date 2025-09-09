@@ -4,6 +4,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
+from launch.substitutions import PathJoinSubstitution
 
 def generate_launch_description():
     
@@ -15,7 +16,8 @@ def generate_launch_description():
         default_value="true",
         description="Use simulation (Gazebo) clock if true"
     )
-    
+
+
 
     ekf_filter_node_odom=Node(
         package="robot_localization",
@@ -57,6 +59,8 @@ def generate_launch_description():
                ("odometry/gps", "odometry/gps"),              
            ]
        )
+    
+
         
     return LaunchDescription([
             use_sim_time_arg,

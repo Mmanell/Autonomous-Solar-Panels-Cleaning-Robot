@@ -16,6 +16,17 @@
   <depend>opennav_coverage</depend>
   <depend>opennav_docking</depend>
 
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>rclpy</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav2_msgs</depend>
+  <depend>pluginlib</depend>
+
 
 
   <test_depend>ament_lint_auto</test_depend>
@@ -23,5 +34,6 @@
 
   <export>
     <build_type>ament_cmake</build_type>
+    <nav2_core plugin="${prefix}/coverage_planner_plugin.xml" />
   </export>
 </package>

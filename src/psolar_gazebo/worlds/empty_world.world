@@ -38,15 +38,7 @@
   <heading_deg>0</heading_deg>
 </spherical_coordinates>
 
- 
-<include>
-   <name>April Tag 0</name>
-   <pose>-0.5 0.0 0.117 1.5708 0 1.5708</pose>
-   <static>true</static>
-   <uri>model://April Tag 0</uri>
- </include>
-
-  <model name="solar_panel">
+<model name="solar_panel">
    <static>true</static> <!-- Set to true if it's a static object in the world -->
    <link name="panel_link">
      <visual name="visual">
@@ -91,7 +83,7 @@
       
      </inertial>
    </link>
-   <pose>-0.1 0.4 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
+   <pose>-0.1 0.2 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
  </model> 
 
   <model name="solar_panel_2">
@@ -139,7 +131,7 @@
       
      </inertial>
    </link>
-   <pose>4 0.4 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
+   <pose>4 0.2 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
  </model> 
 
    <model name="solar_panel_3">
@@ -187,8 +179,16 @@
       
      </inertial>
    </link>
-   <pose>8.1 0.4 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
+   <pose>8.1 0.2 0 0 0 0</pose> <!-- Initial pose, can be overridden when spawned -->
  </model> 
+
+<include>
+   <name>April Tag 0</name>
+   <pose>-0.5 0.0 0.117 1.5708 0 1.5708</pose>
+   <static>true</static>
+   <uri>model://April Tag 0</uri>
+ </include>
+
 
 
     <include>

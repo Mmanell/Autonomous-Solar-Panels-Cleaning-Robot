@@ -1,0 +1,8 @@
+<class_libraries>
+  <library path="coverage_planner">
+    <class type="psolar_navigation::CoveragePlanner"
+           base_class_type="nav2_core::GlobalPlanner">
+      <description>Custom Coverage Planner.</description>
+    </class>
+  </library>
+</class_libraries>

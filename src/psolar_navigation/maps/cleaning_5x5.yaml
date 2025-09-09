@@ -1,0 +1,8 @@
+image: cleaning_5x5.pgm
+mode: trinary
+resolution: 0.05 
+#each pixel in the occupancy grid corresponds to a 5 cm × 5 cm area in the real world.
+origin: [-0.5, -0.5, 0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.6
