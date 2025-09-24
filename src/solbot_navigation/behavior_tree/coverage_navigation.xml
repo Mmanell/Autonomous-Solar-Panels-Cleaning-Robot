@@ -1,0 +1,9 @@
+<root main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <Sequence name="CoverageMission">
+            <ComputeCoveragePath goal="{goal}" path="{path}" planner_id="GridBased"/>
+            <FollowPath path="{path}" controller_id="FollowPath"/>
+            <StopRobot/>
+        </Sequence>
+    </BehaviorTree>
+</root>
