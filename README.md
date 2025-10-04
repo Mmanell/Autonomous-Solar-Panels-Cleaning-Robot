@@ -16,7 +16,6 @@ Simulation of an autonomous robot for **cleaning solar panels**, built in **ROS2
 - **Mission Execution:**  
   - **Behavior Trees** to coordinate cleaning, navigation, and docking.  
   - Simulated **battery management** using a linear discharge model.  
-- **Real-Time Monitoring:** PlotJuggler, RViz, rqt, and TF tree for debugging and visualization.
 
 ---
 
@@ -27,7 +26,7 @@ Simulation of an autonomous robot for **cleaning solar panels**, built in **ROS2
 | Programming              | C++, Python                            |
 | Robotics Framework       | ROS2 Humble, Nav2                      |
 | Simulation               | Gazebo                                  |
-| Sensor Fusion & Estimation | EKF, GPS/IMU/Encoder                 |
+| Sensor Fusion & Estimation | EKF                 |
 | Monitoring & Debugging    | PlotJuggler, RViz, rqt                 |
 
 ---
