@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # 🌞 Autonomous Solar Panel Cleaning Robot
 
 ---
@@ -36,22 +35,29 @@ Simulation of an autonomous robot for cleaning solar panels, built in ROS2 Humbl
 
 ## 📂 Project Structure
 
-\`\`\`
+
 Autonomous-Solar-Panels-Cleaning-Robot/
 ├── README.md
 ├── assets/
-│   └── demo.gif
+│ └── demo.gif
 └── src/
-    ├── Fields2Cover/
-    ├── localization_pipeline.drawio
-    ├── opennav_coverage/
-    ├── solbot_bringup/
-    ├── solbot_decision_making/
-    ├── solbot_docking/
-    ├── solbot_gazebo/
-    ├── solbot_localization/
-    └── solbot_navigation/
-\`\`\`
+├── Fields2Cover/
+│ ├── tutorials/
+│ └── swig/
+│ └── python/
+├── localization_pipeline.drawio
+├── opennav_coverage/
+│ ├── opennav_coverage/
+│ ├── opennav_coverage_msgs/
+│ ├── opennav_coverage_navigator/
+│ ├── backported_bt_navigator/
+│ └── opennav_row_coverage/
+├── solbot_bringup/
+├── solbot_decision_making/
+├── solbot_docking/
+├── solbot_gazebo/
+├── solbot_localization/
+└── solbot_navigation/
 
 ---
 
@@ -100,4 +106,4 @@ Perspectives / Future Work:
 - 🤖 Hardware deployment: porting the simulation to a real solar panel cleaning robot with real-time telemetry and GPS RTK
 - 🛠️ Improve docking procedure to ensure reliable autonomous docking under different conditions
 - 🧠 Intelligent fault detection: incorporate ML-based monitoring for predictive maintenance and autonomous recovery
-EOF
+
