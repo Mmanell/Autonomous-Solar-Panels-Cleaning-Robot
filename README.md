@@ -3,11 +3,13 @@
 ---
 
 ## Table of Contents
-- [Overview]
-- [Features]
-- [Project Structure]
-- [Getting Started]
-- [Conclusions & Perspectives]
+
+- ✅ [Conclusions & Perspectives](#conclusions-and-perspectives)
+- 🤖 [Overview](#overview)
+- 🛠 [Features](#features)
+- 📂 [Project Structure](#project-structure)
+- 🚀 [Getting Started](#getting-started)
+
 
 ---
 
