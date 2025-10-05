@@ -3,11 +3,11 @@
 ---
 
 ## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Conclusions & Perspectives](#conclusions--perspectives)
+- [Overview](#🤖-overview)
+- [Features](#🛠-features)
+- [Project Structure](#📂-project-structure)
+- [Getting Started](#🚀-getting-started)
+- [Conclusions & Perspectives](#✅-conclusions--perspectives)
 
 ---
 
@@ -59,24 +59,36 @@ Autonomous-Solar-Panels-Cleaning-Robot/
 git clone https://github.com/Mmanell/Autonomous-Solar-Panels-Cleaning-Robot.git
 cd Autonomous-Solar-Panels-Cleaning-Robot
 ```
+2. **Install ROS2 dependencies**
+```bash
+rosdep update
+rosdep install --from-paths src --ignore-src -y
 
-2. **Launch Simulation**
+```
+3. **Build the workspace**
+```bash
+colcon build
+source install/setup.bash
+
+```
+
+4. **Launch Simulation**
 ```bash
 ros2 launch solbot_bringup solbot.launch.py
 ```
 
-3. **Launch Navigation Stacks**
+5. **Launch Navigation Stacks**
 ```bash
 ros2 launch solbot_navigation navigate_between_panels.launch.py
 ros2 launch solbot_navigation complete_coverage.launch.py
 ```
 
-4. **Launch Docking**
+6. **Launch Docking**
 ```bash
 ros2 launch solbot_docking apriltag_dock_pose_publisher.launch.py
 ```
 
-5. **Execute the Mission**
+7. **Execute the Mission**
 ```bash
 ros2 run solbot_decision_making mission_bt
 ```
