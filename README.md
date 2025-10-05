@@ -3,15 +3,15 @@
 ---
 
 ## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
+- [Overview](#🤖-overview)
+- [Features](#🛠-features)
+- [Project Structure](#📂-project-structure)
+- [Getting Started](#🚀-getting-started)
 - [Conclusions & Perspectives](#conclusions--perspectives)
 
 ---
 
-##  Overview
+## 🤖 Overview
 Simulation of an autonomous robot for cleaning solar panels, built in ROS2 Humble with C++. Designed for precise navigation, coverage path planning, and mission execution.
 
 ![Robot Demo](assets/demo.gif)
