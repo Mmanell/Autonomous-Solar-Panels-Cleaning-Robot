@@ -35,7 +35,7 @@ Simulation of an autonomous robot for cleaning solar panels, built in ROS2 Humbl
 
 ## 📂 Project Structure
 
-
+```
 Autonomous-Solar-Panels-Cleaning-Robot/
 ├── README.md
 ├── assets/
@@ -58,7 +58,7 @@ Autonomous-Solar-Panels-Cleaning-Robot/
 ├── solbot_gazebo/
 ├── solbot_localization/
 └── solbot_navigation/
-
+```
 ---
 
 ## 🚀 Getting Started
