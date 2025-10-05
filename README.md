@@ -4,23 +4,23 @@
 
 ## Table of Contents
 
-- ✅ [Conclusions & Perspectives](#conclusions-and-perspectives)
 - 🤖 [Overview](#overview)
 - 🛠 [Features](#features)
 - 📂 [Project Structure](#project-structure)
 - 🚀 [Getting Started](#getting-started)
+- ✅ [Conclusions & Perspectives](#conclusions-and-perspectives)
 
 
 ---
 
-## 🤖 Overview
+##  Overview
 Simulation of an autonomous robot for cleaning solar panels, built in ROS2 Humble with C++. Designed for precise navigation, coverage path planning, and mission execution.
 
 ![Robot Demo](assets/demo.gif)
 
 ---
 
-## 🛠 Features
+##  Features
 
 - Gazebo Simulation: Full robot simulation to test navigation and cleaning operations
 - Localization & Sensor Fusion:
@@ -35,7 +35,7 @@ Simulation of an autonomous robot for cleaning solar panels, built in ROS2 Humbl
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Autonomous-Solar-Panels-Cleaning-Robot/
@@ -54,7 +54,7 @@ Autonomous-Solar-Panels-Cleaning-Robot/
 ```
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. **Clone the repository**
 ```bash
@@ -97,7 +97,7 @@ ros2 run solbot_decision_making mission_bt
 
 ---
 
-## ✅ Conclusions & Perspectives
+##  Conclusions & Perspectives
 
 Conclusions:
 - Successfully simulated a solar panel cleaning robot with autonomous coverage and docking
