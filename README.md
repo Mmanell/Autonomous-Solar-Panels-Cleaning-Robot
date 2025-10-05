@@ -64,31 +64,31 @@ Autonomous-Solar-Panels-Cleaning-Robot/
 ## 🚀 Getting Started
 
 1. **Clone the repository**
-\`\`\`bash
+```bash
 git clone https://github.com/Mmanell/Autonomous-Solar-Panels-Cleaning-Robot.git
 cd Autonomous-Solar-Panels-Cleaning-Robot
-\`\`\`
+```
 
 2. **Launch Simulation**
-\`\`\`bash
+```bash
 ros2 launch solbot_bringup solbot.launch.py
-\`\`\`
+```
 
 3. **Launch Navigation Stacks**
-\`\`\`bash
+```bash
 ros2 launch solbot_navigation navigate_between_panels.launch.py
 ros2 launch solbot_navigation complete_coverage.launch.py
-\`\`\`
+```
 
 4. **Launch Docking**
-\`\`\`bash
+```bash
 ros2 launch solbot_docking apriltag_dock_pose_publisher.launch.py
-\`\`\`
+```
 
 5. **Execute the Mission**
-\`\`\`bash
+```bash
 ros2 run solbot_decision_making mission_bt
-\`\`\`
+```
 
 ---
 
